@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller Regular'), local('Muller-Regular'),
+    url('../fonts/MullerRegular.woff2') format('woff2'),
+    url('../fonts/MullerRegular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller Regular Italic'), local('Muller-Regular-Italic'),
+    url('../fonts/MullerRegularItalic.woff2') format('woff2'),
+    url('../fonts/MullerRegularItalic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller Medium'), local('Muller-Medium'),
+    url('../fonts/MullerMedium.woff2') format('woff2'),
+    url('../fonts/MullerMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller Bold'), local('Muller-Bold'),
+    url('../fonts/MullerBold.woff2') format('woff2'),
+    url('../fonts/MullerBold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --mainColor: rgba(18 23 35 / 1);
+  --textGray: rgba(161 166 180 / 1);
+  --primary: rgba(109 49 238 / 1);
+  --primaryLight: rgba(170 157 250 / 1);
+  --mainFS: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Muller, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--mainFS);
+  background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+h2 {
+  color: var(--mainColor);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 3rem;
+}
+
+h3 {
+  color: var(--mainColor);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2rem;
+}
+
+p {
+  color: var(--mainColor);
+  font-weight: 400;
+  font-size: var(--mainFS);
+  line-height: 1.5rem;
+}
+
+.btn {
+  border: none;
+  border-radius: 40px;
+  background-color: var(--primary);
+  cursor: pointer;
+
+  width: 245px;
+  height: 70px;
+
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+
