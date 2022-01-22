@@ -37,6 +37,7 @@
 :root {
   --mainColor: rgba(18 23 35 / 1);
   --textGray: rgba(161 166 180 / 1);
+  --liteColor: rgba(230 232 236 / 1);
   --primary: rgba(109 49 238 / 1);
   --primaryLight: rgba(170 157 250 / 1);
   --mainFS: 16px;
