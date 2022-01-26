@@ -97,9 +97,6 @@ button {
   border-radius: 40px;
   background-color: var(--primary);
 
-  width: 245px;
-  height: 70px;
-
   color: white;
   font-weight: 500;
   font-size: 20px;
