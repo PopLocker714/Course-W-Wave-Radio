@@ -39,7 +39,7 @@
   width: 245px;
   height: 70px;
 
-  font-size: 20px;
+  font-size: var(--secondFS);
   line-height: 1;
   color: #fff;
 
