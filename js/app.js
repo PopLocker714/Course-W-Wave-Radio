@@ -11,12 +11,10 @@ $("#accordion").accordion({
   }
 })
 
-// Initialize Swiper
+// Playlists Initialize Swiper
 
-var swiper = new Swiper(".playlists__tab__swiper__item", {
-  loop: true,
+var swiperPlaylists = new Swiper(".playlists__tab__swiper__item", {
   cssMode: true,
-  
   pagination: {
     el: ".swiper-pagination",
     type: "fraction",
@@ -24,6 +22,16 @@ var swiper = new Swiper(".playlists__tab__swiper__item", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+
+})
+
+// Product Initialize Swiper
+
+var swiperProduct = new Swiper(".product__swiper", {
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
   },
 
 })

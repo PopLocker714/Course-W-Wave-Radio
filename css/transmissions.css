@@ -17,7 +17,7 @@
 
 .transmissions__title {
   font-weight: 400;
-  font-size: 48px;
+  font-size: var(--headingFS);
   line-height: 1;
   margin-bottom: 12px;
 }

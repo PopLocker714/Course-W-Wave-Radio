@@ -1,0 +1,86 @@
+.product {
+  padding: 94px 0;
+  background-color: var(--lightBlack);
+  color: var(--white);
+}
+
+.product__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product__contain__slider {
+  width: 640px;
+  height: 562px;
+  padding: 8px 0px 0 0;
+  margin-left: -5px;
+}
+
+.product__slide__img {
+  display: block;
+}
+
+.product__content {
+  max-width: 445px;
+}
+
+.product__title {
+  font-weight: 400;
+  font-size: var(--headingFS);
+  line-height: 1;
+  color: var(--promoColor);
+  margin-bottom: 18px;
+}
+
+.product__wawe {
+  border: none;
+  margin: 0;
+  width: auto;
+  height: 12px;
+  background: url(../img/product/wawe.png) no-repeat;
+  margin-bottom: 18px;
+}
+
+.product__desc {
+  font-weight: 400;
+  font-size: var(--mainColor);
+  line-height: 1.8;
+  margin-bottom: 13px;
+}
+
+.product__desc-margin {
+  margin-bottom: 31px;
+}
+
+.product__cost {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1;
+  color: var(--white);
+  margin-bottom: 30px;
+}
+
+.product__buy {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: var(--secondFS);
+  line-height: 1;
+  color: var(--promoColor);
+  border-radius: 100px;
+  border: 1px solid var(--promoColor);
+  padding: 23px 12px;
+}
+
+.product__buy__svg {
+  margin-right: 8px;
+}
+/*# sourceMappingURL=product.css.map */

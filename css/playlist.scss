@@ -1,5 +1,5 @@
 .playlists {
-  padding: 74px 0 94px 0;
+  padding: 74px 0 64px 0;
   background-color: var(--white);
 }
 
@@ -135,11 +135,7 @@
   padding-top: 34px;
 }
 
-.swiper-wrapper {
-  height: auto;
-}
-
-.swiper-pagination {
+.playlists__swiper__pagination {
   bottom: 97.8%;
   text-align: end;
   font-style: italic;

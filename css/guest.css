@@ -6,7 +6,7 @@
 
 .guest__title {
   font-weight: 400;
-  font-size: 48px;
+  font-size: var(--headingFS);
   line-height: 1;
   color: var(--white);
   margin-bottom: 13px;
