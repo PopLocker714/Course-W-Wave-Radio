@@ -1,6 +1,6 @@
 .about__us {
   color: var(--textGray);
-  padding: 94px 0;
+  padding: 94px 0 91px;
   background-color: var(--mainColor);
 }
 
@@ -90,7 +90,6 @@
 
 .about__form__cointain {
   display: block;
-  outline: 1px solid red;
   max-width: 920px;
 }
 
@@ -120,7 +119,7 @@
   flex: 1;
   padding: 30px 10px 10px 32px;
 
-  resize: none;
+  resize: vertical;
   width: 100%;
   min-height: 150px;
 
@@ -157,7 +156,7 @@
   color: var(--white);
 
   border: none;
-  padding: 25px 52px;
+  padding: 25px 54px;
   margin-bottom: 29px;
   // width: 212px;
 }

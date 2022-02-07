@@ -53,15 +53,16 @@
 }
 
 :root {
-  --mainColor: rgba(18 23 35 / 1);
-  --lightBlack: rgba(41 46 57 / 1);
-  --textGray: rgba(161 166 180 / 1);
-  --shadeGray: rgba(210 213 221 / 1);
-  --liteColor: rgba(230 232 236 / 1);
-  --primary: rgba(109 49 238 / 1);
-  --primaryLight: rgba(170 157 250 / 1);
-  --promoColor: rgba(240 210 136 / 1);
-  --white: rgba(255 255 255 / 1);
+  --mainColor: rgba(18, 23, 35, 1);
+  --lightBlack: rgba(41, 46, 57, 1);
+  --textGray: rgba(161, 166, 180, 1);
+  --shadeGray: rgba(210, 213, 221, 1);
+  --liteColor: rgba(230, 232, 236, 1);
+  --primary: rgba(109, 49, 238, 1);
+  --primaryLight: rgba(170, 157, 250 , 1);
+  --primaryShade: rgba(79, 40, 165, 1);
+  --promoColor: rgba(240, 210, 136, 1);
+  --white: rgba(255, 255, 255, 1);
   --mainFS: 16px;
   --secondFS: 20px;
   --headingFS: 48px;
