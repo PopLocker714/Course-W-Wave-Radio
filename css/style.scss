@@ -1,0 +1,1830 @@
+@import './fonts';
+@import './resset';
+@import './mixins';
+@import './var';
+
+// -----------------------
+
+
+body {
+  font-family: Muller, Arial, Helvetica, sans-serif;
+  background-color: #e6e8ec;
+}
+
+
+// !main section
+
+.h2_style {
+  @include h2;
+}
+
+.h3_style {
+  @include textBig($mainColor);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1310px;
+  padding: 0 100px;
+}
+
+@media ( max-width: 532px ) {
+  .h2_style {
+    font-weight: $fwRegular;
+    font-size: $secondPreFS;
+  }
+
+  // .h3_style {
+  //   // @include textBig($mainColor);
+  // }
+}
+// !HEADER
+
+// UP
+.header__up, .header__btn__up {
+  display: none;
+}
+
+// HEADER_MIDDLE
+.header__midle {
+  position: relative;
+  background-color: $white;
+  z-index: 20;
+}
+
+.header__nav {
+  @include felxBetween;
+  height: 80px;
+}
+
+.header__logo__svg {
+  width: 160px;
+  height: 20px;
+}
+
+.header__nav__links {
+  @include felxBetween;
+  width: 638px;
+}
+
+.header__nav__link {
+  @include textBig($mainColor);
+
+  transition-property: color, background-color;
+  @include transition;
+  &:focus {
+    outline: none;
+    color: $white;
+    background-color: $primaryLight;
+  }
+  &:hover {
+    color: $primary;
+    background-color: transparent;
+  }
+  &:active {
+    color: $primaryShade;
+    background-color: transparent;
+  }
+}
+
+// BURGER
+.burger__btn {
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 150;
+
+  .burger__midle {
+    position: relative;
+    width: 24px;
+    height: 3px;
+    background-color: $primary;
+    border-radius: 4px;
+    transition-property: transform, background-color;
+    @include transition;
+
+    &::before, &::after {
+      position: absolute;
+      content: '';
+      width: 24px;
+      height: 3px;
+      background-color: $primary;
+      border-radius: 4px;
+      transition-property: transform;
+      @include transition;
+    }
+
+    &::before {
+      transform: translateY(-10px);
+    }
+    &::after {
+      transform: translateY(10px);
+    }
+  }
+
+  &.active .burger__midle {
+    transform: translateX(-50px);
+    background-color: transparent;
+  }
+  &.active .burger__midle::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  &.active .burger__midle::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+}
+
+.burger__menu {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  background: 90% -50px $shadeGray url(../img/header/spiral.png) no-repeat;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  transform: translateX(-900px);
+  transition-property: transform;
+  @include transition;
+
+  padding-top: 106px;
+  padding-bottom: 106px;
+  &.active {
+    transform: translateX(0);
+  }
+}
+
+.burger__menu__links {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  height: 188px;
+  &_left, &_right {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between
+    .header__nav__link {
+      margin-bottom: 60px
+    }
+  }
+}
+
+.burger__menu__container_second {
+  display: none
+}
+
+// --------------
+
+.header__group__btn {
+  @include felxBetween;
+  width: 152px;
+}
+
+.header__search__svg {
+  width: 24px;
+  height: 24px;
+  outline: none;
+  cursor: pointer;
+
+  & path {
+    transition-property: stroke;
+    @include transition;
+  }
+  &:focus path {
+    stroke: $primaryLight;
+  }
+  &:hover path {
+    stroke: $primaryLight;
+  }
+  &:active path {
+    stroke: $primaryShade;
+  }
+}
+
+.header__btn__login {
+  padding: 10px 31px;
+  @include btnConfig($mainColor, $mainFS, $bRadiusMedium);
+  border: 2px solid $mainColor;
+  background-color: transparent;
+
+  transition-property: color, border-color, background-color;
+  @include transition;
+  &:focus {
+    outline: none;
+    background-color: $primaryLight;
+  }
+  &:hover {
+    color: $white;
+    background-color: $mainColor;
+  }
+  &:active {
+    background-color: $primaryShade;
+    color: $white;
+    border-color: $primaryShade;
+  }
+}
+
+// HEADER FOOTER
+.header__footer__section {
+  background: $white;
+  border: 1px solid $liteColor;
+}
+
+.header__nav__second {
+  @include felxBetween;
+  height: 58px;
+}
+
+.nav__second__links {
+  display: flex;
+  justify-content: space-between;
+  width: 611px;
+  margin-right: 10px
+}
+
+.nav__second__link {
+  @include textSecond($mainColor);
+
+  transition-property: color, background-color;
+  @include transition;
+
+  &:focus {
+    outline: none;
+    color: $white;
+    background-color: $primaryLight;
+  }
+  &:hover {
+    color: $primary;
+    background-color: transparent;
+  }
+  &:active {
+    color: $primaryShade;
+    background-color: transparent;
+  }
+}
+
+.header__players__contain {
+  display: flex;
+  border-right: 1px solid $liteColor;
+}
+
+.btn__play__svg {
+  width: 20px;
+  height: 20px;
+}
+
+.btn__play__svg path {
+  transition-property: fill;
+  @include transition;
+}
+
+.header__player {
+  display: flex;
+  width: 174px;
+  height: 40px;
+  border-left: 1px solid $liteColor;
+
+  &:focus {
+    outline: none;
+  }
+  &:focus .player__btn__contain .btn__play__svg path {
+    fill: $primaryLight
+  }
+  &:hover .player__btn__contain .btn__play__svg path {
+    fill: $primary
+  }
+  &:active .player__btn__contain .btn__play__svg path {
+    fill: $primaryShade
+  }
+}
+
+.player__btn__contain {
+  @include felxCenter;
+  padding: 0 0 0 12px;
+}
+
+.header__player__content {
+  padding: 3px 0 0 10px;
+}
+
+.player__content__title {
+  @include textLow($textGray);
+  margin-bottom: 5px;
+}
+
+.player__content__text {
+  @include textSecond($mainColor);
+}
+
+.header__age {
+  @include felxCenter;
+  width: 46px;
+  height: 58px;
+  background-color: $liteColor;
+  margin-left: 10px;
+}
+
+.header__age::before {
+  content: '12+';
+  @include felxCenter;
+  height: 30px;
+  width: 30px;
+  background-color: $white;
+
+  font-family: 'Open Sans', sans-serif;
+  @include btnConfig($textGray, $lowFS, 50%);
+}
+
+// HEADER_PANEL
+.container__plaer {
+  display: none;
+  position: relative;
+}
+
+.header__player__panel {
+  @include felxCenter;
+  width: 100%;
+  height: 45px;
+  border: 1px solid $liteColor;
+  background-color: $white;
+  position: relative;
+  z-index: 10;
+  transition-property: background-color;
+  @include transition;
+
+  .header__plaer__svg {
+    width: 15px;
+    height: 15px;
+    transform: rotateZ(45deg);
+    transition-property: transform;
+    @include transition;
+  }
+
+  .header__plaer__svg circle {
+    transition-property: fill;
+    @include transition;
+  }
+  &:active .header__plaer__svg circle {
+    fill: $primaryShade;
+  }
+
+  .header__player__qestion {
+    @include btnConfig($primary, $mainFS, 0);
+    padding-left: 5px;
+    transition-property: color;
+    @include transition;
+  }
+  &:active .header__player__qestion {
+    color: $primaryShade;
+  }
+
+  &.active {
+    background-color: $liteColorTransparent;
+  }
+  &.active .header__plaer__svg {
+    transform: rotateZ(0)
+  }
+}
+
+// !HERO
+
+.hero {
+  background-color: $white;
+}
+
+.hero__box {
+  background: right url(../img/hero/microphone.png) no-repeat;
+  padding: 94px 0;
+}
+
+.hero__title {
+  font-size: $H1FS;
+  font-weight: $fwBold;
+  line-height: $lhMain;
+  color:$mainColor;
+  margin-bottom: 14px;
+}
+
+.hero__title__style {
+  font-weight: $fwRegular;
+  font-style: italic;
+}
+
+.hero__text {
+  max-width: 635px;
+  @include textSecondConfig($mainColor, $lhSecond);
+  margin-bottom: 45px;
+}
+
+.hero__text__link {
+  position: relative;
+  color: $primary;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $primary;
+
+    transition-property: opacity, background-color;
+    @include transition;
+  }
+
+  transition-property: color, background-color;
+  @include transition;
+  &:focus {
+    outline: none;
+    color: $white;
+    background-color: $primaryLight;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+  &:active {
+    color: $primaryShade;
+    background-color: transparent;
+  }
+  &:active::after {
+    opacity: 1;
+    background-color: $primaryShade;
+  }
+}
+
+.hero__btn {
+  @include btnConfig($white, $secondFS, $bRadiusSmall);
+  background: $primary;
+  padding: 25px 54px;
+
+  transition-property: color, background-color;
+  @include transition;
+
+  &:focus {
+    outline: 2px solid $primaryShade;
+    background-color: $primaryLight;
+  }
+  &:hover {
+    background-color: $primaryLight;
+  }
+  &:active {
+    outline: none;
+    background-color: $primaryShade;
+  }
+}
+
+// !PODCASTS
+.podcasts {
+  padding: 94px 0;
+}
+
+.podcasts__title {
+  margin-bottom: 30px;
+}
+
+.podcasts__playlist__items {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.playlist__items__row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.podcasts__playlist__item {
+  position: relative;
+  display: flex;
+  background-color: $white;
+  flex: 0 0 48.649%;
+}
+
+.podcast__item__date {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  @include felxCenter;
+  width: 51px;
+  height: 16px;
+  @include textCustom($mainColor, 10px, $fwRegular);
+  background-color: $liteColor;
+}
+
+.playlist__item__img {
+  display: block;
+}
+
+.playlist__item__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.item__content__top {
+  @include felxBetween;
+  padding: 24px 30px 21px 30px;
+  text-align: start;
+
+  .playlist__btn__play__svg circle {
+    transition-property: stroke;
+    @include transition;
+  }
+
+  .playlist__btn__play__svg path {
+    transition-property: fill;
+    @include transition;
+  }
+
+  &:focus  {
+    outline: none;
+  }
+  &:focus .playlist__btn__play__svg circle {
+    stroke: $primaryLight;
+  }
+  &:focus .playlist__btn__play__svg path {
+    fill: $primaryLight;
+  }
+  &:hover .playlist__btn__play__svg circle {
+    stroke: $primary;
+  }
+  &:hover .playlist__btn__play__svg path {
+    fill: $primary;
+  }
+  &:active .playlist__btn__play__svg {
+    fill: $primaryShade;
+  }
+  &:active .playlist__btn__play__svg circle {
+    stroke: $primaryShade;
+  }
+  &:active .playlist__btn__play__svg path {
+    fill: $white;
+  }
+}
+
+.playlist__like__btns {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid $liteColor;
+  height: 32px;
+}
+
+.playlist__btn {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+
+  transition-property: background-color;
+  @include transition;
+
+  .playlist__btn__svg path {
+    transition-property: fill;
+    @include transition;
+  }
+  .playlist__counts {
+    transition-property: color;
+    @include transition;
+  }
+
+  &:not(:nth-child(3n + 1)):focus{
+    outline: none;
+    background-color: $primaryLight;
+  }
+  &:not(:nth-child(3n + 1)):focus .playlist__btn__svg path {
+    fill: $white;
+  }
+  &:not(:nth-child(3n + 1)):focus .playlist__counts {
+    color: $white;
+  }
+
+  &:not(:nth-child(3n + 1)):hover{
+    background-color: transparent;
+  }
+  &:not(:nth-child(3n + 1)):hover .playlist__btn__svg path {
+    fill: $primary;
+  }
+  &:not(:nth-child(3n + 1)):hover .playlist__counts {
+    color: $primary;
+  }
+
+  &:not(:nth-child(3n + 1)):active{
+    background-color: transparent;
+  }
+  &:not(:nth-child(3n + 1)):active .playlist__btn__svg {
+    fill: $primaryShade;
+  }
+  &:not(:nth-child(3n + 1)):active .playlist__btn__svg path {
+    fill: $primaryShade;
+  }
+  &:not(:nth-child(3n + 1)):active .playlist__counts {
+    color: $primaryShade;
+  }
+}
+
+.playlist__time {
+  @include textCustom($mainColor, $lowFS, $fwRegular);
+  margin-bottom: 9px;
+}
+
+.playlist__title {
+  margin-bottom: 3px;
+}
+
+.playlist__author {
+  @include textSecond($textGray);
+}
+
+.playlist__counts {
+  @include textSecond($textGray);
+  padding-top: 2px;
+  margin-left: 6px;
+}
+
+.podcasts__btn__more {
+  display: block;
+  padding: 23px 52px;
+  @include btnConfig($primary, $secondFS, $bRadiusSmall);
+  border: 2px solid $primary;
+  background-color: transparent;
+  margin: 0 auto;
+
+  transition-property: background-color, color, border;
+  @include transition;
+  &:focus {
+    outline: none;
+    background-color: $primaryLight;
+    color: $white;
+  }
+  &:hover {
+    background-color: $primary;
+    color: $white;
+  }
+  &:active {
+    background-color: $primaryShade;
+    border: 2px solid $primaryShade;
+    color: $white;
+  }
+}
+
+// !TRANSMISSIONS
+.transmissions {
+  padding: 94px 0 64px;
+  background-color: $white;
+}
+
+.transmissions__box {
+  display: flex;
+}
+
+// TRANSMISSIONS LEFT
+.transmissions__left {
+  display: flex;
+  flex-direction: column;
+  max-width: 285px;
+  padding: 0 30px 0 0;
+  // height: 564px;
+}
+
+// TRANSMISSIONS LEFT INTRO
+.transmissions__left__intro {
+  margin-bottom: 227px;
+}
+
+.transmissions__title {
+  margin-bottom: 12px;
+}
+
+.transmissions__author {
+  @include textSecond ($textGray);
+  margin-bottom: 8px;
+}
+
+// TRANSMISSIONS LEFT FOOTER
+
+.transmissions__left__footer_mobile {
+  display: none;
+}
+
+.transmissions__left__img {
+  width: 100%;
+  height: 89px;
+  background: left / 26% url(../img/transmissions/mic.png) no-repeat;
+  margin-bottom: 24px;
+}
+
+.transmissions__btn {
+  @include felxCenter;
+  @include btnConfig($mainColor, $mainFS, $bRadiusMedium);
+  border: 2px solid $mainColor;
+  padding: 9px 43px;
+  margin-bottom: 12px;
+
+  transition-property: color, border-color, background-color;
+  @include transition;
+  &:focus {
+    outline: none;
+    background-color: $primaryLight;
+  }
+  &:hover {
+    color: $white;
+    background-color: $mainColor;
+  }
+  &:hover .transmissions__icon__svg path {
+    stroke: $white;
+  }
+  &:active {
+    background-color: $primaryShade;
+    color: $white;
+    border-color: $primaryShade;
+  }
+
+}
+
+.transmissions__icon__svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
+  & path {
+    transition-property: stroke;
+  @include transition;
+  }
+}
+
+.transmissions__left__text {
+  @include textSecondConfig ($textGray, $lhSecond);
+}
+
+.ransmissions__text__style {
+  @include textSecondConfig ($textGray, $lhSecond);
+  font-weight: 700;
+}
+
+// TRANSMISSIONS RIGHT
+.transmissions__right {
+  padding-top: 14px;
+  width: 100%;
+}
+
+.transmissions__cards {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.transmissions__cards.active {
+  display: flex;
+}
+
+.transmissions__card {
+  text-align: start;
+  max-width: 255px;
+  margin-bottom: 30px;
+
+  transition-property: color, background-color;
+  @include transition;
+
+  &:focus {
+    outline: none;
+  }
+  &:focus .transmissions__card__btn .transmissions__card__btn__content {
+    color: $white;
+    background-color: $primaryLight;
+  }
+  &:focus .transmissions__card__btn .transmissions__card__btn__content .transmissions__card__btn__svg path {
+    fill: $white;
+  }
+  &:hover .transmissions__card__btn .transmissions__card__btn__content {
+    color: $primary;
+    background-color: transparent;
+  }
+  &:hover .transmissions__card__btn .transmissions__card__btn__content .transmissions__card__btn__svg path {
+    fill: $primary;
+  }
+  &:hover picture .transmissions__card__img {
+    opacity: .7;
+  }
+  &:active .transmissions__card__btn .transmissions__card__btn__content {
+    color: $primaryShade;
+    background-color: transparent;
+  }
+  &:active .transmissions__card__btn .transmissions__card__btn__content .transmissions__card__btn__svg path {
+    fill: $primaryShade;
+  }
+  &:active picture .transmissions__card__img {
+    opacity: .7;
+  }
+}
+
+.transmissions__card__img {
+  display: block;
+  transition-property: opacity;
+  @include transition;
+}
+
+.transmissions__card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0 0 15px;
+  border: 1px solid $liteColor;
+  height: 112px;
+}
+
+.transmissions__card__title {
+  margin-bottom: 3px;
+}
+
+.transmissions__card__date {
+  @include textLow($textGray);
+}
+
+.transmissions__card__btn {
+  @include textSecond($mainColor);
+  font-style: italic;
+  margin-bottom: 19px;
+}
+
+.transmissions__card__btn__content {
+  transition-property: color, background-color;
+  @include transition;
+  display: inline-block;
+}
+
+.transmissions__card__btn__svg {
+  width: 21px;
+  height: 8px;
+}
+.transmissions__card__btn__svg path {
+  transition-property: fill;
+  @include transition;
+}
+
+// *TRANSMISSIONS SELECT*
+.choices {
+  margin: 0;
+  border: none ;
+  border-radius: 10px;
+  height: 40px;
+
+  &.is-focused:focus {
+    outline: 1px solid $primary;
+  }
+  &.is-focused.is-open:focus {
+    outline: none;
+  }
+  &:hover .choices__inner {
+    background-color: $liteColorTransparent;
+  }
+  &:hover.is-open .choices__inner {
+    background-color: $liteColor;
+  }
+  &.is-focused:hover {
+    outline: none;
+  }
+  // &:active .choices__inner {
+  //   background-color: $shadeGray;
+  // }
+}
+
+.choices[data-type*="select-one"]::after {
+  border-color: transparent;
+  background: right url(../img/transmissions/select_def.png) no-repeat;
+  width: 100%;
+}
+
+.choices[data-type*="select-one"].is-open::after {
+  border-color: transparent;
+  background: left url(../img/transmissions/select_def.png) no-repeat;
+  z-index: 3;
+  width: 100%;
+  transform: rotate(180deg);
+}
+
+.choices__list.choices__list--single {
+  padding: 5px 0 0 5px;
+}
+
+.choices__inner {
+  border: none;
+  background-color: $liteColor;
+  transition-property: background-color;
+  @include transition;
+  min-height: 40px;
+}
+
+.is-open .choices__inner {
+  // background-color: $liteColor;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted, .choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
+  background-color: transparent;
+  border: none;
+}
+
+.choices__item {
+  @include textSecond($mainColor);
+}
+
+.choices__item.choices__item--choice.choices__item--selectable {
+  padding: 12px;
+}
+
+.is-selected {
+  display: none;
+}
+
+.choices__list[aria-expanded] .choices__item--selectable{
+  @include textSecond($textGray);
+}
+
+.choices__list.choices__list--dropdown {
+  border-right: 1px solid $shadeGray;
+  border-left: 1px solid $shadeGray;
+  border-bottom: 1px solid $shadeGray;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  margin-top: -30px;
+  padding-top: 30px;
+}
+
+.choices__item.choices__item--choice.choices__item--selectable.is-highlighted[aria-selected] {
+  transition-property: background-color, color;
+  @include transition;
+  &:hover {
+    background-color: $liteColorTransparent;
+    color: black;
+  }
+}
+
+// !GUEST
+.guest {
+  min-height: 1108px;
+  padding: 94px 0;
+  background-color: $mainColor;
+}
+
+.guest__title {
+  color: $white;
+  margin-bottom: 13px;
+}
+
+.guset__subtitle {
+  font-weight: 700;
+  font-size: $secondFS;
+  line-height: 1.5;
+  color: $textGray;
+  margin-bottom: 8px;
+}
+
+.guest__text {
+  max-width: 825px;
+  font-weight: 400;
+  font-size: $secondFS;
+  line-height: 1.6;
+  color: $textGray;
+  margin-bottom: 49px;
+}
+
+.guest__content {
+  display: flex;
+}
+
+.guest__accordion {
+  width: 100%;
+}
+
+.ui-accordion .ui-accordion-header {
+  padding: 34px 0;
+  margin: 0;
+  @include h3($white, $secondFS);
+}
+
+.ui-accordion .ui-state-hover {
+  color: $primaryLight;
+}
+
+.ui-accordion .ui-state-active {
+  color: $primaryLight;
+  border-top: 1px solid $primaryLight;
+  border-bottom: 1px solid $primaryLight;
+}
+
+.accordion__item__title {
+  font-family: Muller;
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  border-top: 1px solid $textGray;
+  border-bottom: 1px solid $textGray;
+}
+
+.accordion__item__title:not(:first-child) {
+  border-top: none;
+}
+
+.ui-accordion .ui-icon {
+  display: none;
+}
+
+.accordion__item__svg {
+  position: absolute;
+  top: 26%;
+  right: 3px;
+  width: 42px;
+  height: 42px;
+  transform: rotate(-0.5turn);
+  transition: transform .3s linear;
+}
+
+.ui-state-active .accordion__item__svg {
+  transform: rotate(0turn);
+}
+
+.ui-accordion .accordion__item__inside {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: none;
+  border-bottom: 1px solid $textGray;
+  background-color: transparent;
+  padding: 30px 0 14px;
+}
+
+.accordion__tab__box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.accordion__tab__box:not(:last-child) {
+  margin-right: 30px;
+}
+
+button.accordion__tab__item {
+  font-family: 'Muller';
+  @include textSecond($white);
+  text-align: start;
+}
+
+.accordion__tab__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.accordion__tab__item.active {
+  color: $primaryLight;
+}
+
+.item_hide_768, .item_hide_320 {
+  display: none;
+}
+
+
+// GUEST PRODACTION
+.guest__prodaction__list {
+  width: 350px;
+  margin-left: 30px;
+}
+
+.prodaction__picture {
+  background-color: $lightBlack;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.prodaction__social__links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  max-width: 132px;
+}
+
+.social__link, .social__link_svg {
+  width: 24px;
+  height: 24px;
+}
+
+.prodaction__name {
+  @include textCustom($white, $secondFS, $fwNormal);
+  margin-bottom: 7px;
+}
+
+.prodaction__desc {
+  @include textSecondConfig($textGray, 1.8);
+  margin-bottom: 30px;
+}
+
+.prodaction__btn {
+  @include felxCenter;
+  background-color: transparent;
+
+  @include btnConfig($primaryLight, $mainFS, $bRadiusMedium);
+  border: 2px solid $primaryLight;
+  padding: 10px 18px;
+}
+
+// !MEDIA
+@media ( max-width: 1249px ) {
+  // !HEADER
+  // HEADER UP
+  .header__up {
+    display: block;
+  }
+
+  .header__up__content {
+    display: flex;
+    align-items: center;
+    height: 60px;
+  }
+
+  // HEADER MIDDLE
+  .header__logo__svg {
+    display: none;
+  }
+
+  .header__nav__links {
+    margin-right: 10px;
+  }
+
+  // HEADER FOOTER
+  .nav__second__links {
+    width: 487px;
+  }
+
+  .header__player {
+    width: 150px;
+  }
+
+  .header__age {
+    display: none;
+  }
+
+  // !HERO
+  .hero__box {
+    background: right / 31% url(../img/hero/microphone.png) no-repeat;
+    padding: 91px 0;
+  }
+
+  .hero__text {
+    max-width: 540px;
+    margin-bottom: 20px;
+  }
+
+  // !PODCASTS
+  .podcasts {
+    padding: 93px 0;
+  }
+
+  .podcasts__playlist__item {
+    flex: 0 0 48.149%;
+  }
+
+  // !TRANSMISSIONS
+  .transmissions__cards {
+    justify-content: space-around;
+  }
+
+  // !GUEST
+  .guest__text {
+    width: 536px;
+  }
+
+  .ui-accordion .accordion__item__inside {
+    padding: 30px 0;
+  }
+
+  .accordion__tab__box:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .accordion__tab__box:nth-child(-n+2) {
+    margin-right: 30px;
+  }
+
+  .accordion__tab__box:last-child {
+    display: none;
+  }
+
+  .accordion__tab__item.item_hide_768 {
+    display: block;
+  }
+}
+
+// *768
+@media ( max-width: 1000px ) {
+  // !PODCASTS
+  .playlist__items__row {
+    flex-direction: column;
+    justify-content: start;
+    margin-bottom: 0px;
+  }
+
+  .podcasts__playlist__item {
+    max-width: 540px;
+    margin-bottom: 30px;
+  }
+
+  .padcasts__btn__wrapper {
+    max-width: 540px;
+  }
+
+  // !TRANSMISSIONS
+  .transmissions__box {
+    flex-direction: column;
+  }
+
+  .transmissions__left__intro {
+    margin: 0;
+  }
+
+  .transmissions__left__footer {
+    display: none;
+  }
+
+  .transmissions__right {
+    max-width: 540px;
+  }
+
+  .transmissions__cards {
+    justify-content: space-between;
+  }
+}
+
+@media ( max-width: 890px ) {
+
+  .container {
+    padding: 0 114px;
+  }
+
+  // !HEADER
+  // HEADER MIDDLE
+  .burger__btn {
+    @include felxCenter;
+  }
+
+  .burger__menu {
+    display: block;
+  }
+
+  .header__nav__links {
+    display: none;
+  }
+
+  // HEADER FOOTER
+  .header__nav__second {
+    justify-content: flex-start;
+  }
+
+  .nav__second__links {
+    margin-right: 26px;
+    width: 100%;
+  }
+
+  .header__players__contain {
+    border: none;
+  }
+
+  .header__player__content {
+    display: none;
+  }
+
+  .header__player {
+    border: none;
+    width: 20px;
+  }
+
+  .header__player:last-child {
+    display: none;
+  }
+
+  .player__btn__contain {
+    padding-left: 0;
+  }
+
+  // !HERO
+  .hero__box {
+    background: transparent;
+    padding: 91px 0;
+  }
+
+  // !PODCASTS
+  .podcasts {
+    padding: 94px 0;
+  }
+
+  // !TRANSMISSIONS
+  .transmissions {
+    padding: 94px 0 0 0;
+  }
+
+  .transmissions__left {
+    margin-bottom: 47px;
+  }
+
+  .transmissions__right {
+    padding: 0;
+    margin-bottom: 31px;
+  }
+
+  .transmissions__left__footer_wrapper {
+    border-top: 1px solid $liteColor;
+    padding: 30px 0;
+  }
+
+  .transmissions__left__footer_mobile {
+    margin: 0 auto;
+    display: block;
+    width: 345px;
+    padding-left: 90px;
+    background: left / 20% url(../img/transmissions/mic.png) no-repeat;
+  }
+
+  .transmissions__btn {
+    margin-bottom: 7px;
+  }
+
+  // !GUEST
+  .guest__content {
+    flex-direction: column;
+  }
+
+  .guest__prodaction__list {
+    margin: 0;
+  }
+
+  .guest__accordion {
+    margin-bottom: 50px;
+  }
+
+  .accordion__tab__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .guest__prodaction__list {
+    width: 100%;
+  }
+
+  .prodaction__item {
+    width: 100%;
+  }
+
+  .prodaction__desc {
+    max-width: 400px;
+  }
+
+}
+
+// *320
+// @media (max-width: 664px) {
+@media (max-width: 750px) {
+  .container {
+    padding: 0 32px;
+  }
+}
+
+@media ( max-width: 580px ) {
+
+  // !TRANSMISSIONS
+  .transmissions__card {
+    margin: 0 10px 30px 10px;
+  }
+
+  .transmissions__card__content {
+    padding: 10px;
+    max-width: 113px;
+  }
+
+  .transmissions__card__title {
+    font-size: $lowFS;
+    font-weight: $fwNormal;
+  }
+
+  .transmissions__card__date {
+    font-size: $veryLowFS;
+  }
+
+  .transmissions__card__btn {
+    font-size: $lowFS;
+    color: $primary;
+    // margin-bottom: 12px;
+  }
+}
+
+
+@media ( max-width: 532px ) {
+  // !HEADER
+  // HEADER UP
+  .header__up__content {
+    @include felxBetween;
+    height: 54px;
+  }
+
+  .header__logo__up {
+    width: 88px;
+  }
+
+  .header__btn__up {
+    display: block;
+  }
+
+  .header__btn__login {
+    padding: 8px 22px;
+  }
+
+  .header__btn {
+    width: 87px;
+    height: 35px;
+  }
+
+  // HEADER MIDDLE
+  .header__nav {
+    height: 50px;
+  }
+
+  .header__group__btn {
+    width: auto;
+  }
+
+  .header__btn__middle {
+    display: none;
+  }
+
+  // HEADER BURGER
+  .burger__menu {
+    background: $shadeGray;
+    padding: 61px 0 0 0;
+  }
+
+  .burger__menu__container_second {
+    display: block;
+    background-color: $white;
+    padding: 30px 32px;
+  }
+
+  .burger__menu__links {
+    width: 250px;
+    height: 140px;
+    &_left, &_right {
+      .header__nav__link {
+        margin-bottom: 30px
+      }
+      .nav__second__link {
+        margin-bottom: 30px
+      }
+    }
+  }
+
+  .burger__menu__links_first {
+    margin-bottom: 30px;
+  }
+
+  .burger__menu__links_second {
+    width: 215px;
+    height: 108px;
+  }
+
+  // HEADER FOOTER
+  .header__footer__section {
+    display: none;
+  }
+
+  .container__plaer {
+    display: block;
+    margin: 0 auto;
+    max-width: 1310px;
+  }
+
+  .header__player__panel_btns {
+    display: flex;
+    flex: 1;
+    position: absolute;
+    height: 78px;
+    margin: 0 auto;
+    top: 45px; left: 0; bottom: 0; right: 0;
+    padding: 16px 32px 0 0;
+    z-index: 5;
+    transform: translateY(-80px);
+    transition-property: transform;
+    @include transition;
+
+    background-color: $white;
+    &.active {
+      transform: translateY(0);
+    }
+  }
+
+  .header__player {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 128px;
+    height: 62px;
+    padding-left: 32px;
+    &:active .btn__play__svg path{
+      fill: $primaryShade;
+    }
+  }
+
+  .header__player:last-child {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-left: 1px solid $shadeGray;
+  }
+
+  .btn__play__svg {
+    margin-left: 2px;
+    margin-bottom: 4px;
+  }
+
+  // !HERO
+  .hero__box {
+    background: transparent;
+    padding: 40px 0;
+  }
+
+  .hero__title {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+
+  .hero__text {
+    max-width: auto;
+    @include textSecondConfig($mainColor, $lhSecond);
+    font-size: $lowPreFS;
+    margin-bottom: 20px;
+  }
+
+  .hero__btn {
+    @include btnConfig($white, $mainFS, $bRadiusSmall);
+    padding: 17px 45px;
+  }
+
+  // !PODCASTS
+  .podcasts {
+    padding: 54px 0;
+  }
+
+  .podcasts__title {
+    font-weight: $fwRegular;
+    font-size: $secondPreFS;
+    margin-bottom: 20px;
+  }
+
+  .playlist__items__row {
+    width: 256px;
+  }
+
+  .item__content__top {
+    padding: 16px 11px 0 16px;
+  }
+
+  .item__content__top path {
+    fill: $primary;
+  }
+
+  .item__content__top circle {
+    stroke: $primary;
+  }
+
+  .playlist__btn__play__svg {
+    width:  31px;
+    height:  31px;
+  }
+
+  .podcasts__playlist__item {
+    flex-direction: column;
+  }
+
+  .podcasts__playlist__items {
+    margin: 0;
+  }
+
+  .playlist_hide {
+    display: none;
+  }
+
+  .podcast__item__date {
+    left: 0;
+    top: 0;
+  }
+
+  .playlist__like__btns {
+    height: 28px;
+  }
+
+  .padcasts__btn__wrapper {
+    width: 100%;
+  }
+
+  .padcasts__btn__wrapper {
+    max-width: 256px;
+  }
+
+  .podcasts__btn__more {
+    @include btnConfig($primary, $mainFS, $bRadiusSmall);
+    padding: 15px 28px;
+  }
+
+  .playlist__item__content {
+    height: 113px;
+  }
+
+  .playlist__title {
+    font-size: $mainFS;
+    margin-bottom: 0;
+  }
+
+  .playlist__author {
+    font-size: $lowFS;
+  }
+
+  .playlist__counts {
+    font-size: $lowFS;
+  }
+
+  .playlist__btn {
+    display: flex;
+    align-items: center;
+    margin-left: 33px;
+  }
+
+
+  // !TRANSMISSIONS
+  .transmissions {
+    padding: 55px 0 0 0;
+  }
+
+  .transmissions__title {
+    margin-bottom: 19px;
+  }
+
+  .transmissions__author {
+    font-size: $lowFS;
+    margin-bottom: 6px;
+  }
+
+  .transmissions__left__footer_mobile {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 256px;
+    background: left / 30% url(../img/transmissions/mic.png) no-repeat;
+  }
+
+  .transmissions__btn {
+    width: 110px;
+    padding: 7px 10px;
+    margin-bottom: 0;
+  }
+
+  .choices {
+    width: 256px;
+  }
+
+  .transmissions__left__text {
+    font-size: $lowPreFS;
+    margin-top: 2px;
+    margin-bottom: 7px;
+  }
+
+  .ransmissions__text__style {
+    font-size: $lowPreFS;
+  }
+
+  .transmissions__left {
+    margin-bottom: 30px;
+  }
+
+  .transmissions__right {
+    margin-bottom: 0;
+  }
+
+  .transmissions__card__content {
+    height: 99px;
+  }
+
+  .transmissions__card__btn {
+    margin-bottom: 0;
+  }
+
+  .transmissions__left__footer_wrapper {
+    padding: 28px 0;
+  }
+
+  // !GUEST
+  .guest {
+    padding: 55px 0;
+  }
+
+  .guest__title {
+    margin-bottom: 11px;
+  }
+
+  .guset__subtitle {
+    font-size: $lowPreFS;
+    margin-bottom: 0px;
+  }
+
+  .guest__text {
+    width: 100%;
+    font-size: $lowPreFS;
+    margin-bottom: 28px;
+  }
+
+  .ui-accordion .ui-accordion-header {
+    font-size: $mainFS;
+    padding: 18px 0;
+  }
+
+  .guest__accordion {
+    margin-bottom: 26px;
+  }
+
+  .accordion__item__svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .ui-accordion .accordion__item__inside {
+    padding: 20px 0;
+  }
+
+  button.accordion__tab__item {
+    font-size: $lowPreFS;
+    line-height: 1;
+  }
+
+  .accordion__tab__box:nth-child(-n+2) {
+    margin-right: 0;
+    padding-right: 28px;
+  }
+
+  .accordion__tab__item {
+    margin-bottom: 32px;
+  }
+
+  .ui-accordion .accordion__item__inside {
+    padding-bottom: 3px;
+  }
+
+  .item_hide_320 {
+    display: block;
+  }
+
+  .item_hide {
+    display: none;
+  }
+
+  .accordion__item__title.hide.ui-accordion-header,
+  .accordion__item__inside.hide.ui-accordion-content {
+    display: none !important;
+  }
+
+  // border-top: 1px solid $primaryLight;
+
+  .accordion__item__title:nth-child(3) {
+    border-top: 1px solid $textGray;
+  }
+
+
+  .prodaction__social__links {
+    margin-bottom: 14px;
+    max-width: 150px;
+  }
+
+  .social__link,
+  .social__link_svg {
+    width: 36px;
+    height: 36px;
+    // viewBox="0 0 24 24"
+  }
+
+  .prodaction__btn {
+    padding: 8px 13px;
+  }
+
+
+}
+
+@media ( max-width: 350px ) {
+  .transmissions__card:nth-child(2n) {
+    margin: 0 0 30px 5px;
+  }
+
+  .transmissions__card:nth-child(2n + 1) {
+    margin: 0 5px 30px 0;
+  }
+}
+
+

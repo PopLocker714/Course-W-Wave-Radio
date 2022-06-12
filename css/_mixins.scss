@@ -1,0 +1,76 @@
+@import './var';
+
+@mixin h2 {
+  color: $mainColor;
+  font-size: $headingFS;
+  font-weight: $fwRegular;
+  line-height: $lhMain;
+}
+
+@mixin h3($color, $fs) {
+  font-weight: $fwNormal;
+  font-size: $fs;
+  line-height: $lhMain;
+  color: $color;
+}
+
+@mixin textBig($color) {
+  font-weight: $fwRegular;
+  font-size: $secondFS;
+  line-height: $lhMain;
+  color: $color;
+}
+
+@mixin textSecond($color) {
+  font-weight: $fwRegular;
+  font-size: $mainFS;
+  line-height: $lhMain;
+  color: $color;
+}
+
+@mixin textSecondConfig($color, $lh) {
+  font-weight: $fwRegular;
+  font-size: $mainFS;
+  line-height: $lh;
+  color: $color;
+}
+
+@mixin textLow($color) {
+  font-weight: $fwRegular;
+  font-size: $lowFS;
+  line-height: $lhMain;
+  color: $color;
+}
+
+@mixin textCustom($color, $fs, $fw) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lhMain;
+  color: $color;
+}
+
+@mixin btnConfig($color, $fs, $radius) {
+  font-weight: $fwNormal;
+  font-size: $fs;
+  line-height: $lhMain;
+  border-radius: $radius;
+  color: $color;
+}
+
+@mixin felxCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin felxBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin transition {
+  transition-duration: $transDuration;
+  transition-timing-function: $timingFunc;
+}
+
