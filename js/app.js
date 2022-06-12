@@ -9,6 +9,8 @@ const HEADER_BURGER_MENU = document.getElementById('burger-menu')
 const PODCASTS_BTN = document.getElementById('podcsts-btn')
 const TRANSMISSIONS_SELECT = document.getElementById('select')
 const TRANSMISSIONS_CARDS = document.querySelectorAll('.transmissions__cards')
+const ACCORDION_TABS = document.querySelectorAll('.accordion__tab__item')
+const PRODACTION_ITEMS = document.querySelectorAll('.prodaction__item')
 
 // !HEADER PANEL
 let closing_panel = false
@@ -59,23 +61,47 @@ function showPodcastsItems() {
 }
 
 // !TRANSMISSIONS
+// select toggle
 TRANSMISSIONS_SELECT.addEventListener('change', event => {
-  // console.log(event.detail.value)
-  if (event.detail.value === 'Дмитрий Гутенберг') {
-    choiceActive(TRANSMISSIONS_CARDS, 0, 'active')
-  }
-  if (event.detail.value === 'Татьяна Флеганова') {
-    choiceActive(TRANSMISSIONS_CARDS, 1, 'active')
-  }
-  if (event.detail.value === 'Анна Васильева') {
-    choiceActive(TRANSMISSIONS_CARDS, 2, 'active')
-  }
-  if (event.detail.value === 'Пётр Дмитриевский') {
-    choiceActive(TRANSMISSIONS_CARDS, 3, 'active')
+  switch (event.detail.value) {
+    case 'Дмитрий Гутенберг':
+      choiceActive(TRANSMISSIONS_CARDS, 0, 'active')
+      break
+    case 'Татьяна Флеганова':
+      choiceActive(TRANSMISSIONS_CARDS, 1, 'active')
+      break
+    case 'Анна Васильева':
+      choiceActive(TRANSMISSIONS_CARDS, 2, 'active')
+      break
+    case 'Пётр Дмитриевский':
+      choiceActive(TRANSMISSIONS_CARDS, 3, 'active')
+      break
+    default:
+      choiceActive(TRANSMISSIONS_CARDS, 0, 'active')
+      break
   }
 })
 
+// !GUEST
+// buttns toggle
 
+// ACCORDION_TABS
+ACCORDION_TABS.forEach(el => el.addEventListener('click', accordionTabsHandler))
+function accordionTabsHandler() {
+  ACCORDION_TABS.forEach(el => removeClass(el, 'active'))
+  addClass(this, 'active')
+
+  PRODACTION_ITEMS.forEach(el => removeClass(el, 'active'))
+  PRODACTION_ITEMS.forEach(el => {
+    if(+el.dataset.prodactionId === +this.dataset.accordionId) {
+      addClass(el, 'active')
+    }
+  })
+}
+
+
+
+// functions
 function choiceActive(arr, target, className) {
   for (let i = 0; i < arr.length; i++) {
     removeClass(arr[i], className)
@@ -83,7 +109,6 @@ function choiceActive(arr, target, className) {
   addClass(arr[target], className)
 }
 
-// functions
 function addClass(el, targetClass) {
   el.classList.add(targetClass)
 }
