@@ -145,17 +145,33 @@ function updateAPI() {
 
 // Playlists Initialize Swiper
 
-// var swiperPlaylists = new Swiper(".playlists__tab__swiper__item", {
-//   cssMode: true,
-//   pagination: {
-//     el: ".swiper-pagination",
-//     type: "fraction",
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// })
+window.addEventListener('resize', checkSreenSize, false)
+
+var swiperPlaylists = new Swiper(".playlists__tab__swiper__item", {
+  cssMode: true,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  
+})
+
+function checkSreenSize() {
+  // console.log(innerWidth)
+  // console.log(innerHeight)
+
+  if (innerWidth < 1249) {
+    swiperPlaylists.navigation.destroy()
+    swiperPlaylists.pagination.destroy()
+  } else {
+    swiperPlaylists.navigation.init()
+    swiperPlaylists.pagination.init()
+  }
+}
 
 // Product Initialize Swiper
 
