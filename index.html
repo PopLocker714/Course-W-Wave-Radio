@@ -2145,50 +2145,61 @@
           <h2 class="playlists__title h2_style">Плейлисты</h2>
           <h3 class="playlists__subtitle">Жанр</h3>
           <div class="playlists__tabs">
-            <div class="playlist_tabs_group">
-              <label for="playlists-tab-input-1" class="playlists__tab__item">
+            <div class="playlist__tabs__group hide_320">
+              <label for="playlists-tab-input-1" class="playlists__tab__item active" data-target-number="1" tabindex="0">
                 <input type="radio" name="playlists__tab" id="playlists-tab-input-1" class="playlists__tab__input"
                   checked>
                 Постпанк
                 <span></span>
               </label>
-              <label for="playlists-tab-input-2" class="playlists__tab__item">
+              <label for="playlists-tab-input-2" class="playlists__tab__item" data-target-number="2" tabindex="1">
                 <input type="radio" name="playlists__tab" id="playlists-tab-input-2" class="playlists__tab__input">
                 Хардкор
                 <span></span>
               </label>
-              <label for="playlists-tab-input-3" class="playlists__tab__item">
+              <label for="playlists-tab-input-3" class="playlists__tab__item" data-target-number="3" tabindex="2">
                 <input type="radio" name="playlists__tab" id="playlists-tab-input-3" class="playlists__tab__input">
                 Панк-рок
                 <span></span>
               </label>
-              <label for="playlists-tab-input-4" class="playlists__tab__item">
+              <label for="playlists-tab-input-4" class="playlists__tab__item" data-target-number="4" tabindex="3">
                 <input type="radio" name="playlists__tab" id="playlists-tab-input-4" class="playlists__tab__input">
                 Рок
                 <span></span>
               </label>
             </div>
-            <div class="playlist_tabs_group">
-              <label for="playlists-tab-input-5" class="playlists__tab__item">
+            <div class="playlist__tabs__group hide_320">
+              <label for="playlists-tab-input-5" class="playlists__tab__item" data-target-number="5" tabindex="4">
                 <input type="radio" name="playlists__tab" id="playlists-tab-input-5" class="playlists__tab__input">
                 Прогрессивный рок
                 <span></span>
               </label>
-              <label for="playlists-tab-input-6" class="playlists__tab__item">
+              <label for="playlists-tab-input-6" class="playlists__tab__item" data-target-number="6" tabindex="5">
                 <input type="radio" name="playlists__tab" id="playlists-tab-input-6" class="playlists__tab__input">
                 Электронная музыка
                 <span></span>
               </label>
-              <label for="playlists-tab-input-7" class="playlists__tab__item">
+              <label for="playlists-tab-input-7" class="playlists__tab__item" data-target-number="7" tabindex="6">
                 <input type="radio" name="playlists__tab" id="playlists-tab-input-7" class="playlists__tab__input">
                 Классическая музыка
                 <span></span>
               </label>
-              <label for="playlists-tab-input-8" class="playlists__tab__item">
+              <label for="playlists-tab-input-8" class="playlists__tab__item" data-target-number="8" tabindex="7">
                 <input type="radio" name="playlists__tab" id="playlists-tab-input-8" class="playlists__tab__input">
                 Звуки природы и шум города
                 <span></span>
               </label>
+            </div>
+
+            <div class="playlist__tabs__group hide_desctop">
+              <button class="playlist_tab_genre active" data-target-number="1">Постпанк</button>
+              <button class="playlist_tab_genre" data-target-number="2">Хардкор</button>
+              <button class="playlist_tab_genre" data-target-number="3">Панк-рок</button>
+              <button class="playlist_tab_genre" data-target-number="4">Рок</button>
+              <button class="playlist_tab_genre" data-target-number="5">Прогрессивный рок</button>
+              <button class="playlist_tab_genre" data-target-number="6">Электронная музыка</button>
+              <button class="playlist_tab_genre" data-target-number="7">Классическая музыка</button>
+              <button class="playlist_tab_genre" data-target-number="8">Звуки природы и шум города</button>
             </div>
           </div>
 
@@ -2203,13 +2214,13 @@
 
         <div class="playlists__right__tabs">
 
-          <div class="swiper playlists__tab__swiper__item">
+          <div class="swiper playlists__tab__swiper__item active" data-number="1">
             <div class="swiper-wrapper">
               <div class="swiper-slide swiper__slide__cards">
                 <button class="swiper__slide__card">
                   <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
                   <picture>
-                    <source media="(max-width: 1024px)" srcset="img/playlist/small_1.png">
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_1.png">
                     <img class="swiper__slide__card__img" src="img/playlist/big_1.png" alt="Ploho">
                   </picture>
                   <div class="swiper__slide__card__content">
@@ -2220,7 +2231,7 @@
                 <button class="swiper__slide__card">
                   <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
                   <picture>
-                    <source media="(max-width: 1024px)" srcset="img/playlist/small_2.png">
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_2.png">
                     <img class="swiper__slide__card__img" src="img/playlist/big_2.png" alt="Molchat Doma">
                   </picture>
                   <div class="swiper__slide__card__content">
@@ -2231,7 +2242,7 @@
                 <button class="swiper__slide__card">
                   <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
                   <picture>
-                    <source media="(max-width: 1024px)" srcset="img/playlist/small_3.png">
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_3.png">
                     <img class="swiper__slide__card__img" src="img/playlist/big_3.png" alt="Motorama">
                   </picture>
                   <div class="swiper__slide__card__content">
@@ -2242,7 +2253,7 @@
                 <button class="swiper__slide__card">
                   <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
                   <picture>
-                    <source media="(max-width: 1024px)" srcset="img/playlist/small_4.png">
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_4.png">
                     <img class="swiper__slide__card__img" src="img/playlist/big_4.png" alt="Human Tetris">
                   </picture>
                   <div class="swiper__slide__card__content">
@@ -2253,7 +2264,7 @@
                 <button class="swiper__slide__card">
                   <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
                   <picture>
-                    <source media="(max-width: 1024px)" srcset="img/playlist/small_5.png">
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_5.png">
                     <img class="swiper__slide__card__img" src="img/playlist/big_5.png" alt="Буерак">
                   </picture>
                   <div class="swiper__slide__card__content">
@@ -2264,7 +2275,7 @@
                 <button class="swiper__slide__card">
                   <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
                   <picture>
-                    <source media="(max-width: 1024px)" srcset="img/playlist/small_6.png">
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_6.png">
                     <img class="swiper__slide__card__img" src="img/playlist/big_6.png" alt="Июльские Дни">
                   </picture>
                   <div class="swiper__slide__card__content">
@@ -2275,7 +2286,7 @@
                 <button class="swiper__slide__card">
                   <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
                   <picture>
-                    <source media="(max-width: 1024px)" srcset="img/playlist/small_7.png">
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_7.png">
                     <img class="swiper__slide__card__img" src="img/playlist/big_7.png" alt="Joy Division">
                   </picture>
                   <div class="swiper__slide__card__content">
@@ -2286,7 +2297,7 @@
                 <button class="swiper__slide__card">
                   <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
                   <picture>
-                    <source media="(max-width: 1024px)" srcset="img/playlist/small_8.png">
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_8.png">
                     <img class="swiper__slide__card__img" src="img/playlist/big_8.png" alt="The Cure">
                   </picture>
                   <div class="swiper__slide__card__content">
@@ -2297,7 +2308,7 @@
                 <button class="swiper__slide__card">
                   <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
                   <picture>
-                    <source media="(max-width: 1024px)" srcset="img/playlist/small_9.png">
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_9.png">
                     <img class="swiper__slide__card__img" src="img/playlist/big_9.png" alt="The Smiths">
                   </picture>
                   <div class="swiper__slide__card__content">
@@ -2308,7 +2319,7 @@
                 <button class="swiper__slide__card">
                   <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
                   <picture>
-                    <source media="(max-width: 1024px)" srcset="img/playlist/small_10.png">
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_10.png">
                     <img class="swiper__slide__card__img" src="img/playlist/big_10.png" alt="New Order">
                   </picture>
                   <div class="swiper__slide__card__content">
@@ -2319,7 +2330,7 @@
                 <button class="swiper__slide__card">
                   <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
                   <picture>
-                    <source media="(max-width: 1024px)" srcset="img/playlist/small_11.png">
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_11.png">
                     <img class="swiper__slide__card__img" src="img/playlist/big_11.png" alt="Bauhaus">
                   </picture>
                   <div class="swiper__slide__card__content">
@@ -2330,7 +2341,7 @@
                 <button class="swiper__slide__card">
                   <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
                   <picture>
-                    <source media="(max-width: 1024px)" srcset="img/playlist/small_12.png">
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_12.png">
                     <img class="swiper__slide__card__img" src="img/playlist/big_12.png" alt="Gang Of Four">
                   </picture>
                   <div class="swiper__slide__card__content">
@@ -2344,7 +2355,7 @@
                 <button class="swiper__slide__card">
                   <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
                   <picture>
-                    <source media="(max-width: 1024px)" srcset="img/playlist/small_13.png">
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_13.png">
                     <img class="swiper__slide__card__img" src="img/playlist/big_13.png" alt="The Chameleons">
                   </picture>
                   <div class="swiper__slide__card__content">
@@ -2355,7 +2366,7 @@
                 <button class="swiper__slide__card">
                   <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
                   <picture>
-                    <source media="(max-width: 1024px)" srcset="img/playlist/small_14.png">
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_14.png">
                     <img class="swiper__slide__card__img" src="img/playlist/big_14.png" alt="Killing Joke">
                   </picture>
                   <div class="swiper__slide__card__content">
@@ -2366,7 +2377,7 @@
                 <button class="swiper__slide__card">
                   <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
                   <picture>
-                    <source media="(max-width: 1024px)" srcset="img/playlist/small_15.png">
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_15.png">
                     <img class="swiper__slide__card__img" src="img/playlist/big_15.png" alt="The Stranglers">
                   </picture>
                   <div class="swiper__slide__card__content">
@@ -2377,7 +2388,7 @@
                 <button class="swiper__slide__card">
                   <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
                   <picture>
-                    <source media="(max-width: 1024px)" srcset="img/playlist/small_16.png">
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_16.png">
                     <img class="swiper__slide__card__img" src="img/playlist/big_16.png" alt="Ultravox">
                   </picture>
                   <div class="swiper__slide__card__content">
@@ -2388,7 +2399,7 @@
                 <button class="swiper__slide__card">
                   <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
                   <picture>
-                    <source media="(max-width: 1024px)" srcset="img/playlist/small_17.png">
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_17.png">
                     <img class="swiper__slide__card__img" src="img/playlist/big_17.png" alt="Dub Housing">
                   </picture>
                   <div class="swiper__slide__card__content">
@@ -2399,7 +2410,7 @@
                 <button class="swiper__slide__card">
                   <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
                   <picture>
-                    <source media="(max-width: 1024px)" srcset="img/playlist/small_18.png">
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_18.png">
                     <img class="swiper__slide__card__img" src="img/playlist/big_18.png" alt="Talking Heads">
                   </picture>
                   <div class="swiper__slide__card__content">
@@ -2410,7 +2421,7 @@
                 <button class="swiper__slide__card">
                   <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
                   <picture>
-                    <source media="(max-width: 1024px)" srcset="img/playlist/small_19.png">
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_19.png">
                     <img class="swiper__slide__card__img" src="img/playlist/big_19.png" alt="The Feelies">
                   </picture>
                   <div class="swiper__slide__card__content">
@@ -2421,7 +2432,7 @@
                 <button class="swiper__slide__card">
                   <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
                   <picture>
-                    <source media="(max-width: 1024px)" srcset="img/playlist/small_20.png">
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_20.png">
                     <img class="swiper__slide__card__img" src="img/playlist/big_20.png" alt="Wipers">
                   </picture>
                   <div class="swiper__slide__card__content">
@@ -2432,7 +2443,7 @@
                 <button class="swiper__slide__card">
                   <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
                   <picture>
-                    <source media="(max-width: 1024px)" srcset="img/playlist/small_21.png">
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_21.png">
                     <img class="swiper__slide__card__img" src="img/playlist/big_21.png" alt="Violent Femmes">
                   </picture>
                   <div class="swiper__slide__card__content">
@@ -2443,7 +2454,7 @@
                 <button class="swiper__slide__card">
                   <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
                   <picture>
-                    <source media="(max-width: 1024px)" srcset="img/playlist/small_22.png">
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_22.png">
                     <img class="swiper__slide__card__img" src="img/playlist/big_22.png" alt="Minutemen">
                   </picture>
                   <div class="swiper__slide__card__content">
@@ -2454,7 +2465,7 @@
                 <button class="swiper__slide__card">
                   <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
                   <picture>
-                    <source media="(max-width: 1024px)" srcset="img/playlist/small_23.png">
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_23.png">
                     <img class="swiper__slide__card__img" src="img/playlist/big_23.png" alt="Swans">
                   </picture>
                   <div class="swiper__slide__card__content">
@@ -2465,7 +2476,7 @@
                 <button class="swiper__slide__card">
                   <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
                   <picture>
-                    <source media="(max-width: 1024px)" srcset="img/playlist/small_24.png">
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_24.png">
                     <img class="swiper__slide__card__img" src="img/playlist/big_24.png" alt="DEVO">
                   </picture>
                   <div class="swiper__slide__card__content">
@@ -2492,6 +2503,2030 @@
               </svg>
             </div>
           </div>
+          <div class="swiper playlists__tab__swiper__item" data-number="2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper__slide__cards">
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_13.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_13.png" alt="The Chameleons">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Chameleons</h3>
+                    <p class="swiper__slide__card__desc">Период 2000-2003</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_14.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_14.png" alt="Killing Joke">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Killing Joke</h3>
+                    <p class="swiper__slide__card__desc">Период 1988-1991</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_15.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_15.png" alt="The Stranglers">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Stranglers</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_16.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_16.png" alt="Ultravox">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Ultravox</h3>
+                    <p class="swiper__slide__card__desc">Период 1973-1987</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_17.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_17.png" alt="Dub Housing">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Pere Ubu</h3>
+                    <p class="swiper__slide__card__desc">Dub Housing</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_18.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_18.png" alt="Talking Heads">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Talking Heads</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_19.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_19.png" alt="The Feelies">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Feelies</h3>
+                    <p class="swiper__slide__card__desc">Crazy Rhythms</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_20.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_20.png" alt="Wipers">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Wipers</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_21.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_21.png" alt="Violent Femmes">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Violent Femmes</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_22.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_22.png" alt="Minutemen">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Minutemen</h3>
+                    <p class="swiper__slide__card__desc">Хиты</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_23.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_23.png" alt="Swans">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Swans</h3>
+                    <p class="swiper__slide__card__desc">Все синглы</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_24.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_24.png" alt="DEVO">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">DEVO</h3>
+                    <p class="swiper__slide__card__desc">3 последних альбома</p>
+                  </div>
+                </button>
+              </div>
+              <div class="swiper-slide swiper__slide__cards">
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_1.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_1.png" alt="Ploho">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Ploho</h3>
+                    <p class="swiper__slide__card__desc">3 последних альбома</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_2.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_2.png" alt="Molchat Doma">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Molchat Doma</h3>
+                    <p class="swiper__slide__card__desc">Все песни</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_3.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_3.png" alt="Motorama">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Motorama</h3>
+                    <p class="swiper__slide__card__desc">Все синглы</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_4.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_4.png" alt="Human Tetris">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Human Tetris</h3>
+                    <p class="swiper__slide__card__desc">3 последних альбома</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_5.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_5.png" alt="Буерак">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Буерак</h3>
+                    <p class="swiper__slide__card__desc">Все EP</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_6.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_6.png" alt="Июльские Дни">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Июльские Дни</h3>
+                    <p class="swiper__slide__card__desc">Альбом «Колокол»</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_7.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_7.png" alt="Joy Division">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Joy Division</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_8.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_8.png" alt="The Cure">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Cure</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_9.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_9.png" alt="The Smiths">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Smiths</h3>
+                    <p class="swiper__slide__card__desc">Период 1984-1988</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_10.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_10.png" alt="New Order">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">New Order</h3>
+                    <p class="swiper__slide__card__desc">Хиты</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_11.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_11.png" alt="Bauhaus">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Bauhaus</h3>
+                    <p class="swiper__slide__card__desc">Все синглы</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_12.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_12.png" alt="Gang Of Four">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Gang Of Four</h3>
+                    <p class="swiper__slide__card__desc">3 последних альбома</p>
+                  </div>
+                </button>
+              </div>
+
+
+            </div>
+            <div class="swiper-pagination playlists__swiper__pagination"></div>
+            <div class="swiper-button-prev">
+              <svg class="transmissions__card__btn__svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
+                  fill="#121723" />
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg class="transmissions__card__btn__svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
+                  fill="#121723" />
+              </svg>
+            </div>
+          </div>
+          <div class="swiper playlists__tab__swiper__item" data-number="3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper__slide__cards">
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_1.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_1.png" alt="Ploho">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Ploho</h3>
+                    <p class="swiper__slide__card__desc">3 последних альбома</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_2.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_2.png" alt="Molchat Doma">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Molchat Doma</h3>
+                    <p class="swiper__slide__card__desc">Все песни</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_3.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_3.png" alt="Motorama">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Motorama</h3>
+                    <p class="swiper__slide__card__desc">Все синглы</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_4.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_4.png" alt="Human Tetris">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Human Tetris</h3>
+                    <p class="swiper__slide__card__desc">3 последних альбома</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_5.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_5.png" alt="Буерак">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Буерак</h3>
+                    <p class="swiper__slide__card__desc">Все EP</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_6.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_6.png" alt="Июльские Дни">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Июльские Дни</h3>
+                    <p class="swiper__slide__card__desc">Альбом «Колокол»</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_7.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_7.png" alt="Joy Division">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Joy Division</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_8.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_8.png" alt="The Cure">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Cure</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_9.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_9.png" alt="The Smiths">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Smiths</h3>
+                    <p class="swiper__slide__card__desc">Период 1984-1988</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_10.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_10.png" alt="New Order">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">New Order</h3>
+                    <p class="swiper__slide__card__desc">Хиты</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_11.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_11.png" alt="Bauhaus">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Bauhaus</h3>
+                    <p class="swiper__slide__card__desc">Все синглы</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_12.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_12.png" alt="Gang Of Four">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Gang Of Four</h3>
+                    <p class="swiper__slide__card__desc">3 последних альбома</p>
+                  </div>
+                </button>
+              </div>
+
+              <div class="swiper-slide swiper__slide__cards">
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_13.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_13.png" alt="The Chameleons">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Chameleons</h3>
+                    <p class="swiper__slide__card__desc">Период 2000-2003</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_14.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_14.png" alt="Killing Joke">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Killing Joke</h3>
+                    <p class="swiper__slide__card__desc">Период 1988-1991</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_15.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_15.png" alt="The Stranglers">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Stranglers</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_16.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_16.png" alt="Ultravox">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Ultravox</h3>
+                    <p class="swiper__slide__card__desc">Период 1973-1987</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_17.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_17.png" alt="Dub Housing">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Pere Ubu</h3>
+                    <p class="swiper__slide__card__desc">Dub Housing</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_18.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_18.png" alt="Talking Heads">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Talking Heads</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_19.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_19.png" alt="The Feelies">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Feelies</h3>
+                    <p class="swiper__slide__card__desc">Crazy Rhythms</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_20.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_20.png" alt="Wipers">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Wipers</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_21.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_21.png" alt="Violent Femmes">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Violent Femmes</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_22.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_22.png" alt="Minutemen">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Minutemen</h3>
+                    <p class="swiper__slide__card__desc">Хиты</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_23.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_23.png" alt="Swans">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Swans</h3>
+                    <p class="swiper__slide__card__desc">Все синглы</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_24.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_24.png" alt="DEVO">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">DEVO</h3>
+                    <p class="swiper__slide__card__desc">3 последних альбома</p>
+                  </div>
+                </button>
+              </div>
+
+            </div>
+            <div class="swiper-pagination playlists__swiper__pagination"></div>
+            <div class="swiper-button-prev">
+              <svg class="transmissions__card__btn__svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
+                  fill="#121723" />
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg class="transmissions__card__btn__svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
+                  fill="#121723" />
+              </svg>
+            </div>
+          </div>
+          <div class="swiper playlists__tab__swiper__item" data-number="4">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper__slide__cards">
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_13.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_13.png" alt="The Chameleons">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Chameleons</h3>
+                    <p class="swiper__slide__card__desc">Период 2000-2003</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_14.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_14.png" alt="Killing Joke">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Killing Joke</h3>
+                    <p class="swiper__slide__card__desc">Период 1988-1991</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_15.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_15.png" alt="The Stranglers">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Stranglers</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_16.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_16.png" alt="Ultravox">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Ultravox</h3>
+                    <p class="swiper__slide__card__desc">Период 1973-1987</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_17.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_17.png" alt="Dub Housing">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Pere Ubu</h3>
+                    <p class="swiper__slide__card__desc">Dub Housing</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_18.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_18.png" alt="Talking Heads">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Talking Heads</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_19.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_19.png" alt="The Feelies">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Feelies</h3>
+                    <p class="swiper__slide__card__desc">Crazy Rhythms</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_20.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_20.png" alt="Wipers">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Wipers</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_21.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_21.png" alt="Violent Femmes">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Violent Femmes</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_22.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_22.png" alt="Minutemen">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Minutemen</h3>
+                    <p class="swiper__slide__card__desc">Хиты</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_23.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_23.png" alt="Swans">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Swans</h3>
+                    <p class="swiper__slide__card__desc">Все синглы</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_24.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_24.png" alt="DEVO">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">DEVO</h3>
+                    <p class="swiper__slide__card__desc">3 последних альбома</p>
+                  </div>
+                </button>
+              </div>
+              <div class="swiper-slide swiper__slide__cards">
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_1.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_1.png" alt="Ploho">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Ploho</h3>
+                    <p class="swiper__slide__card__desc">3 последних альбома</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_2.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_2.png" alt="Molchat Doma">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Molchat Doma</h3>
+                    <p class="swiper__slide__card__desc">Все песни</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_3.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_3.png" alt="Motorama">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Motorama</h3>
+                    <p class="swiper__slide__card__desc">Все синглы</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_4.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_4.png" alt="Human Tetris">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Human Tetris</h3>
+                    <p class="swiper__slide__card__desc">3 последних альбома</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_5.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_5.png" alt="Буерак">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Буерак</h3>
+                    <p class="swiper__slide__card__desc">Все EP</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_6.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_6.png" alt="Июльские Дни">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Июльские Дни</h3>
+                    <p class="swiper__slide__card__desc">Альбом «Колокол»</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_7.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_7.png" alt="Joy Division">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Joy Division</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_8.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_8.png" alt="The Cure">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Cure</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_9.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_9.png" alt="The Smiths">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Smiths</h3>
+                    <p class="swiper__slide__card__desc">Период 1984-1988</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_10.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_10.png" alt="New Order">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">New Order</h3>
+                    <p class="swiper__slide__card__desc">Хиты</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_11.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_11.png" alt="Bauhaus">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Bauhaus</h3>
+                    <p class="swiper__slide__card__desc">Все синглы</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_12.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_12.png" alt="Gang Of Four">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Gang Of Four</h3>
+                    <p class="swiper__slide__card__desc">3 последних альбома</p>
+                  </div>
+                </button>
+              </div>
+
+
+            </div>
+            <div class="swiper-pagination playlists__swiper__pagination"></div>
+            <div class="swiper-button-prev">
+              <svg class="transmissions__card__btn__svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
+                  fill="#121723" />
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg class="transmissions__card__btn__svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
+                  fill="#121723" />
+              </svg>
+            </div>
+          </div>
+          <div class="swiper playlists__tab__swiper__item" data-number="5">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper__slide__cards">
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_1.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_1.png" alt="Ploho">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Ploho</h3>
+                    <p class="swiper__slide__card__desc">3 последних альбома</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_2.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_2.png" alt="Molchat Doma">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Molchat Doma</h3>
+                    <p class="swiper__slide__card__desc">Все песни</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_3.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_3.png" alt="Motorama">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Motorama</h3>
+                    <p class="swiper__slide__card__desc">Все синглы</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_4.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_4.png" alt="Human Tetris">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Human Tetris</h3>
+                    <p class="swiper__slide__card__desc">3 последних альбома</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_5.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_5.png" alt="Буерак">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Буерак</h3>
+                    <p class="swiper__slide__card__desc">Все EP</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_6.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_6.png" alt="Июльские Дни">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Июльские Дни</h3>
+                    <p class="swiper__slide__card__desc">Альбом «Колокол»</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_7.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_7.png" alt="Joy Division">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Joy Division</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_8.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_8.png" alt="The Cure">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Cure</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_9.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_9.png" alt="The Smiths">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Smiths</h3>
+                    <p class="swiper__slide__card__desc">Период 1984-1988</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_10.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_10.png" alt="New Order">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">New Order</h3>
+                    <p class="swiper__slide__card__desc">Хиты</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_11.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_11.png" alt="Bauhaus">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Bauhaus</h3>
+                    <p class="swiper__slide__card__desc">Все синглы</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_12.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_12.png" alt="Gang Of Four">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Gang Of Four</h3>
+                    <p class="swiper__slide__card__desc">3 последних альбома</p>
+                  </div>
+                </button>
+              </div>
+
+              <div class="swiper-slide swiper__slide__cards">
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_13.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_13.png" alt="The Chameleons">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Chameleons</h3>
+                    <p class="swiper__slide__card__desc">Период 2000-2003</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_14.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_14.png" alt="Killing Joke">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Killing Joke</h3>
+                    <p class="swiper__slide__card__desc">Период 1988-1991</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_15.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_15.png" alt="The Stranglers">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Stranglers</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_16.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_16.png" alt="Ultravox">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Ultravox</h3>
+                    <p class="swiper__slide__card__desc">Период 1973-1987</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_17.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_17.png" alt="Dub Housing">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Pere Ubu</h3>
+                    <p class="swiper__slide__card__desc">Dub Housing</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_18.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_18.png" alt="Talking Heads">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Talking Heads</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_19.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_19.png" alt="The Feelies">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Feelies</h3>
+                    <p class="swiper__slide__card__desc">Crazy Rhythms</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_20.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_20.png" alt="Wipers">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Wipers</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_21.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_21.png" alt="Violent Femmes">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Violent Femmes</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_22.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_22.png" alt="Minutemen">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Minutemen</h3>
+                    <p class="swiper__slide__card__desc">Хиты</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_23.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_23.png" alt="Swans">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Swans</h3>
+                    <p class="swiper__slide__card__desc">Все синглы</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_24.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_24.png" alt="DEVO">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">DEVO</h3>
+                    <p class="swiper__slide__card__desc">3 последних альбома</p>
+                  </div>
+                </button>
+              </div>
+
+            </div>
+            <div class="swiper-pagination playlists__swiper__pagination"></div>
+            <div class="swiper-button-prev">
+              <svg class="transmissions__card__btn__svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
+                  fill="#121723" />
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg class="transmissions__card__btn__svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
+                  fill="#121723" />
+              </svg>
+            </div>
+          </div>
+          <div class="swiper playlists__tab__swiper__item" data-number="6">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper__slide__cards">
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_13.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_13.png" alt="The Chameleons">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Chameleons</h3>
+                    <p class="swiper__slide__card__desc">Период 2000-2003</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_14.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_14.png" alt="Killing Joke">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Killing Joke</h3>
+                    <p class="swiper__slide__card__desc">Период 1988-1991</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_15.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_15.png" alt="The Stranglers">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Stranglers</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_16.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_16.png" alt="Ultravox">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Ultravox</h3>
+                    <p class="swiper__slide__card__desc">Период 1973-1987</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_17.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_17.png" alt="Dub Housing">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Pere Ubu</h3>
+                    <p class="swiper__slide__card__desc">Dub Housing</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_18.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_18.png" alt="Talking Heads">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Talking Heads</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_19.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_19.png" alt="The Feelies">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Feelies</h3>
+                    <p class="swiper__slide__card__desc">Crazy Rhythms</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_20.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_20.png" alt="Wipers">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Wipers</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_21.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_21.png" alt="Violent Femmes">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Violent Femmes</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_22.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_22.png" alt="Minutemen">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Minutemen</h3>
+                    <p class="swiper__slide__card__desc">Хиты</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_23.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_23.png" alt="Swans">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Swans</h3>
+                    <p class="swiper__slide__card__desc">Все синглы</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_24.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_24.png" alt="DEVO">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">DEVO</h3>
+                    <p class="swiper__slide__card__desc">3 последних альбома</p>
+                  </div>
+                </button>
+              </div>
+              <div class="swiper-slide swiper__slide__cards">
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_1.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_1.png" alt="Ploho">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Ploho</h3>
+                    <p class="swiper__slide__card__desc">3 последних альбома</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_2.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_2.png" alt="Molchat Doma">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Molchat Doma</h3>
+                    <p class="swiper__slide__card__desc">Все песни</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_3.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_3.png" alt="Motorama">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Motorama</h3>
+                    <p class="swiper__slide__card__desc">Все синглы</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_4.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_4.png" alt="Human Tetris">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Human Tetris</h3>
+                    <p class="swiper__slide__card__desc">3 последних альбома</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_5.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_5.png" alt="Буерак">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Буерак</h3>
+                    <p class="swiper__slide__card__desc">Все EP</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_6.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_6.png" alt="Июльские Дни">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Июльские Дни</h3>
+                    <p class="swiper__slide__card__desc">Альбом «Колокол»</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_7.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_7.png" alt="Joy Division">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Joy Division</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_8.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_8.png" alt="The Cure">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Cure</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_9.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_9.png" alt="The Smiths">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Smiths</h3>
+                    <p class="swiper__slide__card__desc">Период 1984-1988</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_10.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_10.png" alt="New Order">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">New Order</h3>
+                    <p class="swiper__slide__card__desc">Хиты</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_11.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_11.png" alt="Bauhaus">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Bauhaus</h3>
+                    <p class="swiper__slide__card__desc">Все синглы</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_12.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_12.png" alt="Gang Of Four">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Gang Of Four</h3>
+                    <p class="swiper__slide__card__desc">3 последних альбома</p>
+                  </div>
+                </button>
+              </div>
+
+
+            </div>
+            <div class="swiper-pagination playlists__swiper__pagination"></div>
+            <div class="swiper-button-prev">
+              <svg class="transmissions__card__btn__svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
+                  fill="#121723" />
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg class="transmissions__card__btn__svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
+                  fill="#121723" />
+              </svg>
+            </div>
+          </div>
+          <div class="swiper playlists__tab__swiper__item" data-number="7">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper__slide__cards">
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_1.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_1.png" alt="Ploho">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Ploho</h3>
+                    <p class="swiper__slide__card__desc">3 последних альбома</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_2.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_2.png" alt="Molchat Doma">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Molchat Doma</h3>
+                    <p class="swiper__slide__card__desc">Все песни</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_3.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_3.png" alt="Motorama">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Motorama</h3>
+                    <p class="swiper__slide__card__desc">Все синглы</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_4.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_4.png" alt="Human Tetris">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Human Tetris</h3>
+                    <p class="swiper__slide__card__desc">3 последних альбома</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_5.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_5.png" alt="Буерак">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Буерак</h3>
+                    <p class="swiper__slide__card__desc">Все EP</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_6.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_6.png" alt="Июльские Дни">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Июльские Дни</h3>
+                    <p class="swiper__slide__card__desc">Альбом «Колокол»</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_7.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_7.png" alt="Joy Division">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Joy Division</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_8.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_8.png" alt="The Cure">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Cure</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_9.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_9.png" alt="The Smiths">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Smiths</h3>
+                    <p class="swiper__slide__card__desc">Период 1984-1988</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_10.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_10.png" alt="New Order">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">New Order</h3>
+                    <p class="swiper__slide__card__desc">Хиты</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_11.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_11.png" alt="Bauhaus">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Bauhaus</h3>
+                    <p class="swiper__slide__card__desc">Все синглы</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_12.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_12.png" alt="Gang Of Four">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Gang Of Four</h3>
+                    <p class="swiper__slide__card__desc">3 последних альбома</p>
+                  </div>
+                </button>
+              </div>
+
+              <div class="swiper-slide swiper__slide__cards">
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_13.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_13.png" alt="The Chameleons">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Chameleons</h3>
+                    <p class="swiper__slide__card__desc">Период 2000-2003</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_14.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_14.png" alt="Killing Joke">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Killing Joke</h3>
+                    <p class="swiper__slide__card__desc">Период 1988-1991</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_15.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_15.png" alt="The Stranglers">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Stranglers</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_16.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_16.png" alt="Ultravox">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Ultravox</h3>
+                    <p class="swiper__slide__card__desc">Период 1973-1987</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_17.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_17.png" alt="Dub Housing">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Pere Ubu</h3>
+                    <p class="swiper__slide__card__desc">Dub Housing</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_18.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_18.png" alt="Talking Heads">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Talking Heads</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_19.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_19.png" alt="The Feelies">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Feelies</h3>
+                    <p class="swiper__slide__card__desc">Crazy Rhythms</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_20.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_20.png" alt="Wipers">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Wipers</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_21.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_21.png" alt="Violent Femmes">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Violent Femmes</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_22.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_22.png" alt="Minutemen">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Minutemen</h3>
+                    <p class="swiper__slide__card__desc">Хиты</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_23.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_23.png" alt="Swans">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Swans</h3>
+                    <p class="swiper__slide__card__desc">Все синглы</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_24.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_24.png" alt="DEVO">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">DEVO</h3>
+                    <p class="swiper__slide__card__desc">3 последних альбома</p>
+                  </div>
+                </button>
+              </div>
+
+            </div>
+            <div class="swiper-pagination playlists__swiper__pagination"></div>
+            <div class="swiper-button-prev">
+              <svg class="transmissions__card__btn__svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
+                  fill="#121723" />
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg class="transmissions__card__btn__svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
+                  fill="#121723" />
+              </svg>
+            </div>
+          </div>
+          <div class="swiper playlists__tab__swiper__item" data-number="8">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper__slide__cards">
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_13.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_13.png" alt="The Chameleons">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Chameleons</h3>
+                    <p class="swiper__slide__card__desc">Период 2000-2003</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_14.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_14.png" alt="Killing Joke">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Killing Joke</h3>
+                    <p class="swiper__slide__card__desc">Период 1988-1991</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_15.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_15.png" alt="The Stranglers">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Stranglers</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_16.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_16.png" alt="Ultravox">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Ultravox</h3>
+                    <p class="swiper__slide__card__desc">Период 1973-1987</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_17.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_17.png" alt="Dub Housing">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Pere Ubu</h3>
+                    <p class="swiper__slide__card__desc">Dub Housing</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_18.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_18.png" alt="Talking Heads">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Talking Heads</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_19.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_19.png" alt="The Feelies">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Feelies</h3>
+                    <p class="swiper__slide__card__desc">Crazy Rhythms</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_20.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_20.png" alt="Wipers">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Wipers</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_21.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_21.png" alt="Violent Femmes">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Violent Femmes</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_22.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_22.png" alt="Minutemen">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Minutemen</h3>
+                    <p class="swiper__slide__card__desc">Хиты</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_23.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_23.png" alt="Swans">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Swans</h3>
+                    <p class="swiper__slide__card__desc">Все синглы</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-usa.jpg" alt="usa">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_24.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_24.png" alt="DEVO">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">DEVO</h3>
+                    <p class="swiper__slide__card__desc">3 последних альбома</p>
+                  </div>
+                </button>
+              </div>
+              <div class="swiper-slide swiper__slide__cards">
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_1.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_1.png" alt="Ploho">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Ploho</h3>
+                    <p class="swiper__slide__card__desc">3 последних альбома</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_2.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_2.png" alt="Molchat Doma">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Molchat Doma</h3>
+                    <p class="swiper__slide__card__desc">Все песни</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_3.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_3.png" alt="Motorama">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Motorama</h3>
+                    <p class="swiper__slide__card__desc">Все синглы</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_4.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_4.png" alt="Human Tetris">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Human Tetris</h3>
+                    <p class="swiper__slide__card__desc">3 последних альбома</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_5.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_5.png" alt="Буерак">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Буерак</h3>
+                    <p class="swiper__slide__card__desc">Все EP</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-ru.jpg" alt="ru">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_6.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_6.png" alt="Июльские Дни">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Июльские Дни</h3>
+                    <p class="swiper__slide__card__desc">Альбом «Колокол»</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_7.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_7.png" alt="Joy Division">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Joy Division</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_8.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_8.png" alt="The Cure">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Cure</h3>
+                    <p class="swiper__slide__card__desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_9.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_9.png" alt="The Smiths">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">The Smiths</h3>
+                    <p class="swiper__slide__card__desc">Период 1984-1988</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_10.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_10.png" alt="New Order">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">New Order</h3>
+                    <p class="swiper__slide__card__desc">Хиты</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_11.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_11.png" alt="Bauhaus">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Bauhaus</h3>
+                    <p class="swiper__slide__card__desc">Все синглы</p>
+                  </div>
+                </button>
+                <button class="swiper__slide__card">
+                  <img class="swiper__slide__card__flag" src="img/playlist/f-uk.jpg" alt="uk">
+                  <picture>
+                    <source media="(max-width: 1249px)" srcset="img/playlist/small_12.png">
+                    <img class="swiper__slide__card__img" src="img/playlist/big_12.png" alt="Gang Of Four">
+                  </picture>
+                  <div class="swiper__slide__card__content">
+                    <h3 class="swiper__slide__card__title h3_style">Gang Of Four</h3>
+                    <p class="swiper__slide__card__desc">3 последних альбома</p>
+                  </div>
+                </button>
+              </div>
+
+
+            </div>
+            <div class="swiper-pagination playlists__swiper__pagination"></div>
+            <div class="swiper-button-prev">
+              <svg class="transmissions__card__btn__svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
+                  fill="#121723" />
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg class="transmissions__card__btn__svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
+                  fill="#121723" />
+              </svg>
+            </div>
+          </div>
+
 
 
           <script src="api/swiper/swiper-bundle.min.js"></script>
@@ -2511,7 +4546,7 @@
 
   <!-- Product -->
 
-  <!-- <section class="product">
+  <section class="product">
     <div class="container">
       <div class="product__wrapper">
         <div class="product__contain__slider">
@@ -2596,7 +4631,7 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <!-- About Us -->
 

@@ -5,10 +5,20 @@
 
 // -----------------------
 
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 body {
   font-family: Muller, Arial, Helvetica, sans-serif;
   background-color: #e6e8ec;
+  scroll-behavior: smooth;
+
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 
@@ -1009,22 +1019,10 @@ body {
   @include h3($white, $secondFS);
 }
 
-// .ui-accordion .ui-state-hover {
-//   color: $primaryLight;
-// }
-
 .accordion__item__title:not(:first-child) {
-  // border-top: none;
   margin-top: -1px;
 }
 
-// .ui-accordion .ui-state-active {
-
-//   color: $white;
-//   border-top: 1px solid $primaryLight;
-//   border-bottom: 1px solid $primaryLight;
-//   background-color: transparent;
-// }
 
 .accordion__item__title {
   font-family: Muller;
@@ -1274,7 +1272,7 @@ button.accordion__tab__item {
 }
 
 .playlists__right__tabs {
-  max-width: 730px;
+  width: 730px;
   height: auto;
 }
 
@@ -1293,10 +1291,13 @@ button.accordion__tab__item {
   margin-bottom: 24px;
 }
 
-.playlist_tabs_group {
+.playlist__tabs__group {
   display: flex;
   flex-direction: column;
-  margin-right: 34px;
+}
+
+.hide_desctop {
+  display: none;
 }
 
 .playlist_warning_hide_desctop {
@@ -1310,11 +1311,37 @@ button.accordion__tab__item {
   cursor: pointer;
   position: relative;
   padding: 10px 0 10px 42px;
+  margin-bottom: 6px;
+
+  transition-property: color, background-color, border;
+  @include transition;
+  &:focus {
+    outline: none;
+  }
+  &:focus .playlists__tab__input + span {
+    background-color: $shadeGray;
+    border-color: $primary;
+  }
+  &:hover .playlists__tab__input + span {
+    border-color: $primary;
+    background-color: transparent;
+  }
+  &:active .playlists__tab__input + span {
+    border-color: $primaryShade;
+    background-color: transparent;
+  }
+
+  &.active .playlists__tab__input + span {
+    background-color: transparent;
+  }
+
 }
 
-.playlists__tab__item:not(:last-child) {
-  margin-bottom: 6px;
+.playlist__tabs__group:last-child .playlists__tab__item:last-child {
+  margin-bottom: 0;
 }
+
+
 
 .playlists__tab__input {
   display: none;
@@ -1328,6 +1355,9 @@ button.accordion__tab__item {
     height: 26px;
     border: 2px solid $textGray;
     border-radius: 50%;
+
+    transition-property: border-color, background-color;
+    @include transition;
   }
 
   & + span::before {
@@ -1383,9 +1413,14 @@ button.accordion__tab__item {
 
 // swiper custom
 .playlists__tab__swiper__item {
+  display: none;
   max-width: 100%;
   height: 100%;
   padding-top: 34px;
+
+  &.active {
+    display: block;
+  }
 }
 
 .playlists__swiper__pagination {
@@ -1408,10 +1443,36 @@ button.accordion__tab__item {
   margin: 0;
   height: 10px;
   transform: rotate(180deg);
-}
 
-.swiper-button-prev::after {
-  display: none;
+  &::after {
+    display: none;
+  }
+
+  transition-property: background-color;
+  @include transition;
+
+  &:focus {
+    background-color: $primaryLight;
+    outline: none;
+  }
+  &:focus .transmissions__card__btn__svg path {
+    fill: $white;
+  }
+
+  &:hover {
+    background-color: transparent;
+  }
+  &:hover .transmissions__card__btn__svg path {
+    fill: $primary;
+  }
+
+  &:active {
+    background-color: transparent;
+  }
+  &:active .transmissions__card__btn__svg path {
+    fill: $primaryShade;
+  }
+
 }
 
 .swiper-button-next {
@@ -1419,10 +1480,35 @@ button.accordion__tab__item {
   top: 5px;
   margin: 0;
   height: 10px;
-}
 
-.swiper-button-next::after {
-  display: none;
+  &::after {
+    display: none;
+  }
+
+  transition-property: background-color;
+  @include transition;
+
+  &:focus {
+    background-color: $primaryLight;
+    outline: none;
+  }
+  &:focus .transmissions__card__btn__svg path {
+    fill: $white;
+  }
+
+  &:hover {
+    background-color: transparent;
+  }
+  &:hover .transmissions__card__btn__svg path {
+    fill: $primary;
+  }
+
+  &:active {
+    background-color: transparent;
+  }
+  &:active .transmissions__card__btn__svg path {
+    fill: $primaryShade;
+  }
 }
 
 .swiper-slide {
@@ -1437,15 +1523,93 @@ button.accordion__tab__item {
   justify-content: start;
 }
 
-.swiper__slide__card{
+.swiper__slide__card {
   position: relative;
   text-align: start;
   margin-right: 30px;
   margin-bottom: 30px;
-}
 
-.swiper__slide__card:nth-child(4n) {
-  margin-right: 0;
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  &::before {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    background-color: $black;
+    z-index: 5;
+
+    transition-property: opacity;
+    @include transition;
+  }
+
+  &::after {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    left: calc(50% - 56px / 2);
+    top: calc(50% - 56px);
+    width: 56px;
+    height: 56px;
+    z-index: 6;
+    background: 0 0 / 56px url('./../img/playlist/play_btn.svg') no-repeat ;
+
+    transition-property: opacity, transform;
+    @include transition;
+    transform: scale( 0.9);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus .swiper__slide__card__content .swiper__slide__card__desc {
+    color: $black;
+  }
+  &:focus .swiper__slide__card__content {
+    background-color: $primaryLight;
+    border-color: $primaryLight;
+  }
+  &:focus::before{
+    opacity: .8;
+  }
+  &:focus::after{
+    opacity: 1;
+  }
+
+  &:hover .swiper__slide__card__content .swiper__slide__card__title,
+  &:hover .swiper__slide__card__content .swiper__slide__card__desc {
+    color: $white;
+  }
+  &:hover .swiper__slide__card__content {
+    background-color: $primary;
+    border-color: $primary;
+  }
+  &:hover::before{
+    opacity: .8;
+  }
+  &:hover::after{
+    opacity: 1;
+  }
+
+  &:active .swiper__slide__card__content .swiper__slide__card__title,
+  &:active .swiper__slide__card__content .swiper__slide__card__desc {
+    color: $white;
+  }
+  &:active .swiper__slide__card__content {
+    background-color: $primaryShade;
+    border-color: $primaryShade;
+  }
+  &:active::before{
+    opacity: .8;
+  }
+  &:active::after{
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .swiper__slide__card__flag {
@@ -1465,17 +1629,158 @@ button.accordion__tab__item {
 }
 
 .swiper__slide__card__content {
+  transition-property: background-color, border-color;
+  @include transition;
   border: 1px solid $liteColor;
   padding: 15px;
 }
 
 .swiper__slide__card__title {
   font-size: $mainFS;
+  font-weight: $fwNormal;
   margin-bottom: 4px;
+
+  transition-property: color;
+  @include transition;
 }
 
 .swiper__slide__card__desc {
   @include textCustom($textGray, $lowFS, $fwRegular);
+  transition-property: color;
+  @include transition;
+}
+
+// !PRODUCT
+.product {
+  padding: 94px 0 134px;
+  background-color: $lightBlack;
+  color: $white;
+}
+
+.product__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__contain__slider {
+  min-width: 640px;
+  min-height: 562px;
+  margin-left: -5px;
+}
+
+.product__swiper  {
+
+}
+
+.product__slide__img {
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 51px;
+}
+
+.product__content {
+  max-width: 445px;
+}
+
+.product__title {
+  color: $promoColor;
+  margin-bottom: 18px;
+}
+
+.product__wawe {
+  border: none;
+  margin: 0;
+  width: auto;
+  height: 12px;
+  background: url(../img/product/wawe.png) no-repeat;
+  margin-bottom: 18px;
+}
+
+.product__desc {
+  font-weight: 400;
+  font-size: $mainColor;
+  line-height: 1.8;
+  margin-bottom: 13px;
+}
+
+.product__desc_custom_stule {
+  font-weight: 500;
+  color: $promoColor;
+}
+
+.product__desc-margin {
+  margin-bottom: 31px;
+}
+
+.product__cost {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1;
+  color: $white;
+  margin-bottom: 30px;
+}
+
+.product__buy {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: $secondFS;
+  line-height: 1;
+  color: $promoColor;
+
+  border-radius: 100px;
+  border: 1px solid $promoColor;
+  padding: 23px 12px;
+}
+
+.product__buy__svg {
+  margin-right: 8px;
+}
+
+.product__slide__new {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+// bullets slider
+.swiper-horizontal > .swiper-pagination-bullets {
+  bottom: 0;
+}
+
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  opacity: 1;
+  position: relative;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+  content: '';
+  top: 30%;
+  left: 32%;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px rgba(30, 13, 68, 0.8);
+  background-color: $promoColor;
+}
+
+.swiper-pagination-bullet:first-child {
+  background: #874158;
+}
+
+.swiper-pagination-bullet:nth-child(2n){
+  background: #006E7B;
+}
+
+.swiper-pagination-bullet:last-child {
+  background: #1D6C4E;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 15px;
 }
 
 // !MEDIA
@@ -1576,6 +1881,10 @@ button.accordion__tab__item {
     flex-direction: column;
   }
 
+  .playlists__right__tabs {
+    width: auto;
+  }
+
   .playlists__tabs {
     display: flex;
     flex-direction: row;
@@ -1590,6 +1899,31 @@ button.accordion__tab__item {
     display: block;
   }
 
+  .playlists__tabs {
+    margin-bottom: 0;
+  }
+
+  .playlist__tabs__group:first-child {
+    margin-right: 34px;
+  }
+
+  .playlists__swiper__pagination {
+    display: none;
+  }
+
+  // swiper
+  .playlists__tab__swiper__item {
+    padding-top: 18px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+
+  .swiper__slide__cards{
+    justify-content: space-between;
+  }
 
   .swiper__slide__card {
     position: relative;
@@ -1597,15 +1931,67 @@ button.accordion__tab__item {
     display: flex;
     margin-right: 0;
     margin-bottom: 30px;
-  }
 
-  .swiper__slide__card:nth-child(4n) {
-    margin-right: 0;
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    &::before {
+      width: 112px;
+      height: 100%;
+    }
+    &::after {
+      left: calc((254px - 142px - 56px) / 2);
+      top: calc((112px - 56px) / 2);
+      width: 56px;
+      height: 56px;
+    }
+
+    &:focus .swiper__slide__card__content .swiper__slide__card__desc {
+      color: $textGray;
+    }
+    &:focus .swiper__slide__card__content {
+      background-color: transparent;
+      border-color: $liteColor;
+    }
+    &:focus::before{
+      opacity: 0;
+    }
+    &:focus::after{
+      opacity: 0;
+    }
+
+    &:hover .swiper__slide__card__content .swiper__slide__card__title {
+      color: $black;
+    }
+    &:hover .swiper__slide__card__content .swiper__slide__card__desc {
+      color: $textGray;
+    }
+    &:hover .swiper__slide__card__content {
+      background-color: transparent;
+      border-color: $liteColor;
+    }
+    &:hover::before{
+      opacity: 0;
+    }
+    &:hover::after{
+      opacity: 0;
+    }
   }
 
   .swiper__slide__card__flag {
     right: auto;
     left: 0;
+  }
+
+  .swiper__slide__card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 142px;
+    height: 112px;
+    padding: 15px 8px;
   }
 
 }
@@ -1760,6 +2146,10 @@ button.accordion__tab__item {
     margin-bottom: 30px;
   }
 
+  .ui-accordion .accordion__item__inside {
+    padding-bottom: 0;
+  }
+
   .guest__prodaction__list {
     width: 100%;
   }
@@ -1771,6 +2161,21 @@ button.accordion__tab__item {
   .prodaction__desc {
     max-width: 400px;
   }
+
+  // !Playlists
+
+  .swiper__slide__cards  {
+    margin-bottom: 20px;
+  }
+
+  .playlists__tab__item {
+    margin-bottom: 20px;
+  }
+
+  .playlists__tab__swiper__item {
+    padding-top: 24px;
+  }
+
 
 }
 
@@ -2149,7 +2554,6 @@ button.accordion__tab__item {
   .ui-accordion .accordion__item__inside {
     padding: 20px 0;
   }
-
   button.accordion__tab__item {
     font-size: $lowPreFS;
     line-height: 1;
@@ -2185,7 +2589,6 @@ button.accordion__tab__item {
     border-top: 1px solid $textGray;
   }
 
-
   .prodaction__social__links {
     margin-bottom: 14px;
     max-width: 150px;
@@ -2200,6 +2603,105 @@ button.accordion__tab__item {
 
   .prodaction__btn {
     padding: 8px 13px;
+  }
+
+
+  // !Playlists
+
+  .playlists {
+    overflow: hidden;
+    padding: 35px 0 64px 0;
+    position: relative;
+  }
+
+  .playlists__title {
+    margin-bottom: 19px;
+  }
+
+  .playlists__subtitle {
+    font-size: $lowFS;
+  }
+
+  .swiper__slide__card {
+    flex-direction: column;
+  }
+
+  .swiper__slide__card__content {
+    width: 112px;
+    height: 46px;
+  }
+
+  .swiper__slide__card__title {
+    font-size: $lowFS;
+  }
+
+  .swiper__slide__card__desc {
+    font-size: $veryLowFS;
+  }
+
+  .playlists__tabs {
+    overflow: hidden;
+    height: 43px;
+
+  }
+
+  .playlist__tabs__group {
+    width: 564px;
+    position: absolute;
+    left: -32px;
+
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: start;
+    height: 50px;
+  }
+
+  .hide_320 {
+    display: none;
+  }
+
+  .hide_desctop {
+    display: flex;
+  }
+
+  .playlist_tab_genre {
+    background-color: transparent;
+    border: 2px solid $primary;
+    border-radius: 77px;
+    padding: 10px 20px;
+    margin-right: 15px;
+    white-space: nowrap;
+
+    transition-property: background-color, color, border-color;
+    @include transition;
+
+    &:first-child {
+      margin-left: 64px;
+    }
+    &:last-child {
+      margin-right: 240px;
+    }
+
+    &.active {
+      color: $white;
+      background-color: $primary;
+    }
+
+    &:active {
+      color: $white;
+      background-color: $primaryShade;
+      border-color: $primaryShade;
+    }
+    &:focus {
+      outline: none;
+    }
+
   }
 
 

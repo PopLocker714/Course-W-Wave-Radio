@@ -101,6 +101,10 @@ function accordionTabsHandler() {
 
 
 
+
+
+
+
 // functions
 function choiceActive(arr, target, className) {
   for (let i = 0; i < arr.length; i++) {
@@ -141,44 +145,68 @@ function updateAPI() {
 }
 
 
+// !PLAYLISTS
 
 
 // Playlists Initialize Swiper
-
 window.addEventListener('resize', checkSreenSize, false)
+const SWIPER_ITEMS = Array.from(document.querySelectorAll('.playlists__tab__swiper__item'))
+const ARR_SLIDERS_PLAYLISTS = SWIPER_ITEMS.map(el => {
+  return new Swiper(el, {
+    cssMode: true,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
 
-var swiperPlaylists = new Swiper(".playlists__tab__swiper__item", {
-  cssMode: true,
-  pagination: {
-    el: ".swiper-pagination",
-    type: "fraction",
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  
+  })
 })
 
-function checkSreenSize() {
-  // console.log(innerWidth)
-  // console.log(innerHeight)
 
+const PLAYLISTS_TABS = Array.from(document.querySelectorAll('.playlists__tab__item'))
+const PLAYLISTS_TABS_MOBILE = Array.from(document.querySelectorAll('.playlist_tab_genre'))
+console.log(PLAYLISTS_TABS_MOBILE)
+
+PLAYLISTS_TABS.forEach(el => el.addEventListener('click', playlistsTabsHandler))
+PLAYLISTS_TABS_MOBILE.forEach(el => el.addEventListener('click', playlistsTabsHandler))
+function playlistsTabsHandler() {
+  const item = this
+  console.log(item)
+
+  PLAYLISTS_TABS.forEach(el => removeClass(el, 'active'))
+  PLAYLISTS_TABS_MOBILE.forEach(el => removeClass(el, 'active'))
+  ARR_SLIDERS_PLAYLISTS.forEach(el => {
+    removeClass(el.el, 'active')
+    // removeClass(item, 'active')
+    if(+item.dataset.targetNumber === +el.el.dataset.number) {
+      addClass(item, 'active')
+      addClass(el.el, 'active')
+    }
+  })
+
+
+}
+
+
+
+function checkSreenSize() {
   if (innerWidth < 1249) {
-    swiperPlaylists.navigation.destroy()
-    swiperPlaylists.pagination.destroy()
+    ARR_SLIDERS_PLAYLISTS.forEach(el => el.navigation.destroy())
   } else {
-    swiperPlaylists.navigation.init()
-    swiperPlaylists.pagination.init()
+    ARR_SLIDERS_PLAYLISTS.forEach(el => el.navigation.init())
   }
 }
 
-// Product Initialize Swiper
+// !Product Initialize Swiper
 
-// var swiperProduct = new Swiper(".product__swiper", {
-//   loop: true,
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-// })
+var swiperProduct = new Swiper(".product__swiper", {
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+})
