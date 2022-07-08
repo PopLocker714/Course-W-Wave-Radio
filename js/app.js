@@ -12,6 +12,8 @@ const TRANSMISSIONS_CARDS = document.querySelectorAll('.transmissions__cards')
 const ACCORDION_TABS = document.querySelectorAll('.accordion__tab__item')
 const PRODACTION_ITEMS = document.querySelectorAll('.prodaction__item')
 
+document.querySelector('.product__buy').addEventListener('click', (event) => {event.preventDefault()})
+
 // !HEADER PANEL
 let closing_panel = false
 HEADER_PANEL_BTN.addEventListener('click', function () {
@@ -103,25 +105,6 @@ function accordionTabsHandler() {
 
 
 
-
-
-// functions
-function choiceActive(arr, target, className) {
-  for (let i = 0; i < arr.length; i++) {
-    removeClass(arr[i], className)
-  }
-  addClass(arr[target], className)
-}
-
-function addClass(el, targetClass) {
-  el.classList.add(targetClass)
-}
-
-function removeClass(el, targetClass) {
-  el.classList.remove(targetClass)
-}
-
-
 updateAPI()
 function updateAPI() {
   const choices = new Choices(TRANSMISSIONS_SELECT, {
@@ -148,8 +131,8 @@ function updateAPI() {
 // !PLAYLISTS
 
 
-// Playlists Initialize Swiper
 window.addEventListener('resize', checkSreenSize, false)
+// Playlists Initialize Swiper
 const SWIPER_ITEMS = Array.from(document.querySelectorAll('.playlists__tab__swiper__item'))
 const ARR_SLIDERS_PLAYLISTS = SWIPER_ITEMS.map(el => {
   return new Swiper(el, {
@@ -169,36 +152,21 @@ const ARR_SLIDERS_PLAYLISTS = SWIPER_ITEMS.map(el => {
 
 const PLAYLISTS_TABS = Array.from(document.querySelectorAll('.playlists__tab__item'))
 const PLAYLISTS_TABS_MOBILE = Array.from(document.querySelectorAll('.playlist_tab_genre'))
-console.log(PLAYLISTS_TABS_MOBILE)
 
 PLAYLISTS_TABS.forEach(el => el.addEventListener('click', playlistsTabsHandler))
 PLAYLISTS_TABS_MOBILE.forEach(el => el.addEventListener('click', playlistsTabsHandler))
 function playlistsTabsHandler() {
   const item = this
-  console.log(item)
 
   PLAYLISTS_TABS.forEach(el => removeClass(el, 'active'))
   PLAYLISTS_TABS_MOBILE.forEach(el => removeClass(el, 'active'))
   ARR_SLIDERS_PLAYLISTS.forEach(el => {
     removeClass(el.el, 'active')
-    // removeClass(item, 'active')
     if(+item.dataset.targetNumber === +el.el.dataset.number) {
       addClass(item, 'active')
       addClass(el.el, 'active')
     }
   })
-
-
-}
-
-
-
-function checkSreenSize() {
-  if (innerWidth < 1249) {
-    ARR_SLIDERS_PLAYLISTS.forEach(el => el.navigation.destroy())
-  } else {
-    ARR_SLIDERS_PLAYLISTS.forEach(el => el.navigation.init())
-  }
 }
 
 // !Product Initialize Swiper
@@ -210,3 +178,34 @@ var swiperProduct = new Swiper(".product__swiper", {
     clickable: true,
   },
 })
+
+
+function checkSreenSize() {
+  if (innerWidth < 1249) {
+    ARR_SLIDERS_PLAYLISTS.forEach(el => el.navigation.destroy())
+  } else {
+    ARR_SLIDERS_PLAYLISTS.forEach(el => el.navigation.init())
+  }
+  if (innerWidth < 1000) {
+    swiperProduct.pagination.destroy()
+  } else {
+    swiperProduct.pagination.init()
+  }
+}
+checkSreenSize()
+
+// functions
+function choiceActive(arr, target, className) {
+  for (let i = 0; i < arr.length; i++) {
+    removeClass(arr[i], className)
+  }
+  addClass(arr[target], className)
+}
+
+function addClass(el, targetClass) {
+  el.classList.add(targetClass)
+}
+
+function removeClass(el, targetClass) {
+  el.classList.remove(targetClass)
+}
