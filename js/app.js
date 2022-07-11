@@ -130,7 +130,6 @@ function updateAPI() {
 
 // !PLAYLISTS
 
-
 window.addEventListener('resize', checkSreenSize, false)
 // Playlists Initialize Swiper
 const SWIPER_ITEMS = Array.from(document.querySelectorAll('.playlists__tab__swiper__item'))
@@ -144,20 +143,19 @@ const ARR_SLIDERS_PLAYLISTS = SWIPER_ITEMS.map(el => {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
-    },
-
+    }
   })
 })
 
 
 const PLAYLISTS_TABS = Array.from(document.querySelectorAll('.playlists__tab__item'))
-const PLAYLISTS_TABS_MOBILE = Array.from(document.querySelectorAll('.playlist_tab_genre'))
+const PLAYLISTS_TABS_MOBILE = Array.from(document.querySelectorAll('.playlist__tab__genre'))
 
 PLAYLISTS_TABS.forEach(el => el.addEventListener('click', playlistsTabsHandler))
 PLAYLISTS_TABS_MOBILE.forEach(el => el.addEventListener('click', playlistsTabsHandler))
 function playlistsTabsHandler() {
   const item = this
-
+  
   PLAYLISTS_TABS.forEach(el => removeClass(el, 'active'))
   PLAYLISTS_TABS_MOBILE.forEach(el => removeClass(el, 'active'))
   ARR_SLIDERS_PLAYLISTS.forEach(el => {
@@ -190,6 +188,13 @@ function checkSreenSize() {
     swiperProduct.pagination.destroy()
   } else {
     swiperProduct.pagination.init()
+  }
+
+  if(innerWidth < 580) {
+    // accordion ju
+    $("#accordion").accordion({
+      active: 1,
+    })
   }
 }
 checkSreenSize()
