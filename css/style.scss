@@ -2,7 +2,7 @@
 @import './resset';
 @import './mixins';
 @import './var';
-
+@import './elements';
 // -----------------------
 
 html {
@@ -14,16 +14,14 @@ html {
 
 body {
   font-family: Muller, Arial, Helvetica, sans-serif;
-  background-color: #e6e8ec;
+  background-color: $liteColor;
   scroll-behavior: smooth;
 
   width: 100%;
   max-width: 100%;
+  min-width: 320px;
   overflow-x: hidden;
 }
-
-
-// !main section
 
 .h2_style {
   @include h2;
@@ -33,13 +31,8 @@ body {
   @include textBig($mainColor);
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1310px;
-  padding: 0 100px;
-}
 
-@media ( max-width: 532px ) {
+@media (max-width: $point320_small) {
   .h2_style {
     font-weight: $fwRegular;
     font-size: $secondPreFS;
@@ -49,104 +42,39 @@ body {
   //   // @include textBig($mainColor);
   // }
 }
-// !HEADER
 
-// UP
-.header__up, .header__btn__up {
+// -----------------
+
+// -----------------
+
+// !HEADER
+// TOP
+.header__top {
   display: none;
 }
 
-// HEADER_MIDDLE
+// MIDDLE
 .header__midle {
   position: relative;
   background-color: $white;
   z-index: 20;
 }
 
-.header__nav {
-  @include felxBetween;
-  height: 80px;
+.header__midle__nav {
+  min-height: 80px;
 }
 
-.header__logo__svg {
-  width: 160px;
-  height: 20px;
-}
-
-.header__nav__links {
-  @include felxBetween;
+.header__midle__nav__list {
   width: 638px;
 }
 
-.header__nav__link {
+.header__midle__nav__link {
   @include textBig($mainColor);
-
-  transition-property: color, background-color;
-  @include transition;
-  &:focus {
-    outline: none;
-    color: $white;
-    background-color: $primaryLight;
-  }
-  &:hover {
-    color: $primary;
-    background-color: transparent;
-  }
-  &:active {
-    color: $primaryShade;
-    background-color: transparent;
-  }
 }
 
 // BURGER
-.burger__btn {
-  display: none;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  z-index: 150;
 
-  .burger__midle {
-    position: relative;
-    width: 24px;
-    height: 3px;
-    background-color: $primary;
-    border-radius: 4px;
-    transition-property: transform, background-color;
-    @include transition;
-
-    &::before, &::after {
-      position: absolute;
-      content: '';
-      width: 24px;
-      height: 3px;
-      background-color: $primary;
-      border-radius: 4px;
-      transition-property: transform;
-      @include transition;
-    }
-
-    &::before {
-      transform: translateY(-10px);
-    }
-    &::after {
-      transform: translateY(10px);
-    }
-  }
-
-  &.active .burger__midle {
-    transform: translateX(-50px);
-    background-color: transparent;
-  }
-  &.active .burger__midle::before {
-    transform: rotate(45deg) translate(35px, -35px);
-  }
-  &.active .burger__midle::after {
-    transform: rotate(-45deg) translate(35px, 35px);
-  }
-}
-
-.burger__menu {
+.burger-menu {
   display: none;
   position: absolute;
   width: 100%;
@@ -167,63 +95,55 @@ body {
   }
 }
 
-.burger__menu__links {
+.header__middle__burger__wrapper__second-color {
+  background-color: $white;
+}
+
+.header__nav__burger__list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   width: 250px;
   height: 188px;
-  &_left, &_right {
-    display: flex;
-    flex-direction: column;
-    // justify-content: space-between
-    .header__nav__link {
-      margin-bottom: 60px
-    }
-  }
 }
 
-.burger__menu__container_second {
-  display: none
+.header__nav__burger__list__item {
+  min-width: 110px;
 }
 
-// --------------
+.header__nav__burger__list__link {
+  @include textBig($mainColor);
+}
 
-.header__group__btn {
+.header__nav__burger__list__second {
+  display: none;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  width: 215px;
+}
+
+.header__nav__burger__list__second__item {
+  min-width: 85px;
+  margin-bottom: 30px;
+}
+
+.header__nav__burger__list__second__link  {
+  @include textSecond($mainColor);
+}
+
+.header__middle__group__btn {
   @include felxBetween;
   width: 152px;
 }
 
-.header__search__svg {
+.header__search {
   width: 24px;
   height: 24px;
-  outline: none;
-  cursor: pointer;
-
-  & path {
-    transition-property: stroke;
-    @include transition;
-  }
-  &:focus path {
-    stroke: $primaryLight;
-  }
-  &:hover path {
-    stroke: $primaryLight;
-  }
-  &:active path {
-    stroke: $primaryShade;
-  }
+  padding: 0;
 }
 
 .header__btn__login {
-  padding: 10px 31px;
   @include btnConfig($mainColor, $mainFS, $bRadiusMedium);
-  border: 2px solid $mainColor;
-  background-color: transparent;
-
-  transition-property: color, border-color, background-color;
-  @include transition;
   &:focus {
-    outline: none;
     background-color: $primaryLight;
   }
   &:hover {
@@ -237,96 +157,51 @@ body {
   }
 }
 
+.header__btn__login__top {
+  display: none;
+}
+
+.header__btn__login__top,
+.header__btn__login__midle {
+  padding: 10px 31px;
+}
+
 // HEADER FOOTER
-.header__footer__section {
+.header__footer {
   background: $white;
   border: 1px solid $liteColor;
 }
 
-.header__nav__second {
-  @include felxBetween;
-  height: 58px;
+.header__footer__nav {
+  min-height: 58px;
 }
 
-.nav__second__links {
-  display: flex;
-  justify-content: space-between;
+.header__footer__nav__list {
   width: 611px;
   margin-right: 10px
 }
 
-.nav__second__link {
+.header__footer__nav__link {
   @include textSecond($mainColor);
-
-  transition-property: color, background-color;
-  @include transition;
-
-  &:focus {
-    outline: none;
-    color: $white;
-    background-color: $primaryLight;
-  }
-  &:hover {
-    color: $primary;
-    background-color: transparent;
-  }
-  &:active {
-    color: $primaryShade;
-    background-color: transparent;
-  }
 }
 
-.header__players__contain {
+
+// player
+
+.header__footer__player__btns {
   display: flex;
   border-right: 1px solid $liteColor;
-}
-
-.btn__play__svg {
-  width: 20px;
-  height: 20px;
-}
-
-.btn__play__svg path {
-  transition-property: fill;
-  @include transition;
-}
-
-.header__player {
-  display: flex;
-  width: 174px;
-  height: 40px;
-  border-left: 1px solid $liteColor;
-  cursor: pointer;
-
-  &:focus {
-    outline: none;
-  }
-  &:focus .player__btn__contain .btn__play__svg path {
-    fill: $primaryLight
-  }
-  &:hover .player__btn__contain .btn__play__svg path {
-    fill: $primary
-  }
-  &:active .player__btn__contain .btn__play__svg path {
-    fill: $primaryShade
-  }
-}
-
-.player__btn__contain {
-  @include felxCenter;
-  padding: 0 0 0 12px;
 }
 
 .header__player__content {
   padding: 3px 0 0 10px;
 }
 
-.player__content__title {
+.header__player__content__title {
   @include textLow($textGray);
-  margin-bottom: 5px;
 }
 
-.player__content__text {
+.header__player__content__text {
   @include textSecond($mainColor);
 }
 
@@ -336,68 +211,61 @@ body {
   height: 58px;
   background-color: $liteColor;
   margin-left: 10px;
-}
 
-.header__age::before {
-  content: '12+';
-  @include felxCenter;
-  height: 30px;
-  width: 30px;
-  background-color: $white;
+  &::before {
+    content: '12+';
+    @include felxCenter;
+    height: 30px;
+    width: 30px;
+    background-color: $white;
 
-  font-family: 'Open Sans', sans-serif;
-  @include btnConfig($textGray, $lowFS, 50%);
+    font-family: 'Open Sans', sans-serif;
+    @include btnConfig($textGray, $lowFS, 50%);
+  }
 }
 
 // HEADER_PANEL
-.container__plaer {
+
+.header__drop__panel__box {
   display: none;
-  position: relative;
 }
 
-.header__player__panel {
-  @include felxCenter;
-  width: 100%;
-  height: 45px;
-  border: 1px solid $liteColor;
-  background-color: $white;
-  position: relative;
-  z-index: 10;
-  transition-property: background-color, color;
-  @include transition;
+.header__drop__panel__btn {
   @include btnConfig($primary, $mainFS, 0);
+}
 
-  .header__plaer__svg {
-    width: 15px;
-    height: 15px;
-    margin-right: 5px;
-    transform: rotateZ(45deg);
-    transition-property: transform;
-    @include transition;
-  }
+.header__drop__panel__btn__svg {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
 
-  .header__plaer__svg circle {
-    transition-property: fill;
-    @include transition;
-  }
-  &:active .header__plaer__svg circle {
-    fill: $primaryShade;
-  }
 
-  &:active {
-    color: $primaryShade;
-  }
+.header__drop__panel__place {
+  padding: 16px 32px 0 32px;
+  height: 78px;
+  // width: 300px;
 
-  &.active {
-    background-color: $liteColorTransparent;
+}
+
+.header__drop__panel__player__btn {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: start;
+  height: auto;
+  width: 160px;
+
+  &:first-child {
+    border: none;
   }
-  &.active .header__plaer__svg {
-    transform: rotateZ(0)
-  }
+}
+
+.header__drop__panel__player__btn__wrapper {
+  padding: 0;
 }
 
 // !HERO
-
 .hero {
   background-color: $white;
 }
@@ -468,6 +336,7 @@ body {
   @include btnConfig($white, $secondFS, $bRadiusSmall);
   background: $primary;
   padding: 25px 54px;
+  border: none;
 
   transition-property: color, background-color;
   @include transition;
@@ -656,6 +525,8 @@ body {
   margin-left: 6px;
 }
 
+  // !PODCASTS
+
 .podcasts__btn__more {
   display: block;
   padding: 23px 52px;
@@ -770,7 +641,7 @@ body {
   @include textSecondConfig ($textGray, $lhSecond);
 }
 
-.ransmissions__text__style {
+.transmissions__text__style {
   @include textSecondConfig ($textGray, $lhSecond);
   font-weight: 700;
 }
@@ -1755,7 +1626,7 @@ button.accordion__tab__item {
   &:hover  .product__buy__svg g .product__buy__path-2 {
     fill: $promoColor;
   }
-  
+
   &:active {
     color: $black;
     background-color: $promoColorShade;
@@ -2217,34 +2088,34 @@ button.accordion__tab__item {
 
 
 // !MEDIA
-@media ( max-width: 1249px ) {
+@media (max-width: $point1024) {
   // !HEADER
-  // HEADER UP
-  .header__up {
+  // TOP
+  .header__top {
     display: block;
   }
 
-  .header__up__content {
+  .header__top__content {
     display: flex;
     align-items: center;
     height: 60px;
   }
 
-  // HEADER MIDDLE
-  .header__logo__svg {
-    display: none;
-  }
-
-  .header__nav__links {
+  // MIDDLE
+  .header__midle__nav__list {
     margin-right: 10px;
   }
 
-  // HEADER FOOTER
-  .nav__second__links {
+  .header__midle__logo {
+    display: none;
+  }
+
+  // FOOTER
+  .header__footer__nav__list {
     width: 487px;
   }
 
-  .header__player {
+  .header__footer__player__btn {
     width: 150px;
   }
 
@@ -2445,7 +2316,7 @@ button.accordion__tab__item {
   .product__title {
     margin-top: 2px;
   }
-  
+
   // !ABOUT-US
   .about__intro {
     margin-bottom: 29px;
@@ -2484,7 +2355,7 @@ button.accordion__tab__item {
     justify-content: space-between;
     width: 100%;
   }
-  
+
   .about__card {
     width: auto;
     margin-bottom: 29px;
@@ -2540,7 +2411,7 @@ button.accordion__tab__item {
   .product__wrapper {
     flex-direction: column;
   }
-  
+
   .product__contain__slider {
     width: 100%;
   }
@@ -2593,7 +2464,7 @@ button.accordion__tab__item {
   .about__cards__list {
     flex-wrap: wrap;
   }
-  
+
   .about__card {
     width: auto;
     margin-bottom: 29px;
@@ -2658,37 +2529,33 @@ button.accordion__tab__item {
 
 }
 
-@media ( max-width: 890px ) {
-
-  .container {
-    padding: 0 114px;
-  }
+@media (max-width: $point768_small) {
 
   // !HEADER
-  // HEADER MIDDLE
-  .burger__btn {
-    @include felxCenter;
-  }
-
-  .burger__menu {
-    display: block;
-  }
-
-  .header__nav__links {
+  // MIDDLE
+  .header__midle__nav__list {
     display: none;
   }
 
-  // HEADER FOOTER
-  .header__nav__second {
+  .burger {
+    @include felxCenter;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  // FOOTER
+  .header__footer__nav {
     justify-content: flex-start;
   }
 
-  .nav__second__links {
+  .header__footer__nav__list {
     margin-right: 26px;
     width: 100%;
   }
 
-  .header__players__contain {
+  .header__footer__player__btns {
     border: none;
   }
 
@@ -2696,16 +2563,16 @@ button.accordion__tab__item {
     display: none;
   }
 
-  .header__player {
+  .header__footer__player__btn {
     border: none;
     width: 20px;
+
+    &:last-child {
+      display: none;
+    }
   }
 
-  .header__player:last-child {
-    display: none;
-  }
-
-  .player__btn__contain {
+  .header__footer__player {
     padding-left: 0;
   }
 
@@ -2801,12 +2668,12 @@ button.accordion__tab__item {
   .playlists__left__warning {
     padding-top: 31px;
   }
-  
+
   // !PRODUCT
   .product {
     padding: 55px 0 94px 0;
   }
-  
+
   .product__contain__slider {
     margin-right: 0;
     min-height: auto;
@@ -2834,9 +2701,6 @@ button.accordion__tab__item {
 
 // *320
 @media (max-width: 750px) {
-  .container {
-    padding: 0 32px;
-  }
 
   .about__card:nth-child(2n+1) {
     margin-right: 10px;
@@ -2921,7 +2785,7 @@ button.accordion__tab__item {
     font-size: $secondPreFS;
     margin-bottom: 18px;
   }
-  
+
   .product__buy {
     font-size: $mainFS;
     padding: 13px;
@@ -3005,7 +2869,7 @@ button.accordion__tab__item {
   .about__form__email {
     min-height: 51px;
   }
-  
+
   .about__form__name {
     margin-bottom: 30px;
   }
@@ -3019,7 +2883,7 @@ button.accordion__tab__item {
   }
 
   .about__checkbox {
-    & + span, 
+    & + span,
     & + span::after,
     & + span::before {
       width: 13px;
@@ -3041,31 +2905,29 @@ button.accordion__tab__item {
     margin-bottom: 0;
   }
 
-  
-  
-}
 
-@media ( max-width: 582px ) {
-  
+
 }
 
 @media ( max-width: 532px ) {
   // !HEADER
-  // HEADER UP
-  .header__up__content {
+  // TOP
+
+  .header__btn__login {
+    padding: 8px 22px;
+  }
+
+  .header__top__content {
     @include felxBetween;
     height: 54px;
   }
 
-  .header__logo__up {
+  .header__top__logo__img {
     width: 88px;
   }
 
-  .header__btn__up {
+  .header__btn__login__top {
     display: block;
-  }
-
-  .header__btn__login {
     padding: 8px 22px;
   }
 
@@ -3074,106 +2936,50 @@ button.accordion__tab__item {
     height: 35px;
   }
 
-  // HEADER MIDDLE
-  .header__nav {
-    height: 50px;
+  //  MIDDLE
+  .header__midle__nav {
+    min-height: 50px;
   }
 
-  .header__group__btn {
+  .header__middle__group__btn {
     width: auto;
   }
 
-  .header__btn__middle {
+  .header__btn__login__midle {
     display: none;
   }
 
-  // HEADER BURGER
-  .burger__menu {
+  // BURGER
+  .burger-menu {
     background: $shadeGray;
     padding: 61px 0 0 0;
   }
 
-  .burger__menu__container_second {
-    display: block;
-    background-color: $white;
-    padding: 30px 32px;
-  }
-
-  .burger__menu__links {
-    width: 250px;
+  .header__nav__burger__list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
     height: 140px;
-    &_left, &_right {
-      .header__nav__link {
-        margin-bottom: 30px
-      }
-      .nav__second__link {
-        margin-bottom: 30px
-      }
-    }
+    margin-bottom: 24px;
   }
 
-  .burger__menu__links_first {
-    margin-bottom: 30px;
+  .header__nav__burger__list__item:nth-child(2n) {
+    align-self: flex-end;
   }
 
-  .burger__menu__links_second {
-    width: 215px;
-    height: 108px;
+  .header__nav__burger__list__second {
+    display: flex;
   }
 
-  // HEADER FOOTER
-  .header__footer__section {
+
+  // FOOTER
+
+  .header__footer {
     display: none;
   }
 
-  .container__plaer {
+  .header__drop__panel__box {
     display: block;
-    margin: 0 auto;
-    max-width: 1310px;
-  }
-
-  .header__player__panel_btns {
-    display: flex;
-    flex: 1;
-    position: absolute;
-    height: 78px;
-    margin: 0 auto;
-    top: 45px; left: 0; bottom: 0; right: 0;
-    padding: 16px 32px 0 0;
-    z-index: 5;
-    transform: translateY(-80px);
-    transition-property: transform;
-    @include transition;
-
-    background-color: $white;
-    &.active {
-      transform: translateY(0);
-    }
-  }
-
-  .header__player {
-    text-align: start;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    min-width: 128px;
-    height: 62px;
-    padding-left: 32px;
-    &:active .btn__play__svg path{
-      fill: $primaryShade;
-    }
-  }
-
-  .header__player:last-child {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    border-left: 1px solid $shadeGray;
-  }
-
-  .btn__play__svg {
-    margin-left: 2px;
-    margin-bottom: 4px;
   }
 
   // !HERO
@@ -3326,7 +3132,7 @@ button.accordion__tab__item {
     margin-bottom: 7px;
   }
 
-  .ransmissions__text__style {
+  .transmissions__text__style {
     font-size: $lowPreFS;
   }
 
@@ -3515,7 +3321,7 @@ button.accordion__tab__item {
   .playlists__left__warning {
     padding-top: 21px;
   }
-  
+
   .playlists__left__warning__desc {
     font-size: $lowFS;
     margin-bottom: 2px;
@@ -3577,7 +3383,7 @@ button.accordion__tab__item {
     & .footer__intro__nav__item:not(:last-child) {
       margin-bottom: 24px;
     }
-    
+
   }
 
   .footer__intro__nav__item {
@@ -3600,7 +3406,7 @@ button.accordion__tab__item {
   .footer__bottom__copyright {
     font-size: $lowFS;
   }
-  
+
 }
 
 @media ( max-width: 350px ) {

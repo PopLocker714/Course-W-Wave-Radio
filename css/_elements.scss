@@ -1,0 +1,248 @@
+
+
+.logo {}
+
+.logo__img {
+  display: block;
+}
+
+
+.link {
+  color: inherit;
+  text-decoration: none;
+  transition-property: color, background-color;
+  @include transition;
+  &:focus {
+    outline: none;
+    color: $white;
+    background-color: $primaryLight;
+  }
+  &:hover {
+    color: $primary;
+    background-color: transparent;
+  }
+  &:active {
+    color: $primaryShade;
+    background-color: transparent;
+  }
+}
+
+
+.nav {
+  @include felxBetween;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  @include felxBetween;
+}
+
+
+.btn {
+  font-family: 'Muller';
+  background-color: transparent;
+  text-decoration: none;
+  padding: 0;
+  transition-property: color, border-color, background-color;
+  @include transition;
+  border: 2px solid $mainColor;
+  border-radius: $bRadiusMedium;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+
+
+.search {
+  border: none;
+  & .search__svg path {
+    transition-property: stroke;
+    @include transition;
+  }
+  &:focus .search__svg path {
+    stroke: $primaryLight;
+  }
+  &:hover .search__svg path {
+    stroke: $primaryLight;
+  }
+  &:active .search__svg path {
+    stroke: $primaryShade;
+  }
+}
+
+
+.burger {
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 150;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+
+  &.active .burger__span {
+    transform: translateX(-50px);
+    background-color: transparent;
+  }
+  &.active .burger__span::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  &.active .burger__span::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+}
+
+.burger__span {
+  position: relative;
+  width: 24px;
+  height: 3px;
+  background-color: $primary;
+  border-radius: 4px;
+  transition-property: transform, background-color;
+  @include transition;
+
+  &::before, &::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 24px;
+    height: 3px;
+    background-color: $primary;
+    border-radius: 4px;
+    transition-property: transform;
+    @include transition;
+  }
+
+  &::before {
+    transform: translateY(-10px);
+  }
+  &::after {
+    transform: translateY(10px);
+  }
+}
+
+
+.player {
+  display: flex;
+  width: 174px;
+  height: 40px;
+  border: none;
+  border-radius: 0;
+  border-left: 1px solid $liteColor;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+  &:focus .player__btn .player__btn__svg path {
+    fill: $primaryLight
+  }
+  &:hover .player__btn .player__btn__svg path {
+    fill: $primary
+  }
+  &:active .player__btn .player__btn__svg path {
+    fill: $primaryShade
+  }
+}
+
+.player__btn {
+  @include felxCenter;
+  padding: 0 0 0 12px;
+}
+
+.player__btn__svg {
+  width: 20px;
+  height: 20px;
+
+  & path {
+    transition-property: fill;
+    @include transition;
+  }
+}
+
+.player__content__title {
+  margin-bottom: 5px;
+}
+
+
+.drop-panel {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1310px;
+}
+
+.drop-panel__btn {
+  @include felxCenter;
+  width: 100%;
+  height: 45px;
+  border: 1px solid $liteColor;
+  background-color: $white;
+  position: relative;
+  z-index: 10;
+  transition-property: background-color, color;
+  @include transition;
+
+  &:active .drop-panel__btn__svg circle {
+    fill: $primaryShade;
+  }
+
+  &:active {
+    color: $primaryShade;
+  }
+
+  &.active {
+    background-color: $liteColorTransparent;
+  }
+  &.active .drop-panel__btn__svg {
+    transform: rotateZ(0)
+  }
+}
+
+.drop-panel__btn__svg {
+  transform: rotateZ(45deg);
+  transition-property: transform;
+  @include transition;
+
+  & circle {
+    transition-property: fill;
+    @include transition;
+  }
+}
+
+.drop-panel__place {
+  display: flex;
+  flex: 1;
+  position: absolute;
+  margin: 0 auto;
+  top: 45px; left: 0; bottom: 0; right: 0;
+  z-index: 5;
+  transform: translateY(-80px);
+  transition-property: transform;
+  @include transition;
+
+  background-color: $white;
+  &.active {
+    transform: translateY(0);
+  }
+}
+
+// !CONTAINER
+.container {
+  margin: 0 auto;
+  max-width: 1310px;
+  padding: 0 100px;
+}
+@media ( max-width: 890px ) {
+  .container {
+    padding: 0 114px;
+  }
+}
+@media ( max-width: 750px ) {
+  .container {
+    padding: 0 32px;
+  }
+}

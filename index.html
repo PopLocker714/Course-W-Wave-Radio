@@ -26,8 +26,7 @@
   <!-- Swiper -->
   <link rel="stylesheet" href="api/swiper/swiper-bundle.min.css">
 
-  <!-- Style custom -->
-
+  <!-- Styles -->
   <link rel="stylesheet" href="./css/style.min.css">
 
   <!-- js -->
@@ -36,173 +35,166 @@
 
 <body>
   <!-- !HEADER -->
-  <header>
-    <div class="header__up">
+  <header class="header">
+    <div class="header__top">
       <div class="container">
-
-        <div class="header__up__content">
-          <svg class="header__logo__up" width="112" height="14" viewbox="0 0 112 14" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M20.4686 0.232044V8.21823C20.4686 10.1004 19.9538 11.5378 18.9241 12.5304C17.8945 13.5101 16.4348 14 14.545 14C13.6066 14 12.766 13.8646 12.0231 13.5939C11.2932 13.3232 10.6937 12.9429 10.2245 12.453C9.74229 12.9429 9.13625 13.3232 8.40639 13.5939C7.67653 13.8646 6.84893 14 5.92357 14C4.03376 14 2.57405 13.5101 1.54443 12.5304C0.51481 11.5378 0 10.1004 0 8.21823V0.232044H3.16706V8.12155C3.16706 9.21731 3.39514 10.0295 3.8513 10.558C4.30746 11.0737 4.98518 11.3315 5.88447 11.3315C7.72215 11.3315 8.64099 10.2615 8.64099 8.12155V0.232044H11.808V8.12155C11.808 10.2615 12.7334 11.3315 14.5841 11.3315C16.3827 11.3315 17.282 10.2615 17.282 8.12155V0.232044H20.4686Z"
-              fill="#292E39" />
-            <path
-              d="M68.3807 0.232044V8.21823C68.3807 10.1004 67.8659 11.5378 66.8363 12.5304C65.8067 13.5101 64.3469 14 62.4571 14C61.5188 14 60.6781 13.8646 59.9352 13.5939C59.2054 13.3232 58.6058 12.9429 58.1366 12.453C57.6544 12.9429 57.0484 13.3232 56.3185 13.5939C55.5887 13.8646 54.7611 14 53.8357 14C51.9459 14 50.4862 13.5101 49.4566 12.5304C48.4269 11.5378 47.9121 10.1004 47.9121 8.21823V0.232044H51.0792V8.12155C51.0792 9.21731 51.3073 10.0295 51.7634 10.558C52.2196 11.0737 52.8973 11.3315 53.7966 11.3315C55.6343 11.3315 56.5531 10.2615 56.5531 8.12155V0.232044H59.7202V8.12155C59.7202 10.2615 60.6455 11.3315 62.4962 11.3315C64.2948 11.3315 65.1941 10.2615 65.1941 8.12155V0.232044H68.3807Z"
-              fill="#292E39" />
-            <path
-              d="M77.6702 0C78.9344 0 80.0357 0.244936 80.9741 0.734807C81.9125 1.22468 82.6423 1.94659 83.1637 2.90055C83.685 3.85451 83.9457 5.00829 83.9457 6.36188V13.768H80.7786V10.5193H74.5227V13.768H71.3947V6.36188C71.3947 5.00829 71.6554 3.85451 72.1767 2.90055C72.6981 1.94659 73.4279 1.22468 74.3663 0.734807C75.3047 0.244936 76.406 0 77.6702 0ZM80.7786 8.00552V6.07182C80.7786 4.95028 80.4984 4.10589 79.938 3.53867C79.3775 2.95856 78.6151 2.66851 77.6507 2.66851C76.6732 2.66851 75.9042 2.95856 75.3438 3.53867C74.7964 4.10589 74.5227 4.95028 74.5227 6.07182V8.00552H80.7786Z"
-              fill="#292E39" />
-            <path
-              d="M99.8468 0.232044L93.9232 13.768H90.7952L84.8912 0.232044H88.3124L92.4765 9.90055L96.6993 0.232044H99.8468Z"
-              fill="#292E39" />
-            <path
-              d="M112 12.6077C111.348 13.046 110.527 13.3877 109.537 13.6326C108.559 13.8775 107.517 14 106.409 14C105.027 14 103.854 13.8324 102.89 13.4972C101.925 13.1492 101.196 12.6722 100.7 12.0663C100.205 11.4475 99.9574 10.7449 99.9574 9.95856C99.9574 9.23665 100.159 8.59853 100.563 8.0442C100.967 7.48987 101.521 7.07735 102.225 6.80663C101.691 6.52302 101.274 6.13628 100.974 5.64641C100.687 5.15654 100.544 4.60865 100.544 4.00276C100.544 3.26796 100.772 2.59761 101.228 1.99171C101.684 1.38582 102.375 0.902394 103.3 0.541436C104.226 0.180479 105.36 0 106.702 0C107.588 0 108.455 0.0902394 109.302 0.270718C110.149 0.438305 110.886 0.670349 111.511 0.96685L110.632 3.36464C109.432 2.81031 108.162 2.53315 106.819 2.53315C105.803 2.53315 105.034 2.68784 104.512 2.99724C104.004 3.29374 103.75 3.69982 103.75 4.21547C103.75 4.69245 103.919 5.05985 104.258 5.31768C104.61 5.56261 105.138 5.68508 105.842 5.68508H109.576V8.16022H105.646C104.851 8.16022 104.239 8.29558 103.809 8.5663C103.379 8.83702 103.164 9.2302 103.164 9.74586C103.164 10.2873 103.437 10.7127 103.985 11.0221C104.545 11.3186 105.399 11.4668 106.546 11.4668C107.354 11.4668 108.162 11.3637 108.97 11.1575C109.778 10.9383 110.462 10.6354 111.022 10.2486L112 12.6077Z"
-              fill="#292E39" />
-            <path
-              d="M39.4694 7.62741H23V5.37258H39.4694L36.5532 2.5944L38.2268 1L44 6.5L38.2268 12L36.5532 10.4056L39.4694 7.62741Z"
-              fill="#6D31EE" />
-          </svg>
-
-          <button class="header__btn__login header__btn__up">Вход</button>
+        <div class="header__top__content">
+          <picture class="logo header__top__logo">
+            <source srcset="./img/logos/logo-black-small.svg" media="(max-width: 1249px)">
+            <img class="logo__img header__top__logo__img" src="./img/logos/logo-black.svg" alt="W-Wave-Radio">
+          </picture>
+          <a href="#" class="btn header__btn__login header__btn__login__top">Вход</a>
         </div>
-
       </div>
     </div>
 
     <div class="header__midle">
       <div class="container">
+        <nav class="nav header__midle__nav">
 
-        <nav class="header__nav">
-          <svg class="header__logo__svg" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M29.2408 0.331491V11.7403C29.2408 14.4291 28.5054 16.4825 27.0345 17.9006C25.5636 19.3002 23.4783 20 20.7786 20C19.438 20 18.2371 19.8066 17.1758 19.4199C16.1332 19.0331 15.2767 18.4899 14.6064 17.7901C13.9176 18.4899 13.0518 19.0331 12.0091 19.4199C10.9665 19.8066 9.78418 20 8.46224 20C5.76252 20 3.67721 19.3002 2.20633 17.9006C0.735443 16.4825 0 14.4291 0 11.7403V0.331491H4.52437V11.6022C4.52437 13.1676 4.8502 14.3278 5.50186 15.0829C6.15351 15.8195 7.12169 16.1878 8.40639 16.1878C11.0316 16.1878 12.3443 14.6593 12.3443 11.6022V0.331491H16.8686V11.6022C16.8686 14.6593 18.1906 16.1878 20.8344 16.1878C23.4038 16.1878 24.6885 14.6593 24.6885 11.6022V0.331491H29.2408Z"
-              fill="#292E39" />
-            <path
-              d="M97.6867 0.331491V11.7403C97.6867 14.4291 96.9513 16.4825 95.4804 17.9006C94.0095 19.3002 91.9242 20 89.2245 20C87.8839 20 86.683 19.8066 85.6217 19.4199C84.5791 19.0331 83.7226 18.4899 83.0524 17.7901C82.3635 18.4899 81.4977 19.0331 80.455 19.4199C79.4124 19.8066 78.2301 20 76.9082 20C74.2084 20 72.1231 19.3002 70.6522 17.9006C69.1814 16.4825 68.4459 14.4291 68.4459 11.7403V0.331491H72.9703V11.6022C72.9703 13.1676 73.2961 14.3278 73.9478 15.0829C74.5994 15.8195 75.5676 16.1878 76.8523 16.1878C79.4775 16.1878 80.7902 14.6593 80.7902 11.6022V0.331491H85.3145V11.6022C85.3145 14.6593 86.6365 16.1878 89.2803 16.1878C91.8497 16.1878 93.1344 14.6593 93.1344 11.6022V0.331491H97.6867Z"
-              fill="#292E39" />
-            <path
-              d="M110.957 0C112.763 0 114.337 0.349908 115.677 1.04972C117.018 1.74954 118.061 2.78085 118.805 4.14365C119.55 5.50644 119.922 7.1547 119.922 9.0884V19.6685H115.398V15.0276H106.461V19.6685H101.992V9.0884C101.992 7.1547 102.365 5.50644 103.11 4.14365C103.854 2.78085 104.897 1.74954 106.238 1.04972C107.578 0.349908 109.151 0 110.957 0ZM115.398 11.4365V8.67403C115.398 7.07182 114.998 5.86556 114.197 5.05525C113.396 4.22652 112.307 3.81216 110.93 3.81216C109.533 3.81216 108.435 4.22652 107.634 5.05525C106.852 5.86556 106.461 7.07182 106.461 8.67403V11.4365H115.398Z"
-              fill="#292E39" />
-            <path
-              d="M142.638 0.331491L134.176 19.6685H129.708L121.273 0.331491H126.161L132.109 14.1436L138.142 0.331491H142.638Z"
-              fill="#292E39" />
-            <path
-              d="M160 18.011C159.069 18.6372 157.896 19.1252 156.481 19.4751C155.085 19.825 153.595 20 152.013 20C150.039 20 148.363 19.7606 146.985 19.2818C145.608 18.7845 144.565 18.1031 143.857 17.2376C143.15 16.3536 142.796 15.3499 142.796 14.2265C142.796 13.1952 143.085 12.2836 143.662 11.4917C144.239 10.6998 145.03 10.1105 146.036 9.72376C145.273 9.3186 144.677 8.76611 144.248 8.0663C143.839 7.36648 143.634 6.58379 143.634 5.71823C143.634 4.66851 143.96 3.71087 144.612 2.8453C145.263 1.97974 146.25 1.28913 147.572 0.773481C148.894 0.257827 150.514 0 152.431 0C153.698 0 154.936 0.128913 156.146 0.38674C157.356 0.62615 158.408 0.957641 159.302 1.38121L158.045 4.80663C156.332 4.01473 154.517 3.61878 152.599 3.61878C151.147 3.61878 150.048 3.83978 149.303 4.28177C148.577 4.70534 148.214 5.28545 148.214 6.0221C148.214 6.7035 148.456 7.22836 148.94 7.59668C149.443 7.94659 150.197 8.12155 151.203 8.12155H156.537V11.6575H150.923C149.788 11.6575 148.912 11.8508 148.298 12.2376C147.684 12.6243 147.376 13.186 147.376 13.9227C147.376 14.6961 147.767 15.3039 148.549 15.7459C149.35 16.1694 150.57 16.3812 152.208 16.3812C153.362 16.3812 154.517 16.2339 155.671 15.9392C156.825 15.6262 157.803 15.1934 158.604 14.6409L160 18.011Z"
-              fill="#292E39" />
-            <path
-              d="M56.8231 11.2023H33.5484V7.82997H56.8231L52.7019 3.67492L55.0671 1.29033L63.2258 9.51613L55.0671 17.7419L52.7019 15.3574L56.8231 11.2023Z"
-              fill="#6D31EE" />
-          </svg>
+          <picture class="logo header__midle__logo">
+            <img class="logo__img header__midle__logo__img" src="./img/logos/logo-black.svg" alt="W-Wave-Radio">
+          </picture>
 
-          <div class="header__nav__links">
-            <a href="#podcasts" class="header__nav__link">Подкасты</a>
-            <a href="#transmissions" class="header__nav__link">Передачи</a>
-            <a href="#guest" class="header__nav__link">Гости</a>
-            <a href="#playlists" class="header__nav__link">Плейлисты</a>
-            <a href="#about__us" class="header__nav__link">О нас</a>
-          </div>
-          <div class="burger__btn" id="burger">
-            <span class="burger__midle"></span>
+          <ul class="nav__list header__midle__nav__list">
+            <li class="nav__list__item">
+              <a href="#podcasts" class="link header__midle__nav__link">Подкасты</a>
+            </li>
+            <li class="nav__list__item">
+              <a href="#transmissions" class="link header__midle__nav__link">Передачи</a>
+            </li>
+            <li class="nav__list__item">
+              <a href="#guest" class="link header__midle__nav__link">Гости</a>
+            </li>
+            <li class="nav__list__item">
+              <a href="#playlists" class="link header__midle__nav__link">Плейлисты</a>
+            </li>
+            <li class="nav__list__item">
+              <a href="#about-us" class="link header__midle__nav__link">О нас</a>
+            </li>
+          </ul>
+
+          <button class="btn burger header__midle__burger" id="burger">
+            <span class="burger__span"></span>
+          </button>
+
+          <div class="header__middle__group__btn">
+            <button class="btn search header__search">
+              <svg class="search__svg" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 19C15.4182 19 19 15.4183 19 11C19 6.58172 15.4182 3 11 3C6.58169 3 2.99997 6.58172 2.99997 11C2.99997 15.4183 6.58169 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M21 21L16.65 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <a href="#" class="btn header__btn__login header__btn__login__midle">Вход</a>
           </div>
 
-          <div class="header__group__btn">
-            <svg class="header__search__svg" fill="none" xmlns="http://www.w3.org/2000/svg" tabindex="0">
-              <path d="M11 19C15.4182 19 19 15.4183 19 11C19 6.58172 15.4182 3 11 3C6.58169 3 2.99997 6.58172 2.99997 11C2.99997 15.4183 6.58169 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M21 21L16.65 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-            <button class="header__btn__login header__btn__middle">Вход</button>
-          </div>
         </nav>
-
       </div>
 
-      <div class="burger__menu" id="burger-menu">
-
-        <div class="burger__menu__container container">
-          <div class="burger__menu__links burger__menu__links_first">
-            <div class="burger__menu__links_left">
-              <a href="#podcasts" class="header__nav__link">Подкасты</a>
-              <a href="#transmissions" class="header__nav__link">Передачи</a>
-              <a href="#guest" class="header__nav__link">Гости</a>
-            </div>
-            <div class="burger__menu__links_right">
-              <a href="#playlists" class="header__nav__link">Плейлисты</a>
-              <a href="#about__us" class="header__nav__link">О нас</a>
-            </div>
-          </div>
+      <nav class="nav burger-menu header__midle__nav__burger" id="burger-menu">
+        <div class="header__middle__burger__wrapper container">
+          <ul class="nav__list header__nav__burger__list">
+            <li class="nav__list__item header__nav__burger__list__item">
+              <a href="#podcasts" class="link header__nav__burger__list__link">Подкасты</a>
+            </li>
+            <li class="nav__list__item header__nav__burger__list__item">
+              <a href="#transmissions" class="link header__nav__burger__list__link">Передачи</a>
+            </li>
+            <li class="nav__list__item header__nav__burger__list__item">
+              <a href="#guest" class="link header__nav__burger__list__link">Гости</a>
+            </li>
+            <li class="nav__list__item header__nav__burger__list__item">
+              <a href="#playlists" class="link header__nav__burger__list__link">Плейлисты</a>
+            </li>
+            <li class="nav__list__item header__nav__burger__list__item">
+              <a href="#about-us" class="link header__nav__burger__list__link">О нас</a>
+            </li>
+          </ul>
         </div>
-
-        <div class="burger__menu__container container burger__menu__container_second">
-          <div class="burger__menu__links burger__menu__links_second">
-            <div class="burger__menu__links_left">
-              <a href="#" class="nav__second__link">Новости</a>
-              <a href="#" class="nav__second__link">Блоги</a>
-              <a href="#" class="nav__second__link">Топы</a>
-            </div>
-            <div class="burger__menu__links_right">
-              <a href="#" class="nav__second__link">Опросы</a>
-              <a href="#" class="nav__second__link">Рейтинги</a>
-              <a href="#" class="nav__second__link">Реклама</a>
-            </div>
-          </div>
+        <div class="header__middle__burger__wrapper header__middle__burger__wrapper__second-color container">
+          <ul class="nav__list header__nav__burger__list__second">
+            <li class="nav__list__item header__nav__burger__list__second__item">
+              <a href="#" class="link header__nav__burger__list__second__link">Новости</a>
+            </li>
+            <li class="nav__list__item header__nav__burger__list__second__item">
+              <a href="#" class="link header__nav__burger__list__second__link">Блоги</a>
+            </li>
+            <li class="nav__list__item header__nav__burger__list__second__item">
+              <a href="#" class="link header__nav__burger__list__second__link">Топы</a>
+            </li>
+            <li class="nav__list__item header__nav__burger__list__second__item">
+              <a href="#" class="link header__nav__burger__list__second__link">Опросы</a>
+            </li>
+            <li class="nav__list__item header__nav__burger__list__second__item">
+              <a href="#" class="link header__nav__burger__list__second__link">Рейтинги</a>
+            </li>
+            <li class="nav__list__item header__nav__burger__list__second__item">
+              <a href="#" class="link header__nav__burger__list__second__link">Реклама</a>
+            </li>
+          </ul>
         </div>
-
-      </div>
+      </nav>
 
     </div>
 
-    <div class="header__footer__section">
+    <div class="header__footer">
       <div class="container">
-
-        <nav class="header__nav__second">
-          <div class="nav__second__links">
-            <a href="#" class="nav__second__link">Новости</a>
-            <a href="#" class="nav__second__link">Блоги</a>
-            <a href="#" class="nav__second__link">Топы</a>
-            <a href="#" class="nav__second__link">Опросы</a>
-            <a href="#" class="nav__second__link">Рейтинги</a>
-            <a href="#" class="nav__second__link">Реклама</a>
-          </div>
-
-          <div class="header__players__contain">
-            <div class="header__player">
-              <div class="player__btn__contain">
-                <svg class="btn__play__svg" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <nav class="nav header__footer__nav">
+          <ul class="nav__list header__footer__nav__list">
+            <li class="nav__list__item">
+              <a href="#" class="link header__footer__nav__link">Новости</a>
+            </li>
+            <li class="nav__list__item">
+              <a href="#" class="link header__footer__nav__link">Блоги</a>
+            </li>
+            <li class="nav__list__item">
+              <a href="#" class="link header__footer__nav__link">Топы</a>
+            </li>
+            <li class="nav__list__item">
+              <a href="#" class="link header__footer__nav__link">Опросы</a>
+            </li>
+            <li class="nav__list__item">
+              <a href="#" class="link header__footer__nav__link">Рейтинги</a>
+            </li>
+            <li class="nav__list__item">
+              <a href="#" class="link header__footer__nav__link">Реклама</a>
+            </li>
+          </ul>
+          <div class="header__footer__player__btns">
+            <button class="btn player header__footer__player__btn">
+              <div class="player__btn header__footer__player">
+                <svg class="player__btn__svg btn__play__svg" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
                     fill="#A1A6B4" />
                 </svg>
               </div>
-              <div class="header__player__content">
-                <p class="player__content__title">Ранее в эфире</p>
-                <p class="player__content__text">«Музыка»</p>
+              <div class="player__content header__player__content">
+                <p class="player__content__title header__player__content__title">Ранее в эфире</p>
+                <p class="player__content__text header__player__content__text">«Музыка»</p>
               </div>
-            </div>
-            <div class="header__player">
-              <div class="player__btn__contain">
-                <svg class="btn__play__svg" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            </button>
+            <button class="btn player header__footer__player__btn">
+              <div class="player__btn header__footer__player">
+                <svg class="player__btn__svg btn__play__svg" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
                     fill="#A1A6B4" />
                 </svg>
               </div>
-              <div class="header__player__content">
-                <p class="player__content__title">Сейчас в эфире</p>
-                <p class="player__content__text">«Как так?»</p>
+              <div class="player__content header__player__content">
+                <p class="player__content__title header__player__content__title">Сейчас в эфире</p>
+                <p class="player__content__text header__player__content__text">«Как так?»</p>
               </div>
-            </div>
+            </button>
           </div>
-
           <div class="header__age"></div>
         </nav>
-
-      </div> <!-- container / -->
-    </div> <!-- header_footer_section / -->
-
-    <div class="container__plaer" >
-
-      <button class="header__player__panel" id="header-btn-panel">
-        <svg class="header__plaer__svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+      </div>
+    </div>
+    <div class="drop-panel header__drop__panel__box">
+      <button class="btn drop-panel__btn header__drop__panel__btn" id="header-btn-panel">
+        <svg class="drop-panel__btn__svg header__drop__panel__btn__svg" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="7.5" cy="7.5" r="7.5" fill="#6D31EE" />
           <path d="M11.0353 10.3284L10.3282 11.0355L3.96428 4.67157L4.67138 3.96447L11.0353 10.3284Z"
             fill="white" />
@@ -211,30 +203,35 @@
         </svg>
         Что в эфире?
       </button>
-
-      <div class="header__player__panel_btns" id="header-btns-panel">
-        <div class="header__player">
-          <svg class="btn__play__svg" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
-              fill="#A1A6B4" />
-          </svg>
-          <p class="player__content__title">Ранее в эфире</p>
-          <p class="player__content__text">«Музыка»</p>
-        </div>
-        <div class="header__player">
-          <svg class="btn__play__svg" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
-              fill="#A1A6B4" />
-          </svg>
-          <p class="player__content__title">Сейчас в эфире</p>
-          <p class="player__content__text">«Как так?»</p>
-        </div>
+      <div class="drop-panel__place header__drop__panel__place" id="header-btns-panel">
+        <button class="btn player header__drop__panel__player__btn">
+          <div class="player__btn header__drop__panel__player__btn__wrapper">
+            <svg class="player__btn__svg " viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
+                fill="#A1A6B4" />
+            </svg>
+          </div>
+          <div class="player__content ">
+            <p class="player__content__title ">Ранее в эфире</p>
+            <p class="player__content__text ">«Музыка»</p>
+          </div>
+        </button>
+        <button class="btn player header__drop__panel__player__btn">
+          <div class="player__btn header__drop__panel__player__btn__wrapper">
+            <svg class="player__btn__svg " viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
+                fill="#A1A6B4" />
+            </svg>
+          </div>
+          <div class="player__content ">
+            <p class="player__content__title ">Сейчас в эфире</p>
+            <p class="player__content__text ">«Как так?»</p>
+          </div>
+        </button>
       </div>
-
     </div>
-
   </header>
 
   <!-- !HERO -->
@@ -247,13 +244,13 @@
           а&nbsp;теперь пробуем себя в&nbsp;разоворном жанре. Говорим о&nbsp;музыке, политике, истории, науке
           и&nbsp;культуре. Здесь, помимо прямого эфира&nbsp;&mdash; архив передач и&nbsp;многое другое :)
         </p>
-        <button class="hero__btn">Слушать эфир</button>
+        <button class="btn hero__btn">Слушать эфир</button>
       </div>
     </div>
   </section>
 
   <!-- !PODCASTS -->
-  <section class="podcasts" id="podcasts">
+  <!-- <section class="podcasts" id="podcasts">
     <div class="container">
       <div class="podcasts__box">
 
@@ -722,10 +719,10 @@
 
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- !TRANSMISSIONS -->
-  <section class="transmissions" id="transmissions">
+  <!-- <section class="transmissions" id="transmissions">
     <div class="container">
       <div class="transmissions__box">
 
@@ -755,7 +752,7 @@
               Архив
             </button>
             <p class="transmissions__left__text">
-              В архив попадают все передачи, которые вы пропустили! <span class="ransmissions__text__style">Enjoy
+              В архив попадают все передачи, которые вы пропустили! <span class="transmissions__text__style">Enjoy
                 :)</span>
             </p>
           </div>
@@ -1313,7 +1310,6 @@
 
     <div class="transmissions__left__footer_wrapper">
       <div class="transmissions__left__footer transmissions__left__footer_mobile">
-        <!-- <div class="transmissions__left__img"></div> -->
         <button class="transmissions__btn">
           <svg class="transmissions__icon__svg" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M9 1.5L1.5 5.25L9 9L16.5 5.25L9 1.5Z" stroke="#121723" stroke-width="1.5"
@@ -1326,15 +1322,15 @@
           Архив
         </button>
         <p class="transmissions__left__text">
-          В архив попадают все передачи, которые вы пропустили! <span class="ransmissions__text__style">Enjoy
+          В архив попадают все передачи, которые вы пропустили! <span class="transmissions__text__style">Enjoy
             :)</span>
         </p>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- !Guest -->
-  <section class="guest" id="guest">
+  <!-- <section class="guest" id="guest">
     <div class="container">
       <h2 class="guest__title h2_style">Гости</h2>
       <h3 class="guset__subtitle">У нас бывают:</h3>
@@ -2134,11 +2130,11 @@
 
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- !Playlists -->
 
-  <section class="playlists" id="playlists">
+  <!-- <section class="playlists" id="playlists">
     <div class="container">
       <div class="playlists__wrapper">
 
@@ -4551,11 +4547,11 @@
 
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Product -->
 
-  <section class="product">
+  <!-- <section class="product">
     <div class="container">
       <div class="product__wrapper">
         <div class="product__contain__slider">
@@ -4608,7 +4604,7 @@
         <div class="product__content">
           <h2 class="product__title h2_style">
             Будь с&nbsp;нами на&nbsp;одной волне!
-          </h2> 
+          </h2>
           <hr class="product__wawe">
           <p class="product__desc">Друзья, рады представить вам продукт нашего производства! Да-да, несмотря на то, что
             мы только начали свой путь радиовещателей, нам хочется, чтобы вы могли как следует нас расслышать :)</p>
@@ -4640,11 +4636,11 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- !About Us -->
 
-  <section class="about__us" id="about__us">
+  <!-- <section class="about__us" id="about-us">
     <div class="container">
       <div class="about__us__wrapper">
         <div class="about__intro">
@@ -4723,11 +4719,11 @@
         </form>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- !FOOTER -->
 
-  <div class="footer">
+  <!-- <div class="footer">
     <div class="footer__intro">
       <div class="container">
         <div class="footer__intro__wrapper">
@@ -4831,7 +4827,7 @@
         </p>
       </div>
     </div>
-  </div>
+  </div> -->
 
 </body>
 
