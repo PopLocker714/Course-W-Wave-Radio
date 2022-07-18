@@ -213,8 +213,8 @@
             </svg>
           </div>
           <div class="player__content ">
-            <p class="player__content__title ">Ранее в эфире</p>
-            <p class="player__content__text ">«Музыка»</p>
+            <p class="player__content__title header__drop__panel__title">Ранее в эфире</p>
+            <p class="player__content__text header__drop__panel__text">«Музыка»</p>
           </div>
         </button>
         <button class="btn player header__drop__panel__player__btn">
@@ -226,8 +226,8 @@
             </svg>
           </div>
           <div class="player__content ">
-            <p class="player__content__title ">Сейчас в эфире</p>
-            <p class="player__content__text ">«Как так?»</p>
+            <p class="player__content__title header__drop__panel__title">Сейчас в эфире</p>
+            <p class="player__content__text header__drop__panel__text">«Как так?»</p>
           </div>
         </button>
       </div>
@@ -244,491 +244,494 @@
           а&nbsp;теперь пробуем себя в&nbsp;разоворном жанре. Говорим о&nbsp;музыке, политике, истории, науке
           и&nbsp;культуре. Здесь, помимо прямого эфира&nbsp;&mdash; архив передач и&nbsp;многое другое :)
         </p>
-        <button class="btn hero__btn">Слушать эфир</button>
+        <a href="#" class="btn hero__btn">Слушать эфир</a>
       </div>
     </div>
   </section>
 
   <!-- !PODCASTS -->
-  <!-- <section class="podcasts" id="podcasts">
+  <section class="podcasts" id="podcasts">
     <div class="container">
-      <div class="podcasts__box">
-
-        <h2 class="podcasts__title h2_style">Подкасты</h2>
-
-        <ul class="podcasts__playlist__items">
-
-          <li class="playlist__items__row">
-            <div class="podcasts__playlist__item">
-              <span class="podcast__item__date">14 июня</span>
+      <div class="podcasts__wrapper">
+        <h2 class="podcasts__title title-h2">Подкасты</h2>
+        <ul class="podcasts__cards">
+          <li class="podcasts__cards__group">
+            <div class="podcasts__card">
+              <span class="podcasts__card__date">14 июня</span>
               <picture>
                 <source srcset="./img/podcasts/1_320.jpg" media="(max-width: 532px)">
-                <img class="playlist__item__img" src="./img/podcasts/1.jpg" alt="">
+                <img class="podcasts__card__img" src="./img/podcasts/1.jpg" alt="">
               </picture>
-
-              <div class="playlist__item__content">
-                <div class="item__content__top">
-                  <div class="item__content__box">
-                    <p class="playlist__time">15:43</p>
-                    <h3 class="h3_style playlist__title">Европа. XIX век</h3>
-                    <span class="playlist__author">Дмитрий Гутенберг</span>
+              <div class="podcasts__card__content">
+                <div class="podcasts__card__content__top">
+                  <div class="podcasts__card__content__info">
+                    <p class="podcasts__card__content__time">15:43</p>
+                    <h3 class="title-h3 podcasts__card__content__title">Европа. XIX век</h3>
+                    <span class="podcasts__card__content__author">Дмитрий Гутенберг</span>
                   </div>
-                  <svg class="playlist__btn__play__svg" width="48" height="48" viewbox="0 0 48 48" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
-                    <path
-                      d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
-                      fill="#A1A6B4" />
-                  </svg>
+                  <button class="btn podcasts__card__content__btn__play">
+                    <svg class="podcasts__card__content__btn__play__svg" width="48" height="48" viewbox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                      <path
+                        d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+                        fill="#A1A6B4" />
+                    </svg>
+                  </button>
                 </div>
-
-                <div class="playlist__like__btns">
-                  <div class="playlist__btn playlist__btn__listening">
-                    <svg class="playlist__btn__listening__svg" width="10" height="13" viewbox="0 0 10 13" fill="none"
+                <div class="podcasts__card__content__footer">
+                  <div class="podcasts__card__content__btn podcasts__card__content__btn__listening">
+                    <svg class="podcasts__card__content__btn__svg" width="10" height="13" viewbox="0 0 10 13" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z"
                         fill="#A1A6B4" />
                     </svg>
-                    <div class="playlist__counts">258</div>
+                    <div class="podcasts__card__content__btn__count">258</div>
                   </div>
-                  <div class="playlist__btn playlist__btn__like">
-                    <svg class="playlist__btn__svg" width="13" height="12" viewbox="0 0 13 12" fill="none"
+                  <button class="btn podcasts__card__content__btn podcasts__card__content__btn__like">
+                    <svg class="podcasts__card__content__btn__svg" width="13" height="12" viewbox="0 0 13 12" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M9.425 0C8.294 0 7.2085 0.5297 6.5 1.36676C5.7915 0.5297 4.706 0 3.575 0C1.573 0 0 1.58256 0 3.59673C0 6.06866 2.21 8.08283 5.5575 11.1433L6.5 12L7.4425 11.1368C10.79 8.08283 13 6.06866 13 3.59673C13 1.58256 11.427 0 9.425 0ZM6.565 10.1689L6.5 10.2343L6.435 10.1689C3.341 7.35041 1.3 5.48665 1.3 3.59673C1.3 2.28883 2.275 1.3079 3.575 1.3079C4.576 1.3079 5.551 1.95531 5.8955 2.85123H7.111C7.449 1.95531 8.424 1.3079 9.425 1.3079C10.725 1.3079 11.7 2.28883 11.7 3.59673C11.7 5.48665 9.659 7.35041 6.565 10.1689Z"
                         fill="#A1A6B4" />
                     </svg>
-                    <div class="playlist__counts">104</div>
-                  </div>
-                  <div class="playlist__btn playlist__btn__share">
-                    <svg class="playlist__btn__svg" width="12" height="13" viewbox="0 0 12 13" fill="none"
+                    <div class="podcasts__card__content__btn__count">104</div>
+                  </button>
+                  <button class="btn podcasts__card__content__btn podcasts__card__content__btn__share">
+                    <svg class="podcasts__card__content__btn__svg" width="12" height="13" viewbox="0 0 12 13" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M10 9.18876C9.49333 9.18876 9.04 9.38454 8.69333 9.69127L3.94 6.98293C3.97333 6.83283 4 6.68273 4 6.5261C4 6.36948 3.97333 6.21938 3.94 6.06928L8.64 3.38705C9 3.71335 9.47333 3.91566 10 3.91566C11.1067 3.91566 12 3.04116 12 1.95783C12 0.874498 11.1067 0 10 0C8.89333 0 8 0.874498 8 1.95783C8 2.11446 8.02667 2.26456 8.06 2.41466L3.36 5.09689C3 4.77058 2.52667 4.56827 2 4.56827C0.893333 4.56827 0 5.44277 0 6.5261C0 7.60944 0.893333 8.48394 2 8.48394C2.52667 8.48394 3 8.28163 3.36 7.95532L8.10667 10.6702C8.07333 10.8072 8.05333 10.9508 8.05333 11.0944C8.05333 12.1451 8.92667 13 10 13C11.0733 13 11.9467 12.1451 11.9467 11.0944C11.9467 10.0437 11.0733 9.18876 10 9.18876ZM10 1.30522C10.3667 1.30522 10.6667 1.5989 10.6667 1.95783C10.6667 2.31677 10.3667 2.61044 10 2.61044C9.63333 2.61044 9.33333 2.31677 9.33333 1.95783C9.33333 1.5989 9.63333 1.30522 10 1.30522ZM2 7.17871C1.63333 7.17871 1.33333 6.88504 1.33333 6.5261C1.33333 6.16717 1.63333 5.87349 2 5.87349C2.36667 5.87349 2.66667 6.16717 2.66667 6.5261C2.66667 6.88504 2.36667 7.17871 2 7.17871ZM10 11.76C9.63333 11.76 9.33333 11.4664 9.33333 11.1074C9.33333 10.7485 9.63333 10.4548 10 10.4548C10.3667 10.4548 10.6667 10.7485 10.6667 11.1074C10.6667 11.4664 10.3667 11.76 10 11.76Z"
                         fill="#A1A6B4" />
                     </svg>
-                    <div class="playlist__counts">68</div>
-                  </div>
+                    <div class="podcasts__card__content__btn__count">68</div>
+                  </button>
                 </div>
               </div>
-
             </div>
-
-            <div class="podcasts__playlist__item">
-              <span class="podcast__item__date">11 июня</span>
+            <div class="podcasts__card">
+              <span class="podcasts__card__date">11 июня</span>
               <picture>
                 <source srcset="./img/podcasts/2_320.jpg" media="(max-width: 532px)">
-                <img class="playlist__item__img" src="./img/podcasts/2.jpg" alt="">
+                <img class="podcasts__card__img" src="./img/podcasts/2.jpg" alt="">
               </picture>
 
-              <div class="playlist__item__content">
-                <div class="item__content__top">
-                  <div class="item__content__box">
-                    <p class="playlist__time">5:32</p>
-                    <h3 class="h3_style playlist__title">О музыке</h3>
-                    <span class="playlist__author">Дмитрий Гутенберг</span>
+              <div class="podcasts__card__content">
+                <div class="podcasts__card__content__top">
+                  <div class="podcasts__card__content__info">
+                    <p class="podcasts__card__content__time">5:32</p>
+                    <h3 class="title-h3 podcasts__card__content__title">О музыке</h3>
+                    <span class="podcasts__card__content__author">Дмитрий Гутенберг</span>
                   </div>
-                  <svg class="playlist__btn__play__svg" width="48" height="48" viewbox="0 0 48 48" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
-                    <path
-                      d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
-                      fill="#A1A6B4" />
-                  </svg>
+                  <button class="btn podcasts__card__content__btn__play">
+                    <svg class="podcasts__card__content__btn__play__svg" width="48" height="48" viewbox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                      <path
+                        d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+                        fill="#A1A6B4" />
+                    </svg>
+                  </button>
                 </div>
 
-                <div class="playlist__like__btns">
-                  <div class="playlist__btn playlist__btn__listening">
-                    <svg class="playlist__btn__listening__svg" width="10" height="13" viewbox="0 0 10 13" fill="none"
+                <div class="podcasts__card__content__footer">
+                  <div class="podcasts__card__content__btn podcasts__card__content__btn__listening">
+                    <svg class="podcasts__card__content__btn__svg" width="10" height="13" viewbox="0 0 10 13" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z"
                         fill="#A1A6B4" />
                     </svg>
-                    <div class="playlist__counts">207</div>
+                    <div class="podcasts__card__content__btn__count">207</div>
                   </div>
-                  <div class="playlist__btn playlist__btn__like">
-                    <svg class="playlist__btn__svg" width="13" height="12" viewbox="0 0 13 12" fill="none"
+                  <button class="btn podcasts__card__content__btn podcasts__card__content__btn__like">
+                    <svg class="podcasts__card__content__btn__svg" width="13" height="12" viewbox="0 0 13 12" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M9.425 0C8.294 0 7.2085 0.5297 6.5 1.36676C5.7915 0.5297 4.706 0 3.575 0C1.573 0 0 1.58256 0 3.59673C0 6.06866 2.21 8.08283 5.5575 11.1433L6.5 12L7.4425 11.1368C10.79 8.08283 13 6.06866 13 3.59673C13 1.58256 11.427 0 9.425 0ZM6.565 10.1689L6.5 10.2343L6.435 10.1689C3.341 7.35041 1.3 5.48665 1.3 3.59673C1.3 2.28883 2.275 1.3079 3.575 1.3079C4.576 1.3079 5.551 1.95531 5.8955 2.85123H7.111C7.449 1.95531 8.424 1.3079 9.425 1.3079C10.725 1.3079 11.7 2.28883 11.7 3.59673C11.7 5.48665 9.659 7.35041 6.565 10.1689Z"
                         fill="#A1A6B4" />
                     </svg>
-                    <div class="playlist__counts">34</div>
-                  </div>
-                  <div class="playlist__btn playlist__btn__share">
-                    <svg class="playlist__btn__svg" width="12" height="13" viewbox="0 0 12 13" fill="none"
+                    <div class="podcasts__card__content__btn__count">34</div>
+                  </button>
+                  <button class="btn podcasts__card__content__btn podcasts__card__content__btn__share">
+                    <svg class="podcasts__card__content__btn__svg" width="12" height="13" viewbox="0 0 12 13" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M10 9.18876C9.49333 9.18876 9.04 9.38454 8.69333 9.69127L3.94 6.98293C3.97333 6.83283 4 6.68273 4 6.5261C4 6.36948 3.97333 6.21938 3.94 6.06928L8.64 3.38705C9 3.71335 9.47333 3.91566 10 3.91566C11.1067 3.91566 12 3.04116 12 1.95783C12 0.874498 11.1067 0 10 0C8.89333 0 8 0.874498 8 1.95783C8 2.11446 8.02667 2.26456 8.06 2.41466L3.36 5.09689C3 4.77058 2.52667 4.56827 2 4.56827C0.893333 4.56827 0 5.44277 0 6.5261C0 7.60944 0.893333 8.48394 2 8.48394C2.52667 8.48394 3 8.28163 3.36 7.95532L8.10667 10.6702C8.07333 10.8072 8.05333 10.9508 8.05333 11.0944C8.05333 12.1451 8.92667 13 10 13C11.0733 13 11.9467 12.1451 11.9467 11.0944C11.9467 10.0437 11.0733 9.18876 10 9.18876ZM10 1.30522C10.3667 1.30522 10.6667 1.5989 10.6667 1.95783C10.6667 2.31677 10.3667 2.61044 10 2.61044C9.63333 2.61044 9.33333 2.31677 9.33333 1.95783C9.33333 1.5989 9.63333 1.30522 10 1.30522ZM2 7.17871C1.63333 7.17871 1.33333 6.88504 1.33333 6.5261C1.33333 6.16717 1.63333 5.87349 2 5.87349C2.36667 5.87349 2.66667 6.16717 2.66667 6.5261C2.66667 6.88504 2.36667 7.17871 2 7.17871ZM10 11.76C9.63333 11.76 9.33333 11.4664 9.33333 11.1074C9.33333 10.7485 9.63333 10.4548 10 10.4548C10.3667 10.4548 10.6667 10.7485 10.6667 11.1074C10.6667 11.4664 10.3667 11.76 10 11.76Z"
                         fill="#A1A6B4" />
                     </svg>
-                    <div class="playlist__counts">18</div>
-                  </div>
+                    <div class="podcasts__card__content__btn__count">18</div>
+                  </button>
                 </div>
               </div>
-
             </div>
           </li>
-          <li class="playlist__items__row">
-            <div class="podcasts__playlist__item">
-              <span class="podcast__item__date">8 июня</span>
+          <li class="podcasts__cards__group">
+            <div class="podcasts__card">
+              <span class="podcasts__card__date">8 июня</span>
               <picture>
                 <source srcset="./img/podcasts/3_320.jpg" media="(max-width: 532px)">
-                <img class="playlist__item__img" src="./img/podcasts/3.jpg" alt="">
+                <img class="podcasts__card__img" src="./img/podcasts/3.jpg" alt="">
               </picture>
 
-              <div class="playlist__item__content">
-                <div class="item__content__top">
-                  <div class="item__content__box">
-                    <p class="playlist__time">8:54</p>
-                    <h3 class="h3_style playlist__title">Люди сегодня</h3>
-                    <span class="playlist__author">Анна Васильева</span>
+              <div class="podcasts__card__content">
+                <div class="podcasts__card__content__top">
+                  <div class="podcasts__card__content__info">
+                    <p class="podcasts__card__content__time">8:54</p>
+                    <h3 class="title-h3 podcasts__card__content__title">Люди сегодня</h3>
+                    <span class="podcasts__card__content__author">Анна Васильева</span>
                   </div>
-                  <svg class="playlist__btn__play__svg" width="48" height="48" viewbox="0 0 48 48" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
-                    <path
-                      d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
-                      fill="#A1A6B4" />
-                  </svg>
+                  <button class="btn podcasts__card__content__btn__play">
+                    <svg class="podcasts__card__content__btn__play__svg" width="48" height="48" viewbox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                      <path
+                        d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+                        fill="#A1A6B4" />
+                    </svg>
+                  </button>
                 </div>
 
-                <div class="playlist__like__btns">
-                  <div class="playlist__btn playlist__btn__listening">
-                    <svg class="playlist__btn__listening__svg" width="10" height="13" viewbox="0 0 10 13" fill="none"
+                <div class="podcasts__card__content__footer">
+                  <div class="podcasts__card__content__btn podcasts__card__content__btn__listening">
+                    <svg class="podcasts__card__content__btn__svg" width="10" height="13" viewbox="0 0 10 13" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z"
                         fill="#A1A6B4" />
                     </svg>
-                    <div class="playlist__counts">104</div>
+                    <div class="podcasts__card__content__btn__count">104</div>
                   </div>
-                  <div class="playlist__btn playlist__btn__like">
-                    <svg class="playlist__btn__svg" width="13" height="12" viewbox="0 0 13 12" fill="none"
+                  <button class="btn podcasts__card__content__btn podcasts__card__content__btn__like">
+                    <svg class="podcasts__card__content__btn__svg" width="13" height="12" viewbox="0 0 13 12" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M9.425 0C8.294 0 7.2085 0.5297 6.5 1.36676C5.7915 0.5297 4.706 0 3.575 0C1.573 0 0 1.58256 0 3.59673C0 6.06866 2.21 8.08283 5.5575 11.1433L6.5 12L7.4425 11.1368C10.79 8.08283 13 6.06866 13 3.59673C13 1.58256 11.427 0 9.425 0ZM6.565 10.1689L6.5 10.2343L6.435 10.1689C3.341 7.35041 1.3 5.48665 1.3 3.59673C1.3 2.28883 2.275 1.3079 3.575 1.3079C4.576 1.3079 5.551 1.95531 5.8955 2.85123H7.111C7.449 1.95531 8.424 1.3079 9.425 1.3079C10.725 1.3079 11.7 2.28883 11.7 3.59673C11.7 5.48665 9.659 7.35041 6.565 10.1689Z"
                         fill="#A1A6B4" />
                     </svg>
-                    <div class="playlist__counts">54</div>
-                  </div>
-                  <div class="playlist__btn playlist__btn__share">
-                    <svg class="playlist__btn__svg" width="12" height="13" viewbox="0 0 12 13" fill="none"
+                    <div class="podcasts__card__content__btn__count">54</div>
+                  </button>
+                  <button class="btn podcasts__card__content__btn podcasts__card__content__btn__share">
+                    <svg class="podcasts__card__content__btn__svg" width="12" height="13" viewbox="0 0 12 13" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M10 9.18876C9.49333 9.18876 9.04 9.38454 8.69333 9.69127L3.94 6.98293C3.97333 6.83283 4 6.68273 4 6.5261C4 6.36948 3.97333 6.21938 3.94 6.06928L8.64 3.38705C9 3.71335 9.47333 3.91566 10 3.91566C11.1067 3.91566 12 3.04116 12 1.95783C12 0.874498 11.1067 0 10 0C8.89333 0 8 0.874498 8 1.95783C8 2.11446 8.02667 2.26456 8.06 2.41466L3.36 5.09689C3 4.77058 2.52667 4.56827 2 4.56827C0.893333 4.56827 0 5.44277 0 6.5261C0 7.60944 0.893333 8.48394 2 8.48394C2.52667 8.48394 3 8.28163 3.36 7.95532L8.10667 10.6702C8.07333 10.8072 8.05333 10.9508 8.05333 11.0944C8.05333 12.1451 8.92667 13 10 13C11.0733 13 11.9467 12.1451 11.9467 11.0944C11.9467 10.0437 11.0733 9.18876 10 9.18876ZM10 1.30522C10.3667 1.30522 10.6667 1.5989 10.6667 1.95783C10.6667 2.31677 10.3667 2.61044 10 2.61044C9.63333 2.61044 9.33333 2.31677 9.33333 1.95783C9.33333 1.5989 9.63333 1.30522 10 1.30522ZM2 7.17871C1.63333 7.17871 1.33333 6.88504 1.33333 6.5261C1.33333 6.16717 1.63333 5.87349 2 5.87349C2.36667 5.87349 2.66667 6.16717 2.66667 6.5261C2.66667 6.88504 2.36667 7.17871 2 7.17871ZM10 11.76C9.63333 11.76 9.33333 11.4664 9.33333 11.1074C9.33333 10.7485 9.63333 10.4548 10 10.4548C10.3667 10.4548 10.6667 10.7485 10.6667 11.1074C10.6667 11.4664 10.3667 11.76 10 11.76Z"
                         fill="#A1A6B4" />
                     </svg>
-                    <div class="playlist__counts">42</div>
-                  </div>
+                    <div class="podcasts__card__content__btn__count">42</div>
+                  </button>
                 </div>
               </div>
 
             </div>
-
-            <div class="podcasts__playlist__item">
-              <span class="podcast__item__date">5 июня</span>
+            <div class="podcasts__card">
+              <span class="podcasts__card__date">5 июня</span>
               <picture>
                 <source srcset="./img/podcasts/4_320.jpg" media="(max-width: 532px)">
-                <img class="playlist__item__img" src="./img/podcasts/4.jpg" alt="">
+                <img class="podcasts__card__img" src="./img/podcasts/4.jpg" alt="">
               </picture>
 
-              <div class="playlist__item__content">
-                <div class="item__content__top">
-                  <div class="item__content__box">
-                    <p class="playlist__time">9:04</p>
-                    <h3 class="h3_style playlist__title">Хэллоу, Африка!</h3>
-                    <span class="playlist__author">Пётр Дмитриевский</span>
+              <div class="podcasts__card__content">
+                <div class="podcasts__card__content__top">
+                  <div class="podcasts__card__content__info">
+                    <p class="podcasts__card__content__time">9:04</p>
+                    <h3 class="title-h3 podcasts__card__content__title">Хэллоу, Африка!</h3>
+                    <span class="podcasts__card__content__author">Пётр Дмитриевский</span>
                   </div>
-                  <svg class="playlist__btn__play__svg" width="48" height="48" viewbox="0 0 48 48" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
-                    <path
-                      d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
-                      fill="#A1A6B4" />
-                  </svg>
+                  <button class="btn podcasts__card__content__btn__play">
+                    <svg class="podcasts__card__content__btn__play__svg" width="48" height="48" viewbox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                      <path
+                        d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+                        fill="#A1A6B4" />
+                    </svg>
+                  </button>
                 </div>
 
-                <div class="playlist__like__btns">
-                  <div class="playlist__btn playlist__btn__listening">
-                    <svg class="playlist__btn__listening__svg" width="10" height="13" viewbox="0 0 10 13" fill="none"
+                <div class="podcasts__card__content__footer">
+                  <div class="podcasts__card__content__btn podcasts__card__content__btn__listening">
+                    <svg class="podcasts__card__content__btn__svg" width="10" height="13" viewbox="0 0 10 13" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z"
                         fill="#A1A6B4" />
                     </svg>
-                    <div class="playlist__counts">87</div>
+                    <div class="podcasts__card__content__btn__count">87</div>
                   </div>
-                  <div class="playlist__btn playlist__btn__like">
-                    <svg class="playlist__btn__svg" width="13" height="12" viewbox="0 0 13 12" fill="none"
+                  <button class="btn podcasts__card__content__btn podcasts__card__content__btn__like">
+                    <svg class="podcasts__card__content__btn__svg" width="13" height="12" viewbox="0 0 13 12" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M9.425 0C8.294 0 7.2085 0.5297 6.5 1.36676C5.7915 0.5297 4.706 0 3.575 0C1.573 0 0 1.58256 0 3.59673C0 6.06866 2.21 8.08283 5.5575 11.1433L6.5 12L7.4425 11.1368C10.79 8.08283 13 6.06866 13 3.59673C13 1.58256 11.427 0 9.425 0ZM6.565 10.1689L6.5 10.2343L6.435 10.1689C3.341 7.35041 1.3 5.48665 1.3 3.59673C1.3 2.28883 2.275 1.3079 3.575 1.3079C4.576 1.3079 5.551 1.95531 5.8955 2.85123H7.111C7.449 1.95531 8.424 1.3079 9.425 1.3079C10.725 1.3079 11.7 2.28883 11.7 3.59673C11.7 5.48665 9.659 7.35041 6.565 10.1689Z"
                         fill="#A1A6B4" />
                     </svg>
-                    <div class="playlist__counts">44</div>
-                  </div>
-                  <div class="playlist__btn playlist__btn__share">
-                    <svg class="playlist__btn__svg" width="12" height="13" viewbox="0 0 12 13" fill="none"
+                    <div class="podcasts__card__content__btn__count">44</div>
+                  </button>
+                  <button class="btn podcasts__card__content__btn podcasts__card__content__btn__share">
+                    <svg class="podcasts__card__content__btn__svg" width="12" height="13" viewbox="0 0 12 13" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M10 9.18876C9.49333 9.18876 9.04 9.38454 8.69333 9.69127L3.94 6.98293C3.97333 6.83283 4 6.68273 4 6.5261C4 6.36948 3.97333 6.21938 3.94 6.06928L8.64 3.38705C9 3.71335 9.47333 3.91566 10 3.91566C11.1067 3.91566 12 3.04116 12 1.95783C12 0.874498 11.1067 0 10 0C8.89333 0 8 0.874498 8 1.95783C8 2.11446 8.02667 2.26456 8.06 2.41466L3.36 5.09689C3 4.77058 2.52667 4.56827 2 4.56827C0.893333 4.56827 0 5.44277 0 6.5261C0 7.60944 0.893333 8.48394 2 8.48394C2.52667 8.48394 3 8.28163 3.36 7.95532L8.10667 10.6702C8.07333 10.8072 8.05333 10.9508 8.05333 11.0944C8.05333 12.1451 8.92667 13 10 13C11.0733 13 11.9467 12.1451 11.9467 11.0944C11.9467 10.0437 11.0733 9.18876 10 9.18876ZM10 1.30522C10.3667 1.30522 10.6667 1.5989 10.6667 1.95783C10.6667 2.31677 10.3667 2.61044 10 2.61044C9.63333 2.61044 9.33333 2.31677 9.33333 1.95783C9.33333 1.5989 9.63333 1.30522 10 1.30522ZM2 7.17871C1.63333 7.17871 1.33333 6.88504 1.33333 6.5261C1.33333 6.16717 1.63333 5.87349 2 5.87349C2.36667 5.87349 2.66667 6.16717 2.66667 6.5261C2.66667 6.88504 2.36667 7.17871 2 7.17871ZM10 11.76C9.63333 11.76 9.33333 11.4664 9.33333 11.1074C9.33333 10.7485 9.63333 10.4548 10 10.4548C10.3667 10.4548 10.6667 10.7485 10.6667 11.1074C10.6667 11.4664 10.3667 11.76 10 11.76Z"
                         fill="#A1A6B4" />
                     </svg>
-                    <div class="playlist__counts">5</div>
-                  </div>
+                    <div class="podcasts__card__content__btn__count">5</div>
+                  </button>
                 </div>
               </div>
 
             </div>
           </li>
-          <li class="playlist__items__row playlist_hide">
-            <div class="podcasts__playlist__item">
-              <span class="podcast__item__date">2 июня</span>
+          <li class="podcasts__cards__group podcasts__cards__group-hide">
+            <div class="podcasts__card">
+              <span class="podcasts__card__date">2 июня</span>
               <picture>
                 <source srcset="./img/podcasts/5_320.jpg" media="(max-width: 532px)">
-                <img class="playlist__item__img" src="./img/podcasts/5.jpg" alt="">
+                <img class="podcasts__card__img" src="./img/podcasts/5.jpg" alt="">
               </picture>
 
-              <div class="playlist__item__content">
-                <div class="item__content__top">
-                  <div class="item__content__box">
-                    <p class="playlist__time">7:03</p>
-                    <h3 class="h3_style playlist__title">Обо всём</h3>
-                    <span class="playlist__author">Пётр Дмитриевский</span>
+              <div class="podcasts__card__content">
+                <div class="podcasts__card__content__top">
+                  <div class="podcasts__card__content__info">
+                    <p class="podcasts__card__content__time">7:03</p>
+                    <h3 class="title-h3 podcasts__card__content__title">Обо всём</h3>
+                    <span class="podcasts__card__content__author">Пётр Дмитриевский</span>
                   </div>
-                  <svg class="playlist__btn__play__svg" width="48" height="48" viewbox="0 0 48 48" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
-                    <path
-                      d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
-                      fill="#A1A6B4" />
-                  </svg>
+                  <button class="btn podcasts__card__content__btn__play">
+                    <svg class="podcasts__card__content__btn__play__svg" width="48" height="48" viewbox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                      <path
+                        d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+                        fill="#A1A6B4" />
+                    </svg>
+                  </button>
                 </div>
 
-                <div class="playlist__like__btns">
-                  <div class="playlist__btn playlist__btn__listening">
-                    <svg class="playlist__btn__listening__svg" width="10" height="13" viewbox="0 0 10 13" fill="none"
+                <div class="podcasts__card__content__footer">
+                  <div class="podcasts__card__content__btn podcasts__card__content__btn__listening">
+                    <svg class="podcasts__card__content__btn__svg" width="10" height="13" viewbox="0 0 10 13" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z"
                         fill="#A1A6B4" />
                     </svg>
-                    <div class="playlist__counts">64</div>
+                    <div class="podcasts__card__content__btn__count">64</div>
                   </div>
-                  <div class="playlist__btn playlist__btn__like">
-                    <svg class="playlist__btn__svg" width="13" height="12" viewbox="0 0 13 12" fill="none"
+                  <button class="btn podcasts__card__content__btn podcasts__card__content__btn__like">
+                    <svg class="podcasts__card__content__btn__svg" width="13" height="12" viewbox="0 0 13 12" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M9.425 0C8.294 0 7.2085 0.5297 6.5 1.36676C5.7915 0.5297 4.706 0 3.575 0C1.573 0 0 1.58256 0 3.59673C0 6.06866 2.21 8.08283 5.5575 11.1433L6.5 12L7.4425 11.1368C10.79 8.08283 13 6.06866 13 3.59673C13 1.58256 11.427 0 9.425 0ZM6.565 10.1689L6.5 10.2343L6.435 10.1689C3.341 7.35041 1.3 5.48665 1.3 3.59673C1.3 2.28883 2.275 1.3079 3.575 1.3079C4.576 1.3079 5.551 1.95531 5.8955 2.85123H7.111C7.449 1.95531 8.424 1.3079 9.425 1.3079C10.725 1.3079 11.7 2.28883 11.7 3.59673C11.7 5.48665 9.659 7.35041 6.565 10.1689Z"
                         fill="#A1A6B4" />
                     </svg>
-                    <div class="playlist__counts">30</div>
-                  </div>
-                  <div class="playlist__btn playlist__btn__share">
-                    <svg class="playlist__btn__svg" width="12" height="13" viewbox="0 0 12 13" fill="none"
+                    <div class="podcasts__card__content__btn__count">30</div>
+                  </button>
+                  <button class="btn podcasts__card__content__btn podcasts__card__content__btn__share">
+                    <svg class="podcasts__card__content__btn__svg" width="12" height="13" viewbox="0 0 12 13" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M10 9.18876C9.49333 9.18876 9.04 9.38454 8.69333 9.69127L3.94 6.98293C3.97333 6.83283 4 6.68273 4 6.5261C4 6.36948 3.97333 6.21938 3.94 6.06928L8.64 3.38705C9 3.71335 9.47333 3.91566 10 3.91566C11.1067 3.91566 12 3.04116 12 1.95783C12 0.874498 11.1067 0 10 0C8.89333 0 8 0.874498 8 1.95783C8 2.11446 8.02667 2.26456 8.06 2.41466L3.36 5.09689C3 4.77058 2.52667 4.56827 2 4.56827C0.893333 4.56827 0 5.44277 0 6.5261C0 7.60944 0.893333 8.48394 2 8.48394C2.52667 8.48394 3 8.28163 3.36 7.95532L8.10667 10.6702C8.07333 10.8072 8.05333 10.9508 8.05333 11.0944C8.05333 12.1451 8.92667 13 10 13C11.0733 13 11.9467 12.1451 11.9467 11.0944C11.9467 10.0437 11.0733 9.18876 10 9.18876ZM10 1.30522C10.3667 1.30522 10.6667 1.5989 10.6667 1.95783C10.6667 2.31677 10.3667 2.61044 10 2.61044C9.63333 2.61044 9.33333 2.31677 9.33333 1.95783C9.33333 1.5989 9.63333 1.30522 10 1.30522ZM2 7.17871C1.63333 7.17871 1.33333 6.88504 1.33333 6.5261C1.33333 6.16717 1.63333 5.87349 2 5.87349C2.36667 5.87349 2.66667 6.16717 2.66667 6.5261C2.66667 6.88504 2.36667 7.17871 2 7.17871ZM10 11.76C9.63333 11.76 9.33333 11.4664 9.33333 11.1074C9.33333 10.7485 9.63333 10.4548 10 10.4548C10.3667 10.4548 10.6667 10.7485 10.6667 11.1074C10.6667 11.4664 10.3667 11.76 10 11.76Z"
                         fill="#A1A6B4" />
                     </svg>
-                    <div class="playlist__counts">8</div>
-                  </div>
+                    <div class="podcasts__card__content__btn__count">8</div>
+                  </button>
                 </div>
               </div>
 
             </div>
-
-            <div class="podcasts__playlist__item">
-              <span class="podcast__item__date">28 мая</span>
+            <div class="podcasts__card">
+              <span class="podcasts__card__date">28 мая</span>
               <picture>
                 <source srcset="./img/podcasts/6_320.jpg" media="(max-width: 532px)">
-                <img class="playlist__item__img" src="./img/podcasts/6.jpg" alt="">
+                <img class="podcasts__card__img" src="./img/podcasts/6.jpg" alt="">
               </picture>
 
 
-              <div class="playlist__item__content">
-                <div class="item__content__top">
-                  <div class="item__content__box">
-                    <p class="playlist__time">9:15</p>
-                    <h3 class="h3_style playlist__title">Физика цвета</h3>
-                    <span class="playlist__author">Татьяна Флеганова</span>
+              <div class="podcasts__card__content">
+                <div class="podcasts__card__content__top">
+                  <div class="podcasts__card__content__info">
+                    <p class="podcasts__card__content__time">9:15</p>
+                    <h3 class="title-h3 podcasts__card__content__title">Физика цвета</h3>
+                    <span class="podcasts__card__content__author">Татьяна Флеганова</span>
                   </div>
-                  <svg class="playlist__btn__play__svg" width="48" height="48" viewbox="0 0 48 48" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
-                    <path
-                      d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
-                      fill="#A1A6B4" />
-                  </svg>
+                  <button class="btn podcasts__card__content__btn__play">
+                    <svg class="podcasts__card__content__btn__play__svg" width="48" height="48" viewbox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                      <path
+                        d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+                        fill="#A1A6B4" />
+                    </svg>
+                  </button>
                 </div>
 
-                <div class="playlist__like__btns">
-                  <div class="playlist__btn playlist__btn__listening">
-                    <svg class="playlist__btn__listening__svg" width="10" height="13" viewbox="0 0 10 13" fill="none"
+                <div class="podcasts__card__content__footer">
+                  <div class="podcasts__card__content__btn podcasts__card__content__btn__listening">
+                    <svg class="podcasts__card__content__btn__svg" width="10" height="13" viewbox="0 0 10 13" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z"
                         fill="#A1A6B4" />
                     </svg>
-                    <div class="playlist__counts">58</div>
+                    <div class="podcasts__card__content__btn__count">58</div>
                   </div>
-                  <div class="playlist__btn playlist__btn__like">
-                    <svg class="playlist__btn__svg" width="13" height="12" viewbox="0 0 13 12" fill="none"
+                  <button class="btn podcasts__card__content__btn podcasts__card__content__btn__like">
+                    <svg class="podcasts__card__content__btn__svg" width="13" height="12" viewbox="0 0 13 12" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M9.425 0C8.294 0 7.2085 0.5297 6.5 1.36676C5.7915 0.5297 4.706 0 3.575 0C1.573 0 0 1.58256 0 3.59673C0 6.06866 2.21 8.08283 5.5575 11.1433L6.5 12L7.4425 11.1368C10.79 8.08283 13 6.06866 13 3.59673C13 1.58256 11.427 0 9.425 0ZM6.565 10.1689L6.5 10.2343L6.435 10.1689C3.341 7.35041 1.3 5.48665 1.3 3.59673C1.3 2.28883 2.275 1.3079 3.575 1.3079C4.576 1.3079 5.551 1.95531 5.8955 2.85123H7.111C7.449 1.95531 8.424 1.3079 9.425 1.3079C10.725 1.3079 11.7 2.28883 11.7 3.59673C11.7 5.48665 9.659 7.35041 6.565 10.1689Z"
                         fill="#A1A6B4" />
                     </svg>
-                    <div class="playlist__counts">29</div>
-                  </div>
-                  <div class="playlist__btn playlist__btn__share">
-                    <svg class="playlist__btn__svg" width="12" height="13" viewbox="0 0 12 13" fill="none"
+                    <div class="podcasts__card__content__btn__count">29</div>
+                  </button>
+                  <button class="btn podcasts__card__content__btn podcasts__card__content__btn__share">
+                    <svg class="podcasts__card__content__btn__svg" width="12" height="13" viewbox="0 0 12 13" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M10 9.18876C9.49333 9.18876 9.04 9.38454 8.69333 9.69127L3.94 6.98293C3.97333 6.83283 4 6.68273 4 6.5261C4 6.36948 3.97333 6.21938 3.94 6.06928L8.64 3.38705C9 3.71335 9.47333 3.91566 10 3.91566C11.1067 3.91566 12 3.04116 12 1.95783C12 0.874498 11.1067 0 10 0C8.89333 0 8 0.874498 8 1.95783C8 2.11446 8.02667 2.26456 8.06 2.41466L3.36 5.09689C3 4.77058 2.52667 4.56827 2 4.56827C0.893333 4.56827 0 5.44277 0 6.5261C0 7.60944 0.893333 8.48394 2 8.48394C2.52667 8.48394 3 8.28163 3.36 7.95532L8.10667 10.6702C8.07333 10.8072 8.05333 10.9508 8.05333 11.0944C8.05333 12.1451 8.92667 13 10 13C11.0733 13 11.9467 12.1451 11.9467 11.0944C11.9467 10.0437 11.0733 9.18876 10 9.18876ZM10 1.30522C10.3667 1.30522 10.6667 1.5989 10.6667 1.95783C10.6667 2.31677 10.3667 2.61044 10 2.61044C9.63333 2.61044 9.33333 2.31677 9.33333 1.95783C9.33333 1.5989 9.63333 1.30522 10 1.30522ZM2 7.17871C1.63333 7.17871 1.33333 6.88504 1.33333 6.5261C1.33333 6.16717 1.63333 5.87349 2 5.87349C2.36667 5.87349 2.66667 6.16717 2.66667 6.5261C2.66667 6.88504 2.36667 7.17871 2 7.17871ZM10 11.76C9.63333 11.76 9.33333 11.4664 9.33333 11.1074C9.33333 10.7485 9.63333 10.4548 10 10.4548C10.3667 10.4548 10.6667 10.7485 10.6667 11.1074C10.6667 11.4664 10.3667 11.76 10 11.76Z"
                         fill="#A1A6B4" />
                     </svg>
-                    <div class="playlist__counts">14</div>
-                  </div>
+                    <div class="podcasts__card__content__btn__count">14</div>
+                  </button>
                 </div>
               </div>
 
             </div>
           </li>
-          <li class="playlist__items__row playlist_hide">
-            <div class="podcasts__playlist__item">
-              <span class="podcast__item__date">22 мая</span>
+          <li class="podcasts__cards__group podcasts__cards__group-hide">
+            <div class="podcasts__card">
+              <span class="podcasts__card__date">22 мая</span>
               <picture>
                 <source srcset="./img/podcasts/7_320.jpg" media="(max-width: 532px)">
-                <img class="playlist__item__img" src="./img/podcasts/7.jpg" alt="">
+                <img class="podcasts__card__img" src="./img/podcasts/7.jpg" alt="">
               </picture>
 
-              <div class="playlist__item__content">
-                <div class="item__content__top">
-                  <div class="item__content__box">
-                    <p class="playlist__time">16:04</p>
-                    <h3 class="h3_style playlist__title">Источник звука</h3>
-                    <span class="playlist__author">Пётр Дмитриевский</span>
+              <div class="podcasts__card__content">
+                <div class="podcasts__card__content__top">
+                  <div class="podcasts__card__content__info">
+                    <p class="podcasts__card__content__time">16:04</p>
+                    <h3 class="title-h3 podcasts__card__content__title">Источник звука</h3>
+                    <span class="podcasts__card__content__author">Пётр Дмитриевский</span>
                   </div>
-                  <svg class="playlist__btn__play__svg" width="48" height="48" viewbox="0 0 48 48" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
-                    <path
-                      d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
-                      fill="#A1A6B4" />
-                  </svg>
+                  <button class="btn podcasts__card__content__btn__play">
+                    <svg class="podcasts__card__content__btn__play__svg" width="48" height="48" viewbox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                      <path
+                        d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+                        fill="#A1A6B4" />
+                    </svg>
+                  </button>
                 </div>
 
-                <div class="playlist__like__btns">
-                  <div class="playlist__btn playlist__btn__listening">
-                    <svg class="playlist__btn__listening__svg" width="10" height="13" viewbox="0 0 10 13" fill="none"
+                <div class="podcasts__card__content__footer">
+                  <div class="podcasts__card__content__btn podcasts__card__content__btn__listening">
+                    <svg class="podcasts__card__content__btn__svg" width="10" height="13" viewbox="0 0 10 13" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z"
                         fill="#A1A6B4" />
                     </svg>
-                    <div class="playlist__counts">55</div>
+                    <div class="podcasts__card__content__btn__count">55</div>
                   </div>
-                  <div class="playlist__btn playlist__btn__like">
-                    <svg class="playlist__btn__svg" width="13" height="12" viewbox="0 0 13 12" fill="none"
+                  <button class="btn podcasts__card__content__btn podcasts__card__content__btn__like">
+                    <svg class="podcasts__card__content__btn__svg" width="13" height="12" viewbox="0 0 13 12" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M9.425 0C8.294 0 7.2085 0.5297 6.5 1.36676C5.7915 0.5297 4.706 0 3.575 0C1.573 0 0 1.58256 0 3.59673C0 6.06866 2.21 8.08283 5.5575 11.1433L6.5 12L7.4425 11.1368C10.79 8.08283 13 6.06866 13 3.59673C13 1.58256 11.427 0 9.425 0ZM6.565 10.1689L6.5 10.2343L6.435 10.1689C3.341 7.35041 1.3 5.48665 1.3 3.59673C1.3 2.28883 2.275 1.3079 3.575 1.3079C4.576 1.3079 5.551 1.95531 5.8955 2.85123H7.111C7.449 1.95531 8.424 1.3079 9.425 1.3079C10.725 1.3079 11.7 2.28883 11.7 3.59673C11.7 5.48665 9.659 7.35041 6.565 10.1689Z"
                         fill="#A1A6B4" />
                     </svg>
-                    <div class="playlist__counts">20</div>
-                  </div>
-                  <div class="playlist__btn playlist__btn__share">
-                    <svg class="playlist__btn__svg" width="12" height="13" viewbox="0 0 12 13" fill="none"
+                    <div class="podcasts__card__content__btn__count">20</div>
+                  </button>
+                  <button class="btn podcasts__card__content__btn podcasts__card__content__btn__share">
+                    <svg class="podcasts__card__content__btn__svg" width="12" height="13" viewbox="0 0 12 13" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M10 9.18876C9.49333 9.18876 9.04 9.38454 8.69333 9.69127L3.94 6.98293C3.97333 6.83283 4 6.68273 4 6.5261C4 6.36948 3.97333 6.21938 3.94 6.06928L8.64 3.38705C9 3.71335 9.47333 3.91566 10 3.91566C11.1067 3.91566 12 3.04116 12 1.95783C12 0.874498 11.1067 0 10 0C8.89333 0 8 0.874498 8 1.95783C8 2.11446 8.02667 2.26456 8.06 2.41466L3.36 5.09689C3 4.77058 2.52667 4.56827 2 4.56827C0.893333 4.56827 0 5.44277 0 6.5261C0 7.60944 0.893333 8.48394 2 8.48394C2.52667 8.48394 3 8.28163 3.36 7.95532L8.10667 10.6702C8.07333 10.8072 8.05333 10.9508 8.05333 11.0944C8.05333 12.1451 8.92667 13 10 13C11.0733 13 11.9467 12.1451 11.9467 11.0944C11.9467 10.0437 11.0733 9.18876 10 9.18876ZM10 1.30522C10.3667 1.30522 10.6667 1.5989 10.6667 1.95783C10.6667 2.31677 10.3667 2.61044 10 2.61044C9.63333 2.61044 9.33333 2.31677 9.33333 1.95783C9.33333 1.5989 9.63333 1.30522 10 1.30522ZM2 7.17871C1.63333 7.17871 1.33333 6.88504 1.33333 6.5261C1.33333 6.16717 1.63333 5.87349 2 5.87349C2.36667 5.87349 2.66667 6.16717 2.66667 6.5261C2.66667 6.88504 2.36667 7.17871 2 7.17871ZM10 11.76C9.63333 11.76 9.33333 11.4664 9.33333 11.1074C9.33333 10.7485 9.63333 10.4548 10 10.4548C10.3667 10.4548 10.6667 10.7485 10.6667 11.1074C10.6667 11.4664 10.3667 11.76 10 11.76Z"
                         fill="#A1A6B4" />
                     </svg>
-                    <div class="playlist__counts">12</div>
-                  </div>
+                    <div class="podcasts__card__content__btn__count">12</div>
+                  </button>
                 </div>
               </div>
 
             </div>
-
-            <div class="podcasts__playlist__item">
-              <span class="podcast__item__date">18 мая</span>
+            <div class="podcasts__card">
+              <span class="podcasts__card__date">18 мая</span>
               <picture>
                 <source srcset="./img/podcasts/8_320.jpg" media="(max-width: 532px)">
-                <img class="playlist__item__img" src="./img/podcasts/8.jpg" alt="">
+                <img class="podcasts__card__img" src="./img/podcasts/8.jpg" alt="">
               </picture>
 
-              <div class="playlist__item__content">
-                <div class="item__content__top">
-                  <div class="item__content__box">
-                    <p class="playlist__time">5:55</p>
-                    <h3 class="h3_style playlist__title">Правила этикета</h3>
-                    <span class="playlist__author">Татьяна Флеганова</span>
+              <div class="podcasts__card__content">
+                <div class="podcasts__card__content__top">
+                  <div class="podcasts__card__content__info">
+                    <p class="podcasts__card__content__time">5:55</p>
+                    <h3 class="title-h3 podcasts__card__content__title">Правила этикета</h3>
+                    <span class="podcasts__card__content__author">Татьяна Флеганова</span>
                   </div>
-                  <svg class="playlist__btn__play__svg" width="48" height="48" viewbox="0 0 48 48" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
-                    <path
-                      d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
-                      fill="#A1A6B4" />
-                  </svg>
+                  <button class="btn podcasts__card__content__btn__play">
+                    <svg class="podcasts__card__content__btn__play__svg" width="48" height="48" viewbox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                      <path
+                        d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+                        fill="#A1A6B4" />
+                    </svg>
+                  </button>
                 </div>
 
-                <div class="playlist__like__btns">
-                  <div class="playlist__btn playlist__btn__listening">
-                    <svg class="playlist__btn__listening__svg" width="10" height="13" viewbox="0 0 10 13" fill="none"
+                <div class="podcasts__card__content__footer">
+                  <div class="podcasts__card__content__btn podcasts__card__content__btn__listening">
+                    <svg class="podcasts__card__content__btn__svg" width="10" height="13" viewbox="0 0 10 13" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z"
                         fill="#A1A6B4" />
                     </svg>
-                    <div class="playlist__counts">24</div>
+                    <div class="podcasts__card__content__btn__count">24</div>
                   </div>
-                  <div class="playlist__btn playlist__btn__like">
-                    <svg class="playlist__btn__svg" width="13" height="12" viewbox="0 0 13 12" fill="none"
+                  <button class="btn podcasts__card__content__btn podcasts__card__content__btn__like">
+                    <svg class="podcasts__card__content__btn__svg" width="13" height="12" viewbox="0 0 13 12" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M9.425 0C8.294 0 7.2085 0.5297 6.5 1.36676C5.7915 0.5297 4.706 0 3.575 0C1.573 0 0 1.58256 0 3.59673C0 6.06866 2.21 8.08283 5.5575 11.1433L6.5 12L7.4425 11.1368C10.79 8.08283 13 6.06866 13 3.59673C13 1.58256 11.427 0 9.425 0ZM6.565 10.1689L6.5 10.2343L6.435 10.1689C3.341 7.35041 1.3 5.48665 1.3 3.59673C1.3 2.28883 2.275 1.3079 3.575 1.3079C4.576 1.3079 5.551 1.95531 5.8955 2.85123H7.111C7.449 1.95531 8.424 1.3079 9.425 1.3079C10.725 1.3079 11.7 2.28883 11.7 3.59673C11.7 5.48665 9.659 7.35041 6.565 10.1689Z"
                         fill="#A1A6B4" />
                     </svg>
-                    <div class="playlist__counts">54</div>
-                  </div>
-                  <div class="playlist__btn playlist__btn__share">
-                    <svg class="playlist__btn__svg" width="12" height="13" viewbox="0 0 12 13" fill="none"
+                    <div class="podcasts__card__content__btn__count">54</div>
+                  </button>
+                  <button class="btn podcasts__card__content__btn podcasts__card__content__btn__share">
+                    <svg class="podcasts__card__content__btn__svg" width="12" height="13" viewbox="0 0 12 13" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M10 9.18876C9.49333 9.18876 9.04 9.38454 8.69333 9.69127L3.94 6.98293C3.97333 6.83283 4 6.68273 4 6.5261C4 6.36948 3.97333 6.21938 3.94 6.06928L8.64 3.38705C9 3.71335 9.47333 3.91566 10 3.91566C11.1067 3.91566 12 3.04116 12 1.95783C12 0.874498 11.1067 0 10 0C8.89333 0 8 0.874498 8 1.95783C8 2.11446 8.02667 2.26456 8.06 2.41466L3.36 5.09689C3 4.77058 2.52667 4.56827 2 4.56827C0.893333 4.56827 0 5.44277 0 6.5261C0 7.60944 0.893333 8.48394 2 8.48394C2.52667 8.48394 3 8.28163 3.36 7.95532L8.10667 10.6702C8.07333 10.8072 8.05333 10.9508 8.05333 11.0944C8.05333 12.1451 8.92667 13 10 13C11.0733 13 11.9467 12.1451 11.9467 11.0944C11.9467 10.0437 11.0733 9.18876 10 9.18876ZM10 1.30522C10.3667 1.30522 10.6667 1.5989 10.6667 1.95783C10.6667 2.31677 10.3667 2.61044 10 2.61044C9.63333 2.61044 9.33333 2.31677 9.33333 1.95783C9.33333 1.5989 9.63333 1.30522 10 1.30522ZM2 7.17871C1.63333 7.17871 1.33333 6.88504 1.33333 6.5261C1.33333 6.16717 1.63333 5.87349 2 5.87349C2.36667 5.87349 2.66667 6.16717 2.66667 6.5261C2.66667 6.88504 2.36667 7.17871 2 7.17871ZM10 11.76C9.63333 11.76 9.33333 11.4664 9.33333 11.1074C9.33333 10.7485 9.63333 10.4548 10 10.4548C10.3667 10.4548 10.6667 10.7485 10.6667 11.1074C10.6667 11.4664 10.3667 11.76 10 11.76Z"
                         fill="#A1A6B4" />
                     </svg>
-                    <div class="playlist__counts">42</div>
-                  </div>
+                    <div class="podcasts__card__content__btn__count">42</div>
+                  </button>
                 </div>
               </div>
 
             </div>
           </li>
-
         </ul>
         <div class="padcasts__btn__wrapper">
           <button class="podcasts__btn__more" id="podcsts-btn">Ещё подкасты</button>
         </div>
-
       </div>
     </div>
-  </section> -->
+  </section>
 
   <!-- !TRANSMISSIONS -->
-  <!-- <section class="transmissions" id="transmissions">
+  <section class="transmissions" id="transmissions">
     <div class="container">
       <div class="transmissions__box">
 
         <div class="transmissions__left">
           <div class="transmissions__left__intro">
-            <h2 class="transmissions__title h2_style">Передачи</h2>
+            <h2 class="transmissions__title title-h2">Передачи</h2>
             <p class="transmissions__author">Автор:</p>
             <select name="select" id="select">
               <option class="text select-item" value="Дмитрий Гутенберг">Дмитрий Гутенберг</option>
@@ -768,7 +771,7 @@
               </picture>
               <div class="transmissions__card__content">
                 <div class="transmissions__card__text__content">
-                  <h3 class="h3_style transmissions__card__title">О людях и книгах</h3>
+                  <h3 class="title-h3 transmissions__card__title">О людях и книгах</h3>
                   <p class="transmissions__card__date">Анонсируется отдельно</p>
                 </div>
                 <div class="transmissions__card__btn">
@@ -790,7 +793,7 @@
               </picture>
               <div class="transmissions__card__content">
                 <div class="transmissions__card__text__content">
-                  <h3 class="h3_style transmissions__card__title">Графомания td.</h3>
+                  <h3 class="title-h3 transmissions__card__title">Графомания td.</h3>
                   <p class="transmissions__card__date">По понедельникам в 10:00 </p>
                 </div>
                 <div class="transmissions__card__btn">
@@ -812,7 +815,7 @@
               </picture>
               <div class="transmissions__card__content">
                 <div class="transmissions__card__text__content">
-                  <h3 class="h3_style transmissions__card__title">Не Рим, не Троя</h3>
+                  <h3 class="title-h3 transmissions__card__title">Не Рим, не Троя</h3>
                   <p class="transmissions__card__date">По вторникам в 12:00</p>
                 </div>
                 <div class="transmissions__card__btn">
@@ -834,7 +837,7 @@
               </picture>
               <div class="transmissions__card__content">
                 <div class="transmissions__card__text__content">
-                  <h3 class="h3_style transmissions__card__title">Эрудит</h3>
+                  <h3 class="title-h3 transmissions__card__title">Эрудит</h3>
                   <p class="transmissions__card__date">По пятницам в 17:00</p>
                 </div>
                 <div class="transmissions__card__btn">
@@ -856,7 +859,7 @@
               </picture>
               <div class="transmissions__card__content">
                 <div class="transmissions__card__text__content">
-                  <h3 class="h3_style transmissions__card__title">Тонкости эпох</h3>
+                  <h3 class="title-h3 transmissions__card__title">Тонкости эпох</h3>
                   <p class="transmissions__card__date">По субботам в 10:00</p>
                 </div>
                 <div class="transmissions__card__btn">
@@ -878,7 +881,7 @@
               </picture>
               <div class="transmissions__card__content">
                 <div class="transmissions__card__text__content">
-                  <h3 class="h3_style transmissions__card__title">Живые мысли</h3>
+                  <h3 class="title-h3 transmissions__card__title">Живые мысли</h3>
                   <p class="transmissions__card__date">По воскресеньям в 15:30</p>
                 </div>
                 <div class="transmissions__card__btn">
@@ -904,7 +907,7 @@
               </picture>
               <div class="transmissions__card__content">
                 <div class="transmissions__card__text__content">
-                  <h3 class="h3_style transmissions__card__title">Постфактум</h3>
+                  <h3 class="title-h3 transmissions__card__title">Постфактум</h3>
                   <p class="transmissions__card__date">По вторникам в 12:00</p>
                 </div>
                 <div class="transmissions__card__btn">
@@ -926,7 +929,7 @@
               </picture>
               <div class="transmissions__card__content">
                 <div class="transmissions__card__text__content">
-                  <h3 class="h3_style transmissions__card__title">Связи 2.0</h3>
+                  <h3 class="title-h3 transmissions__card__title">Связи 2.0</h3>
                   <p class="transmissions__card__date">По вторникам в 18:00</p>
                 </div>
                 <div class="transmissions__card__btn">
@@ -948,7 +951,7 @@
               </picture>
               <div class="transmissions__card__content">
                 <div class="transmissions__card__text__content">
-                  <h3 class="h3_style transmissions__card__title">Контекст</h3>
+                  <h3 class="title-h3 transmissions__card__title">Контекст</h3>
                   <p class="transmissions__card__date">По средам в 12:00</p>
                 </div>
                 <div class="transmissions__card__btn">
@@ -970,7 +973,7 @@
               </picture>
               <div class="transmissions__card__content">
                 <div class="transmissions__card__text__content">
-                  <h3 class="h3_style transmissions__card__title">Научпоп</h3>
+                  <h3 class="title-h3 transmissions__card__title">Научпоп</h3>
                   <p class="transmissions__card__date">По пятницам в 10:00</p>
                 </div>
                 <div class="transmissions__card__btn">
@@ -992,7 +995,7 @@
               </picture>
               <div class="transmissions__card__content">
                 <div class="transmissions__card__text__content">
-                  <h3 class="h3_style transmissions__card__title">Физика</h3>
+                  <h3 class="title-h3 transmissions__card__title">Физика</h3>
                   <p class="transmissions__card__date">По субботам в 14:00</p>
                 </div>
                 <div class="transmissions__card__btn">
@@ -1014,7 +1017,7 @@
               </picture>
               <div class="transmissions__card__content">
                 <div class="transmissions__card__text__content">
-                  <h3 class="h3_style transmissions__card__title">Энергия</h3>
+                  <h3 class="title-h3 transmissions__card__title">Энергия</h3>
                   <p class="transmissions__card__date">Анонсируется отдельно</p>
                 </div>
                 <div class="transmissions__card__btn">
@@ -1040,7 +1043,7 @@
               </picture>
               <div class="transmissions__card__content">
                 <div class="transmissions__card__text__content">
-                  <h3 class="h3_style transmissions__card__title">Своя культура</h3>
+                  <h3 class="title-h3 transmissions__card__title">Своя культура</h3>
                   <p class="transmissions__card__date">По вторникам в 11:00</p>
                 </div>
                 <div class="transmissions__card__btn">
@@ -1062,7 +1065,7 @@
               </picture>
               <div class="transmissions__card__content">
                 <div class="transmissions__card__text__content">
-                  <h3 class="h3_style transmissions__card__title">Утро XX века</h3>
+                  <h3 class="title-h3 transmissions__card__title">Утро XX века</h3>
                   <p class="transmissions__card__date">Анонсируется отдельно</p>
                 </div>
                 <div class="transmissions__card__btn">
@@ -1084,7 +1087,7 @@
               </picture>
               <div class="transmissions__card__content">
                 <div class="transmissions__card__text__content">
-                  <h3 class="h3_style transmissions__card__title">Юра, мы всё...</h3>
+                  <h3 class="title-h3 transmissions__card__title">Юра, мы всё...</h3>
                   <p class="transmissions__card__date">Анонсируется отдельно</p>
                 </div>
                 <div class="transmissions__card__btn">
@@ -1106,7 +1109,7 @@
               </picture>
               <div class="transmissions__card__content">
                 <div class="transmissions__card__text__content">
-                  <h3 class="h3_style transmissions__card__title">Времена и нравы</h3>
+                  <h3 class="title-h3 transmissions__card__title">Времена и нравы</h3>
                   <p class="transmissions__card__date">По четвергам в 12:00</p>
                 </div>
                 <div class="transmissions__card__btn">
@@ -1128,7 +1131,7 @@
               </picture>
               <div class="transmissions__card__content">
                 <div class="transmissions__card__text__content">
-                  <h3 class="h3_style transmissions__card__title">17:54</h3>
+                  <h3 class="title-h3 transmissions__card__title">17:54</h3>
                   <p class="transmissions__card__date">По четвергам в 16:00</p>
                 </div>
                 <div class="transmissions__card__btn">
@@ -1150,7 +1153,7 @@
               </picture>
               <div class="transmissions__card__content">
                 <div class="transmissions__card__text__content">
-                  <h3 class="h3_style transmissions__card__title">Как так?</h3>
+                  <h3 class="title-h3 transmissions__card__title">Как так?</h3>
                   <p class="transmissions__card__date">По понедельникам в 20:00</p>
                 </div>
                 <div class="transmissions__card__btn">
@@ -1176,7 +1179,7 @@
               </picture>
               <div class="transmissions__card__content">
                 <div class="transmissions__card__text__content">
-                  <h3 class="h3_style transmissions__card__title">Регистр</h3>
+                  <h3 class="title-h3 transmissions__card__title">Регистр</h3>
                   <p class="transmissions__card__date">По понедельникам в 14:00</p>
                 </div>
                 <div class="transmissions__card__btn">
@@ -1198,7 +1201,7 @@
               </picture>
               <div class="transmissions__card__content">
                 <div class="transmissions__card__text__content">
-                  <h3 class="h3_style transmissions__card__title">День радио</h3>
+                  <h3 class="title-h3 transmissions__card__title">День радио</h3>
                   <p class="transmissions__card__date">По вторникам в 19:00</p>
                 </div>
                 <div class="transmissions__card__btn">
@@ -1220,7 +1223,7 @@
               </picture>
               <div class="transmissions__card__content">
                 <div class="transmissions__card__text__content">
-                  <h3 class="h3_style transmissions__card__title">Нотный стан</h3>
+                  <h3 class="title-h3 transmissions__card__title">Нотный стан</h3>
                   <p class="transmissions__card__date">По средам в 16:30</p>
                 </div>
                 <div class="transmissions__card__btn">
@@ -1242,7 +1245,7 @@
               </picture>
               <div class="transmissions__card__content">
                 <div class="transmissions__card__text__content">
-                  <h3 class="h3_style transmissions__card__title">Мой рок</h3>
+                  <h3 class="title-h3 transmissions__card__title">Мой рок</h3>
                   <p class="transmissions__card__date">По пятницам в 14:00</p>
                 </div>
                 <div class="transmissions__card__btn">
@@ -1264,7 +1267,7 @@
               </picture>
               <div class="transmissions__card__content">
                 <div class="transmissions__card__text__content">
-                  <h3 class="h3_style transmissions__card__title">Такая музыка</h3>
+                  <h3 class="title-h3 transmissions__card__title">Такая музыка</h3>
                   <p class="transmissions__card__date">По субботам в 11:00</p>
                 </div>
                 <div class="transmissions__card__btn">
@@ -1286,7 +1289,7 @@
               </picture>
               <div class="transmissions__card__content">
                 <div class="transmissions__card__text__content">
-                  <h3 class="h3_style transmissions__card__title">Новая волна</h3>
+                  <h3 class="title-h3 transmissions__card__title">Новая волна</h3>
                   <p class="transmissions__card__date">Анонсируется отдельно</p>
                 </div>
                 <div class="transmissions__card__btn">
@@ -1327,12 +1330,12 @@
         </p>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <!-- !Guest -->
-  <!-- <section class="guest" id="guest">
+  <section class="guest" id="guest">
     <div class="container">
-      <h2 class="guest__title h2_style">Гости</h2>
+      <h2 class="guest__title title-h2">Гости</h2>
       <h3 class="guset__subtitle">У нас бывают:</h3>
       <p class="guest__text">
         Блогеры, арт-критики и&nbsp;деятели искусства, музыканты, молодые учёные и&nbsp;люди науки, историки, филологи и&nbsp;много других интересных гостей!
@@ -2130,16 +2133,15 @@
 
       </div>
     </div>
-  </section> -->
+  </section>
 
   <!-- !Playlists -->
-
-  <!-- <section class="playlists" id="playlists">
+  <section class="playlists" id="playlists">
     <div class="container">
       <div class="playlists__wrapper">
 
         <div class="playlists__left">
-          <h2 class="playlists__title h2_style">Плейлисты</h2>
+          <h2 class="playlists__title title-h2">Плейлисты</h2>
           <h3 class="playlists__subtitle">Жанр</h3>
           <div class="playlists__tabs">
             <div class="playlist__tabs__group hide_320">
@@ -2222,7 +2224,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_1.png" alt="Ploho">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Ploho</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Ploho</h3>
                     <p class="swiper__slide__card__desc">3 последних альбома</p>
                   </div>
                 </div>
@@ -2233,7 +2235,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_2.png" alt="Molchat Doma">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Molchat Doma</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Molchat Doma</h3>
                     <p class="swiper__slide__card__desc">Все песни</p>
                   </div>
                 </div>
@@ -2244,7 +2246,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_3.png" alt="Motorama">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Motorama</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Motorama</h3>
                     <p class="swiper__slide__card__desc">Все синглы</p>
                   </div>
                 </div>
@@ -2255,7 +2257,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_4.png" alt="Human Tetris">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Human Tetris</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Human Tetris</h3>
                     <p class="swiper__slide__card__desc">3 последних альбома</p>
                   </div>
                 </div>
@@ -2266,7 +2268,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_5.png" alt="Буерак">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Буерак</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Буерак</h3>
                     <p class="swiper__slide__card__desc">Все EP</p>
                   </div>
                 </div>
@@ -2277,7 +2279,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_6.png" alt="Июльские Дни">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Июльские Дни</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Июльские Дни</h3>
                     <p class="swiper__slide__card__desc">Альбом «Колокол»</p>
                   </div>
                 </div>
@@ -2288,7 +2290,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_7.png" alt="Joy Division">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Joy Division</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Joy Division</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -2299,7 +2301,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_8.png" alt="The Cure">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Cure</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Cure</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -2310,7 +2312,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_9.png" alt="The Smiths">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Smiths</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Smiths</h3>
                     <p class="swiper__slide__card__desc">Период 1984-1988</p>
                   </div>
                 </div>
@@ -2321,7 +2323,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_10.png" alt="New Order">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">New Order</h3>
+                    <h3 class="swiper__slide__card__title title-h3">New Order</h3>
                     <p class="swiper__slide__card__desc">Хиты</p>
                   </div>
                 </div>
@@ -2332,7 +2334,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_11.png" alt="Bauhaus">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Bauhaus</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Bauhaus</h3>
                     <p class="swiper__slide__card__desc">Все синглы</p>
                   </div>
                 </div>
@@ -2343,7 +2345,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_12.png" alt="Gang Of Four">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Gang Of Four</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Gang Of Four</h3>
                     <p class="swiper__slide__card__desc">3 последних альбома</p>
                   </div>
                 </div>
@@ -2357,7 +2359,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_13.png" alt="The Chameleons">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Chameleons</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Chameleons</h3>
                     <p class="swiper__slide__card__desc">Период 2000-2003</p>
                   </div>
                 </div>
@@ -2368,7 +2370,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_14.png" alt="Killing Joke">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Killing Joke</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Killing Joke</h3>
                     <p class="swiper__slide__card__desc">Период 1988-1991</p>
                   </div>
                 </div>
@@ -2379,7 +2381,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_15.png" alt="The Stranglers">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Stranglers</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Stranglers</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -2390,7 +2392,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_16.png" alt="Ultravox">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Ultravox</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Ultravox</h3>
                     <p class="swiper__slide__card__desc">Период 1973-1987</p>
                   </div>
                 </div>
@@ -2401,7 +2403,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_17.png" alt="Dub Housing">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Pere Ubu</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Pere Ubu</h3>
                     <p class="swiper__slide__card__desc">Dub Housing</p>
                   </div>
                 </div>
@@ -2412,7 +2414,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_18.png" alt="Talking Heads">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Talking Heads</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Talking Heads</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -2423,7 +2425,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_19.png" alt="The Feelies">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Feelies</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Feelies</h3>
                     <p class="swiper__slide__card__desc">Crazy Rhythms</p>
                   </div>
                 </div>
@@ -2434,7 +2436,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_20.png" alt="Wipers">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Wipers</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Wipers</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -2445,7 +2447,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_21.png" alt="Violent Femmes">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Violent Femmes</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Violent Femmes</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -2456,7 +2458,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_22.png" alt="Minutemen">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Minutemen</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Minutemen</h3>
                     <p class="swiper__slide__card__desc">Хиты</p>
                   </div>
                 </div>
@@ -2467,7 +2469,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_23.png" alt="Swans">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Swans</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Swans</h3>
                     <p class="swiper__slide__card__desc">Все синглы</p>
                   </div>
                 </div>
@@ -2478,7 +2480,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_24.png" alt="DEVO">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">DEVO</h3>
+                    <h3 class="swiper__slide__card__title title-h3">DEVO</h3>
                     <p class="swiper__slide__card__desc">3 последних альбома</p>
                   </div>
                 </div>
@@ -2512,7 +2514,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_13.png" alt="The Chameleons">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Chameleons</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Chameleons</h3>
                     <p class="swiper__slide__card__desc">Период 2000-2003</p>
                   </div>
                 </div>
@@ -2523,7 +2525,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_14.png" alt="Killing Joke">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Killing Joke</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Killing Joke</h3>
                     <p class="swiper__slide__card__desc">Период 1988-1991</p>
                   </div>
                 </div>
@@ -2534,7 +2536,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_15.png" alt="The Stranglers">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Stranglers</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Stranglers</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -2545,7 +2547,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_16.png" alt="Ultravox">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Ultravox</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Ultravox</h3>
                     <p class="swiper__slide__card__desc">Период 1973-1987</p>
                   </div>
                 </div>
@@ -2556,7 +2558,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_17.png" alt="Dub Housing">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Pere Ubu</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Pere Ubu</h3>
                     <p class="swiper__slide__card__desc">Dub Housing</p>
                   </div>
                 </div>
@@ -2567,7 +2569,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_18.png" alt="Talking Heads">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Talking Heads</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Talking Heads</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -2578,7 +2580,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_19.png" alt="The Feelies">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Feelies</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Feelies</h3>
                     <p class="swiper__slide__card__desc">Crazy Rhythms</p>
                   </div>
                 </div>
@@ -2589,7 +2591,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_20.png" alt="Wipers">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Wipers</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Wipers</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -2600,7 +2602,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_21.png" alt="Violent Femmes">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Violent Femmes</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Violent Femmes</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -2611,7 +2613,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_22.png" alt="Minutemen">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Minutemen</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Minutemen</h3>
                     <p class="swiper__slide__card__desc">Хиты</p>
                   </div>
                 </div>
@@ -2622,7 +2624,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_23.png" alt="Swans">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Swans</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Swans</h3>
                     <p class="swiper__slide__card__desc">Все синглы</p>
                   </div>
                 </div>
@@ -2633,7 +2635,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_24.png" alt="DEVO">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">DEVO</h3>
+                    <h3 class="swiper__slide__card__title title-h3">DEVO</h3>
                     <p class="swiper__slide__card__desc">3 последних альбома</p>
                   </div>
                 </div>
@@ -2647,7 +2649,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_13.png" alt="The Chameleons">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Chameleons</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Chameleons</h3>
                     <p class="swiper__slide__card__desc">Период 2000-2003</p>
                   </div>
                 </div>
@@ -2658,7 +2660,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_14.png" alt="Killing Joke">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Killing Joke</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Killing Joke</h3>
                     <p class="swiper__slide__card__desc">Период 1988-1991</p>
                   </div>
                 </div>
@@ -2669,7 +2671,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_15.png" alt="The Stranglers">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Stranglers</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Stranglers</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -2680,7 +2682,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_16.png" alt="Ultravox">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Ultravox</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Ultravox</h3>
                     <p class="swiper__slide__card__desc">Период 1973-1987</p>
                   </div>
                 </div>
@@ -2691,7 +2693,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_17.png" alt="Dub Housing">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Pere Ubu</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Pere Ubu</h3>
                     <p class="swiper__slide__card__desc">Dub Housing</p>
                   </div>
                 </div>
@@ -2702,7 +2704,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_18.png" alt="Talking Heads">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Talking Heads</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Talking Heads</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -2713,7 +2715,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_19.png" alt="The Feelies">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Feelies</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Feelies</h3>
                     <p class="swiper__slide__card__desc">Crazy Rhythms</p>
                   </div>
                 </div>
@@ -2724,7 +2726,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_20.png" alt="Wipers">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Wipers</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Wipers</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -2735,7 +2737,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_21.png" alt="Violent Femmes">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Violent Femmes</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Violent Femmes</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -2746,7 +2748,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_22.png" alt="Minutemen">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Minutemen</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Minutemen</h3>
                     <p class="swiper__slide__card__desc">Хиты</p>
                   </div>
                 </div>
@@ -2757,7 +2759,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_23.png" alt="Swans">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Swans</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Swans</h3>
                     <p class="swiper__slide__card__desc">Все синглы</p>
                   </div>
                 </div>
@@ -2768,7 +2770,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_24.png" alt="DEVO">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">DEVO</h3>
+                    <h3 class="swiper__slide__card__title title-h3">DEVO</h3>
                     <p class="swiper__slide__card__desc">3 последних альбома</p>
                   </div>
                 </div>
@@ -2802,7 +2804,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_1.png" alt="Ploho">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Ploho</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Ploho</h3>
                     <p class="swiper__slide__card__desc">3 последних альбома</p>
                   </div>
                 </div>
@@ -2813,7 +2815,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_2.png" alt="Molchat Doma">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Molchat Doma</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Molchat Doma</h3>
                     <p class="swiper__slide__card__desc">Все песни</p>
                   </div>
                 </div>
@@ -2824,7 +2826,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_3.png" alt="Motorama">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Motorama</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Motorama</h3>
                     <p class="swiper__slide__card__desc">Все синглы</p>
                   </div>
                 </div>
@@ -2835,7 +2837,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_4.png" alt="Human Tetris">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Human Tetris</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Human Tetris</h3>
                     <p class="swiper__slide__card__desc">3 последних альбома</p>
                   </div>
                 </div>
@@ -2846,7 +2848,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_5.png" alt="Буерак">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Буерак</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Буерак</h3>
                     <p class="swiper__slide__card__desc">Все EP</p>
                   </div>
                 </div>
@@ -2857,7 +2859,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_6.png" alt="Июльские Дни">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Июльские Дни</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Июльские Дни</h3>
                     <p class="swiper__slide__card__desc">Альбом «Колокол»</p>
                   </div>
                 </div>
@@ -2868,7 +2870,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_7.png" alt="Joy Division">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Joy Division</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Joy Division</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -2879,7 +2881,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_8.png" alt="The Cure">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Cure</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Cure</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -2890,7 +2892,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_9.png" alt="The Smiths">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Smiths</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Smiths</h3>
                     <p class="swiper__slide__card__desc">Период 1984-1988</p>
                   </div>
                 </div>
@@ -2901,7 +2903,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_10.png" alt="New Order">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">New Order</h3>
+                    <h3 class="swiper__slide__card__title title-h3">New Order</h3>
                     <p class="swiper__slide__card__desc">Хиты</p>
                   </div>
                 </div>
@@ -2912,7 +2914,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_11.png" alt="Bauhaus">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Bauhaus</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Bauhaus</h3>
                     <p class="swiper__slide__card__desc">Все синглы</p>
                   </div>
                 </div>
@@ -2923,7 +2925,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_12.png" alt="Gang Of Four">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Gang Of Four</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Gang Of Four</h3>
                     <p class="swiper__slide__card__desc">3 последних альбома</p>
                   </div>
                 </div>
@@ -2937,7 +2939,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_13.png" alt="The Chameleons">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Chameleons</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Chameleons</h3>
                     <p class="swiper__slide__card__desc">Период 2000-2003</p>
                   </div>
                 </div>
@@ -2948,7 +2950,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_14.png" alt="Killing Joke">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Killing Joke</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Killing Joke</h3>
                     <p class="swiper__slide__card__desc">Период 1988-1991</p>
                   </div>
                 </div>
@@ -2959,7 +2961,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_15.png" alt="The Stranglers">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Stranglers</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Stranglers</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -2970,7 +2972,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_16.png" alt="Ultravox">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Ultravox</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Ultravox</h3>
                     <p class="swiper__slide__card__desc">Период 1973-1987</p>
                   </div>
                 </div>
@@ -2981,7 +2983,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_17.png" alt="Dub Housing">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Pere Ubu</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Pere Ubu</h3>
                     <p class="swiper__slide__card__desc">Dub Housing</p>
                   </div>
                 </div>
@@ -2992,7 +2994,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_18.png" alt="Talking Heads">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Talking Heads</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Talking Heads</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -3003,7 +3005,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_19.png" alt="The Feelies">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Feelies</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Feelies</h3>
                     <p class="swiper__slide__card__desc">Crazy Rhythms</p>
                   </div>
                 </div>
@@ -3014,7 +3016,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_20.png" alt="Wipers">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Wipers</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Wipers</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -3025,7 +3027,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_21.png" alt="Violent Femmes">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Violent Femmes</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Violent Femmes</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -3036,7 +3038,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_22.png" alt="Minutemen">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Minutemen</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Minutemen</h3>
                     <p class="swiper__slide__card__desc">Хиты</p>
                   </div>
                 </div>
@@ -3047,7 +3049,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_23.png" alt="Swans">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Swans</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Swans</h3>
                     <p class="swiper__slide__card__desc">Все синглы</p>
                   </div>
                 </div>
@@ -3058,7 +3060,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_24.png" alt="DEVO">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">DEVO</h3>
+                    <h3 class="swiper__slide__card__title title-h3">DEVO</h3>
                     <p class="swiper__slide__card__desc">3 последних альбома</p>
                   </div>
                 </div>
@@ -3092,7 +3094,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_13.png" alt="The Chameleons">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Chameleons</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Chameleons</h3>
                     <p class="swiper__slide__card__desc">Период 2000-2003</p>
                   </div>
                 </div>
@@ -3103,7 +3105,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_14.png" alt="Killing Joke">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Killing Joke</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Killing Joke</h3>
                     <p class="swiper__slide__card__desc">Период 1988-1991</p>
                   </div>
                 </div>
@@ -3114,7 +3116,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_15.png" alt="The Stranglers">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Stranglers</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Stranglers</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -3125,7 +3127,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_16.png" alt="Ultravox">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Ultravox</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Ultravox</h3>
                     <p class="swiper__slide__card__desc">Период 1973-1987</p>
                   </div>
                 </div>
@@ -3136,7 +3138,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_17.png" alt="Dub Housing">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Pere Ubu</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Pere Ubu</h3>
                     <p class="swiper__slide__card__desc">Dub Housing</p>
                   </div>
                 </div>
@@ -3147,7 +3149,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_18.png" alt="Talking Heads">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Talking Heads</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Talking Heads</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -3158,7 +3160,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_19.png" alt="The Feelies">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Feelies</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Feelies</h3>
                     <p class="swiper__slide__card__desc">Crazy Rhythms</p>
                   </div>
                 </div>
@@ -3169,7 +3171,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_20.png" alt="Wipers">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Wipers</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Wipers</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -3180,7 +3182,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_21.png" alt="Violent Femmes">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Violent Femmes</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Violent Femmes</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -3191,7 +3193,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_22.png" alt="Minutemen">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Minutemen</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Minutemen</h3>
                     <p class="swiper__slide__card__desc">Хиты</p>
                   </div>
                 </div>
@@ -3202,7 +3204,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_23.png" alt="Swans">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Swans</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Swans</h3>
                     <p class="swiper__slide__card__desc">Все синглы</p>
                   </div>
                 </div>
@@ -3213,7 +3215,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_24.png" alt="DEVO">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">DEVO</h3>
+                    <h3 class="swiper__slide__card__title title-h3">DEVO</h3>
                     <p class="swiper__slide__card__desc">3 последних альбома</p>
                   </div>
                 </div>
@@ -3227,7 +3229,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_13.png" alt="The Chameleons">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Chameleons</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Chameleons</h3>
                     <p class="swiper__slide__card__desc">Период 2000-2003</p>
                   </div>
                 </div>
@@ -3238,7 +3240,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_14.png" alt="Killing Joke">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Killing Joke</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Killing Joke</h3>
                     <p class="swiper__slide__card__desc">Период 1988-1991</p>
                   </div>
                 </div>
@@ -3249,7 +3251,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_15.png" alt="The Stranglers">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Stranglers</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Stranglers</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -3260,7 +3262,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_16.png" alt="Ultravox">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Ultravox</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Ultravox</h3>
                     <p class="swiper__slide__card__desc">Период 1973-1987</p>
                   </div>
                 </div>
@@ -3271,7 +3273,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_17.png" alt="Dub Housing">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Pere Ubu</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Pere Ubu</h3>
                     <p class="swiper__slide__card__desc">Dub Housing</p>
                   </div>
                 </div>
@@ -3282,7 +3284,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_18.png" alt="Talking Heads">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Talking Heads</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Talking Heads</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -3293,7 +3295,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_19.png" alt="The Feelies">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Feelies</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Feelies</h3>
                     <p class="swiper__slide__card__desc">Crazy Rhythms</p>
                   </div>
                 </div>
@@ -3304,7 +3306,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_20.png" alt="Wipers">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Wipers</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Wipers</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -3315,7 +3317,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_21.png" alt="Violent Femmes">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Violent Femmes</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Violent Femmes</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -3326,7 +3328,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_22.png" alt="Minutemen">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Minutemen</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Minutemen</h3>
                     <p class="swiper__slide__card__desc">Хиты</p>
                   </div>
                 </div>
@@ -3337,7 +3339,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_23.png" alt="Swans">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Swans</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Swans</h3>
                     <p class="swiper__slide__card__desc">Все синглы</p>
                   </div>
                 </div>
@@ -3348,7 +3350,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_24.png" alt="DEVO">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">DEVO</h3>
+                    <h3 class="swiper__slide__card__title title-h3">DEVO</h3>
                     <p class="swiper__slide__card__desc">3 последних альбома</p>
                   </div>
                 </div>
@@ -3382,7 +3384,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_1.png" alt="Ploho">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Ploho</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Ploho</h3>
                     <p class="swiper__slide__card__desc">3 последних альбома</p>
                   </div>
                 </div>
@@ -3393,7 +3395,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_2.png" alt="Molchat Doma">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Molchat Doma</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Molchat Doma</h3>
                     <p class="swiper__slide__card__desc">Все песни</p>
                   </div>
                 </div>
@@ -3404,7 +3406,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_3.png" alt="Motorama">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Motorama</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Motorama</h3>
                     <p class="swiper__slide__card__desc">Все синглы</p>
                   </div>
                 </div>
@@ -3415,7 +3417,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_4.png" alt="Human Tetris">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Human Tetris</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Human Tetris</h3>
                     <p class="swiper__slide__card__desc">3 последних альбома</p>
                   </div>
                 </div>
@@ -3426,7 +3428,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_5.png" alt="Буерак">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Буерак</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Буерак</h3>
                     <p class="swiper__slide__card__desc">Все EP</p>
                   </div>
                 </div>
@@ -3437,7 +3439,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_6.png" alt="Июльские Дни">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Июльские Дни</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Июльские Дни</h3>
                     <p class="swiper__slide__card__desc">Альбом «Колокол»</p>
                   </div>
                 </div>
@@ -3448,7 +3450,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_7.png" alt="Joy Division">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Joy Division</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Joy Division</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -3459,7 +3461,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_8.png" alt="The Cure">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Cure</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Cure</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -3470,7 +3472,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_9.png" alt="The Smiths">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Smiths</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Smiths</h3>
                     <p class="swiper__slide__card__desc">Период 1984-1988</p>
                   </div>
                 </div>
@@ -3481,7 +3483,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_10.png" alt="New Order">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">New Order</h3>
+                    <h3 class="swiper__slide__card__title title-h3">New Order</h3>
                     <p class="swiper__slide__card__desc">Хиты</p>
                   </div>
                 </div>
@@ -3492,7 +3494,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_11.png" alt="Bauhaus">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Bauhaus</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Bauhaus</h3>
                     <p class="swiper__slide__card__desc">Все синглы</p>
                   </div>
                 </div>
@@ -3503,7 +3505,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_12.png" alt="Gang Of Four">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Gang Of Four</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Gang Of Four</h3>
                     <p class="swiper__slide__card__desc">3 последних альбома</p>
                   </div>
                 </div>
@@ -3517,7 +3519,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_13.png" alt="The Chameleons">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Chameleons</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Chameleons</h3>
                     <p class="swiper__slide__card__desc">Период 2000-2003</p>
                   </div>
                 </div>
@@ -3528,7 +3530,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_14.png" alt="Killing Joke">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Killing Joke</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Killing Joke</h3>
                     <p class="swiper__slide__card__desc">Период 1988-1991</p>
                   </div>
                 </div>
@@ -3539,7 +3541,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_15.png" alt="The Stranglers">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Stranglers</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Stranglers</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -3550,7 +3552,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_16.png" alt="Ultravox">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Ultravox</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Ultravox</h3>
                     <p class="swiper__slide__card__desc">Период 1973-1987</p>
                   </div>
                 </div>
@@ -3561,7 +3563,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_17.png" alt="Dub Housing">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Pere Ubu</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Pere Ubu</h3>
                     <p class="swiper__slide__card__desc">Dub Housing</p>
                   </div>
                 </div>
@@ -3572,7 +3574,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_18.png" alt="Talking Heads">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Talking Heads</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Talking Heads</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -3583,7 +3585,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_19.png" alt="The Feelies">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Feelies</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Feelies</h3>
                     <p class="swiper__slide__card__desc">Crazy Rhythms</p>
                   </div>
                 </div>
@@ -3594,7 +3596,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_20.png" alt="Wipers">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Wipers</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Wipers</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -3605,7 +3607,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_21.png" alt="Violent Femmes">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Violent Femmes</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Violent Femmes</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -3616,7 +3618,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_22.png" alt="Minutemen">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Minutemen</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Minutemen</h3>
                     <p class="swiper__slide__card__desc">Хиты</p>
                   </div>
                 </div>
@@ -3627,7 +3629,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_23.png" alt="Swans">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Swans</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Swans</h3>
                     <p class="swiper__slide__card__desc">Все синглы</p>
                   </div>
                 </div>
@@ -3638,7 +3640,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_24.png" alt="DEVO">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">DEVO</h3>
+                    <h3 class="swiper__slide__card__title title-h3">DEVO</h3>
                     <p class="swiper__slide__card__desc">3 последних альбома</p>
                   </div>
                 </div>
@@ -3672,7 +3674,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_13.png" alt="The Chameleons">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Chameleons</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Chameleons</h3>
                     <p class="swiper__slide__card__desc">Период 2000-2003</p>
                   </div>
                 </div>
@@ -3683,7 +3685,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_14.png" alt="Killing Joke">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Killing Joke</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Killing Joke</h3>
                     <p class="swiper__slide__card__desc">Период 1988-1991</p>
                   </div>
                 </div>
@@ -3694,7 +3696,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_15.png" alt="The Stranglers">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Stranglers</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Stranglers</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -3705,7 +3707,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_16.png" alt="Ultravox">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Ultravox</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Ultravox</h3>
                     <p class="swiper__slide__card__desc">Период 1973-1987</p>
                   </div>
                 </div>
@@ -3716,7 +3718,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_17.png" alt="Dub Housing">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Pere Ubu</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Pere Ubu</h3>
                     <p class="swiper__slide__card__desc">Dub Housing</p>
                   </div>
                 </div>
@@ -3727,7 +3729,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_18.png" alt="Talking Heads">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Talking Heads</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Talking Heads</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -3738,7 +3740,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_19.png" alt="The Feelies">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Feelies</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Feelies</h3>
                     <p class="swiper__slide__card__desc">Crazy Rhythms</p>
                   </div>
                 </div>
@@ -3749,7 +3751,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_20.png" alt="Wipers">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Wipers</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Wipers</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -3760,7 +3762,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_21.png" alt="Violent Femmes">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Violent Femmes</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Violent Femmes</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -3771,7 +3773,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_22.png" alt="Minutemen">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Minutemen</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Minutemen</h3>
                     <p class="swiper__slide__card__desc">Хиты</p>
                   </div>
                 </div>
@@ -3782,7 +3784,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_23.png" alt="Swans">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Swans</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Swans</h3>
                     <p class="swiper__slide__card__desc">Все синглы</p>
                   </div>
                 </div>
@@ -3793,7 +3795,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_24.png" alt="DEVO">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">DEVO</h3>
+                    <h3 class="swiper__slide__card__title title-h3">DEVO</h3>
                     <p class="swiper__slide__card__desc">3 последних альбома</p>
                   </div>
                 </div>
@@ -3807,7 +3809,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_13.png" alt="The Chameleons">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Chameleons</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Chameleons</h3>
                     <p class="swiper__slide__card__desc">Период 2000-2003</p>
                   </div>
                 </div>
@@ -3818,7 +3820,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_14.png" alt="Killing Joke">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Killing Joke</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Killing Joke</h3>
                     <p class="swiper__slide__card__desc">Период 1988-1991</p>
                   </div>
                 </div>
@@ -3829,7 +3831,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_15.png" alt="The Stranglers">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Stranglers</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Stranglers</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -3840,7 +3842,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_16.png" alt="Ultravox">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Ultravox</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Ultravox</h3>
                     <p class="swiper__slide__card__desc">Период 1973-1987</p>
                   </div>
                 </div>
@@ -3851,7 +3853,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_17.png" alt="Dub Housing">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Pere Ubu</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Pere Ubu</h3>
                     <p class="swiper__slide__card__desc">Dub Housing</p>
                   </div>
                 </div>
@@ -3862,7 +3864,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_18.png" alt="Talking Heads">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Talking Heads</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Talking Heads</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -3873,7 +3875,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_19.png" alt="The Feelies">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Feelies</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Feelies</h3>
                     <p class="swiper__slide__card__desc">Crazy Rhythms</p>
                   </div>
                 </div>
@@ -3884,7 +3886,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_20.png" alt="Wipers">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Wipers</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Wipers</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -3895,7 +3897,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_21.png" alt="Violent Femmes">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Violent Femmes</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Violent Femmes</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -3906,7 +3908,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_22.png" alt="Minutemen">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Minutemen</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Minutemen</h3>
                     <p class="swiper__slide__card__desc">Хиты</p>
                   </div>
                 </div>
@@ -3917,7 +3919,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_23.png" alt="Swans">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Swans</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Swans</h3>
                     <p class="swiper__slide__card__desc">Все синглы</p>
                   </div>
                 </div>
@@ -3928,7 +3930,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_24.png" alt="DEVO">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">DEVO</h3>
+                    <h3 class="swiper__slide__card__title title-h3">DEVO</h3>
                     <p class="swiper__slide__card__desc">3 последних альбома</p>
                   </div>
                 </div>
@@ -3962,7 +3964,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_1.png" alt="Ploho">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Ploho</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Ploho</h3>
                     <p class="swiper__slide__card__desc">3 последних альбома</p>
                   </div>
                 </div>
@@ -3973,7 +3975,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_2.png" alt="Molchat Doma">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Molchat Doma</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Molchat Doma</h3>
                     <p class="swiper__slide__card__desc">Все песни</p>
                   </div>
                 </div>
@@ -3984,7 +3986,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_3.png" alt="Motorama">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Motorama</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Motorama</h3>
                     <p class="swiper__slide__card__desc">Все синглы</p>
                   </div>
                 </div>
@@ -3995,7 +3997,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_4.png" alt="Human Tetris">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Human Tetris</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Human Tetris</h3>
                     <p class="swiper__slide__card__desc">3 последних альбома</p>
                   </div>
                 </div>
@@ -4006,7 +4008,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_5.png" alt="Буерак">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Буерак</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Буерак</h3>
                     <p class="swiper__slide__card__desc">Все EP</p>
                   </div>
                 </div>
@@ -4017,7 +4019,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_6.png" alt="Июльские Дни">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Июльские Дни</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Июльские Дни</h3>
                     <p class="swiper__slide__card__desc">Альбом «Колокол»</p>
                   </div>
                 </div>
@@ -4028,7 +4030,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_7.png" alt="Joy Division">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Joy Division</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Joy Division</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -4039,7 +4041,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_8.png" alt="The Cure">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Cure</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Cure</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -4050,7 +4052,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_9.png" alt="The Smiths">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Smiths</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Smiths</h3>
                     <p class="swiper__slide__card__desc">Период 1984-1988</p>
                   </div>
                 </div>
@@ -4061,7 +4063,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_10.png" alt="New Order">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">New Order</h3>
+                    <h3 class="swiper__slide__card__title title-h3">New Order</h3>
                     <p class="swiper__slide__card__desc">Хиты</p>
                   </div>
                 </div>
@@ -4072,7 +4074,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_11.png" alt="Bauhaus">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Bauhaus</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Bauhaus</h3>
                     <p class="swiper__slide__card__desc">Все синглы</p>
                   </div>
                 </div>
@@ -4083,7 +4085,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_12.png" alt="Gang Of Four">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Gang Of Four</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Gang Of Four</h3>
                     <p class="swiper__slide__card__desc">3 последних альбома</p>
                   </div>
                 </div>
@@ -4097,7 +4099,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_13.png" alt="The Chameleons">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Chameleons</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Chameleons</h3>
                     <p class="swiper__slide__card__desc">Период 2000-2003</p>
                   </div>
                 </div>
@@ -4108,7 +4110,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_14.png" alt="Killing Joke">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Killing Joke</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Killing Joke</h3>
                     <p class="swiper__slide__card__desc">Период 1988-1991</p>
                   </div>
                 </div>
@@ -4119,7 +4121,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_15.png" alt="The Stranglers">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Stranglers</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Stranglers</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -4130,7 +4132,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_16.png" alt="Ultravox">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Ultravox</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Ultravox</h3>
                     <p class="swiper__slide__card__desc">Период 1973-1987</p>
                   </div>
                 </div>
@@ -4141,7 +4143,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_17.png" alt="Dub Housing">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Pere Ubu</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Pere Ubu</h3>
                     <p class="swiper__slide__card__desc">Dub Housing</p>
                   </div>
                 </div>
@@ -4152,7 +4154,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_18.png" alt="Talking Heads">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Talking Heads</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Talking Heads</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -4163,7 +4165,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_19.png" alt="The Feelies">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Feelies</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Feelies</h3>
                     <p class="swiper__slide__card__desc">Crazy Rhythms</p>
                   </div>
                 </div>
@@ -4174,7 +4176,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_20.png" alt="Wipers">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Wipers</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Wipers</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -4185,7 +4187,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_21.png" alt="Violent Femmes">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Violent Femmes</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Violent Femmes</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -4196,7 +4198,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_22.png" alt="Minutemen">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Minutemen</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Minutemen</h3>
                     <p class="swiper__slide__card__desc">Хиты</p>
                   </div>
                 </div>
@@ -4207,7 +4209,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_23.png" alt="Swans">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Swans</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Swans</h3>
                     <p class="swiper__slide__card__desc">Все синглы</p>
                   </div>
                 </div>
@@ -4218,7 +4220,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_24.png" alt="DEVO">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">DEVO</h3>
+                    <h3 class="swiper__slide__card__title title-h3">DEVO</h3>
                     <p class="swiper__slide__card__desc">3 последних альбома</p>
                   </div>
                 </div>
@@ -4252,7 +4254,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_13.png" alt="The Chameleons">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Chameleons</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Chameleons</h3>
                     <p class="swiper__slide__card__desc">Период 2000-2003</p>
                   </div>
                 </div>
@@ -4263,7 +4265,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_14.png" alt="Killing Joke">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Killing Joke</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Killing Joke</h3>
                     <p class="swiper__slide__card__desc">Период 1988-1991</p>
                   </div>
                 </div>
@@ -4274,7 +4276,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_15.png" alt="The Stranglers">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Stranglers</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Stranglers</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -4285,7 +4287,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_16.png" alt="Ultravox">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Ultravox</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Ultravox</h3>
                     <p class="swiper__slide__card__desc">Период 1973-1987</p>
                   </div>
                 </div>
@@ -4296,7 +4298,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_17.png" alt="Dub Housing">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Pere Ubu</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Pere Ubu</h3>
                     <p class="swiper__slide__card__desc">Dub Housing</p>
                   </div>
                 </div>
@@ -4307,7 +4309,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_18.png" alt="Talking Heads">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Talking Heads</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Talking Heads</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -4318,7 +4320,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_19.png" alt="The Feelies">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Feelies</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Feelies</h3>
                     <p class="swiper__slide__card__desc">Crazy Rhythms</p>
                   </div>
                 </div>
@@ -4329,7 +4331,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_20.png" alt="Wipers">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Wipers</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Wipers</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -4340,7 +4342,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_21.png" alt="Violent Femmes">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Violent Femmes</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Violent Femmes</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -4351,7 +4353,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_22.png" alt="Minutemen">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Minutemen</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Minutemen</h3>
                     <p class="swiper__slide__card__desc">Хиты</p>
                   </div>
                 </div>
@@ -4362,7 +4364,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_23.png" alt="Swans">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Swans</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Swans</h3>
                     <p class="swiper__slide__card__desc">Все синглы</p>
                   </div>
                 </div>
@@ -4373,7 +4375,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_24.png" alt="DEVO">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">DEVO</h3>
+                    <h3 class="swiper__slide__card__title title-h3">DEVO</h3>
                     <p class="swiper__slide__card__desc">3 последних альбома</p>
                   </div>
                 </div>
@@ -4387,7 +4389,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_13.png" alt="The Chameleons">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Chameleons</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Chameleons</h3>
                     <p class="swiper__slide__card__desc">Период 2000-2003</p>
                   </div>
                 </div>
@@ -4398,7 +4400,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_14.png" alt="Killing Joke">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Killing Joke</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Killing Joke</h3>
                     <p class="swiper__slide__card__desc">Период 1988-1991</p>
                   </div>
                 </div>
@@ -4409,7 +4411,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_15.png" alt="The Stranglers">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Stranglers</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Stranglers</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -4420,7 +4422,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_16.png" alt="Ultravox">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Ultravox</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Ultravox</h3>
                     <p class="swiper__slide__card__desc">Период 1973-1987</p>
                   </div>
                 </div>
@@ -4431,7 +4433,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_17.png" alt="Dub Housing">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Pere Ubu</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Pere Ubu</h3>
                     <p class="swiper__slide__card__desc">Dub Housing</p>
                   </div>
                 </div>
@@ -4442,7 +4444,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_18.png" alt="Talking Heads">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Talking Heads</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Talking Heads</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -4453,7 +4455,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_19.png" alt="The Feelies">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">The Feelies</h3>
+                    <h3 class="swiper__slide__card__title title-h3">The Feelies</h3>
                     <p class="swiper__slide__card__desc">Crazy Rhythms</p>
                   </div>
                 </div>
@@ -4464,7 +4466,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_20.png" alt="Wipers">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Wipers</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Wipers</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -4475,7 +4477,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_21.png" alt="Violent Femmes">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Violent Femmes</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Violent Femmes</h3>
                     <p class="swiper__slide__card__desc">Лучшее за всё время</p>
                   </div>
                 </div>
@@ -4486,7 +4488,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_22.png" alt="Minutemen">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Minutemen</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Minutemen</h3>
                     <p class="swiper__slide__card__desc">Хиты</p>
                   </div>
                 </div>
@@ -4497,7 +4499,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_23.png" alt="Swans">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">Swans</h3>
+                    <h3 class="swiper__slide__card__title title-h3">Swans</h3>
                     <p class="swiper__slide__card__desc">Все синглы</p>
                   </div>
                 </div>
@@ -4508,7 +4510,7 @@
                     <img class="swiper__slide__card__img" src="img/playlist/big_24.png" alt="DEVO">
                   </picture>
                   <div class="swiper__slide__card__content">
-                    <h3 class="swiper__slide__card__title h3_style">DEVO</h3>
+                    <h3 class="swiper__slide__card__title title-h3">DEVO</h3>
                     <p class="swiper__slide__card__desc">3 последних альбома</p>
                   </div>
                 </div>
@@ -4547,11 +4549,10 @@
 
       </div>
     </div>
-  </section> -->
+  </section>
 
   <!-- Product -->
-
-  <!-- <section class="product">
+  <section class="product">
     <div class="container">
       <div class="product__wrapper">
         <div class="product__contain__slider">
@@ -4602,7 +4603,7 @@
         </div>
 
         <div class="product__content">
-          <h2 class="product__title h2_style">
+          <h2 class="product__title title-h2">
             Будь с&nbsp;нами на&nbsp;одной волне!
           </h2>
           <hr class="product__wawe">
@@ -4636,16 +4637,15 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <!-- !About Us -->
-
-  <!-- <section class="about__us" id="about-us">
+  <section class="about__us" id="about-us">
     <div class="container">
       <div class="about__us__wrapper">
         <div class="about__intro">
           <div class="about__intro__content">
-            <h2 class="about__title h2_style">О нас</h2>
+            <h2 class="about__title title-h2">О нас</h2>
             <h3 class="about__second__title">Приём-приём! Как слышно? Мы уже в эфире? Отлично, поехали!</h3>
             <p class="about__text">
               Друзья, мы будем очень рады, если вы поможете стать нам лучше. Нам важен каждый слушатель, поэтому вы
@@ -4719,11 +4719,10 @@
         </form>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <!-- !FOOTER -->
-
-  <!-- <div class="footer">
+  <div class="footer">
     <div class="footer__intro">
       <div class="container">
         <div class="footer__intro__wrapper">
@@ -4827,7 +4826,7 @@
         </p>
       </div>
     </div>
-  </div> -->
+  </div>
 
 </body>
 

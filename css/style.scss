@@ -23,17 +23,20 @@ body {
   overflow-x: hidden;
 }
 
-.h2_style {
-  @include h2;
+.title-h2 {
+  color: $mainColor;
+  font-size: $headingFS;
+  font-weight: $fwRegular;
+  line-height: $lhMain;
 }
 
-.h3_style {
+.title-h3 {
   @include textBig($mainColor);
 }
 
 
 @media (max-width: $point320_small) {
-  .h2_style {
+  .title-h2 {
     font-weight: $fwRegular;
     font-size: $secondPreFS;
   }
@@ -230,6 +233,10 @@ body {
   display: none;
 }
 
+.header__drop__panel__player__btn__wrapper {
+  margin-bottom: 7px;
+}
+
 .header__drop__panel__btn {
   @include btnConfig($primary, $mainFS, 0);
 }
@@ -242,10 +249,8 @@ body {
 
 
 .header__drop__panel__place {
-  padding: 16px 32px 0 32px;
+  padding: 11px 0 0 32px;
   height: 78px;
-  // width: 300px;
-
 }
 
 .header__drop__panel__player__btn {
@@ -254,10 +259,16 @@ body {
   flex-direction: column;
   text-align: start;
   height: auto;
-  width: 160px;
+  width: 107px;
 
   &:first-child {
+
     border: none;
+  }
+
+  &:last-child {
+    width: auto;
+    padding-left: 35px;
   }
 }
 
@@ -272,7 +283,7 @@ body {
 
 .hero__box {
   background: right url(../img/hero/microphone.png) no-repeat;
-  padding: 94px 0;
+  padding: 96px 0 94px 0;
 }
 
 .hero__title {
@@ -337,6 +348,7 @@ body {
   background: $primary;
   padding: 25px 54px;
   border: none;
+  display: inline-block;
 
   transition-property: color, background-color;
   @include transition;
@@ -363,26 +375,26 @@ body {
   margin-bottom: 30px;
 }
 
-.podcasts__playlist__items {
+.podcasts__cards {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
 }
 
-.playlist__items__row {
+.podcasts__cards__group {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
 }
 
-.podcasts__playlist__item {
+.podcasts__card {
   position: relative;
   display: flex;
   background-color: $white;
   flex: 0 0 48.649%;
 }
 
-.podcast__item__date {
+.podcasts__card__date {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -393,140 +405,150 @@ body {
   background-color: $liteColor;
 }
 
-.playlist__item__img {
-  display: block;
-}
-
-.playlist__item__content {
+.podcasts__card__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
 }
 
-.item__content__top {
+.podcasts__card__content__top {
   @include felxBetween;
   padding: 24px 30px 21px 30px;
   text-align: start;
-  cursor: pointer;
+}
 
-  .playlist__btn__play__svg circle {
-    transition-property: stroke;
-    @include transition;
-  }
+.podcasts__card__content__btn__play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  .playlist__btn__play__svg path {
-    transition-property: fill;
-    @include transition;
-  }
+  border: none;
 
   &:focus  {
     outline: none;
   }
-  &:focus .playlist__btn__play__svg circle {
+  &:focus .podcasts__card__content__btn__play__svg circle {
     stroke: $primaryLight;
   }
-  &:focus .playlist__btn__play__svg path {
+  &:focus .podcasts__card__content__btn__play__svg path {
     fill: $primaryLight;
   }
-  &:hover .playlist__btn__play__svg circle {
+  &:hover .podcasts__card__content__btn__play__svg circle {
     stroke: $primary;
   }
-  &:hover .playlist__btn__play__svg path {
+  &:hover .podcasts__card__content__btn__play__svg path {
     fill: $primary;
   }
-  &:active .playlist__btn__play__svg {
+  &:active .podcasts__card__content__btn__play__svg {
     fill: $primaryShade;
   }
-  &:active .playlist__btn__play__svg circle {
+  &:active .podcasts__card__content__btn__play__svg circle {
     stroke: $primaryShade;
   }
-  &:active .playlist__btn__play__svg path {
+  &:active .podcasts__card__content__btn__play__svg path {
     fill: $white;
   }
 }
 
-.playlist__like__btns {
+.podcasts__card__content__btn__play__svg {
+  & circle {
+    transition-property: stroke;
+    @include transition;
+  }
+  & path {
+    transition-property: fill;
+    @include transition;
+  }
+}
+
+.podcasts__card__content__time {
+  @include textCustom($mainColor, $lowFS, $fwRegular);
+  margin-bottom: 9px;
+}
+
+.podcasts__card__content__title {
+  margin-bottom: 3px;
+}
+
+.podcasts__card__content__author {
+  @include textSecond($textGray);
+}
+
+.podcasts__card__content__footer {
   display: flex;
   align-items: center;
   border-top: 1px solid $liteColor;
   height: 32px;
 }
 
-.playlist__btn {
+.podcasts__card__content__btn {
   display: flex;
   align-items: center;
   margin-left: 30px;
   cursor: pointer;
+  border: none;
+  border-radius: 0;
 
   transition-property: background-color;
   @include transition;
-
-  .playlist__btn__svg path {
-    transition-property: fill;
-    @include transition;
-  }
-  .playlist__counts {
-    transition-property: color;
-    @include transition;
-  }
 
   &:not(:nth-child(3n + 1)):focus{
     outline: none;
     background-color: $primaryLight;
   }
-  &:not(:nth-child(3n + 1)):focus .playlist__btn__svg path {
+  &:not(:nth-child(3n + 1)):focus .podcasts__card__content__btn__svg path {
     fill: $white;
   }
-  &:not(:nth-child(3n + 1)):focus .playlist__counts {
+  &:not(:nth-child(3n + 1)):focus .podcasts__card__content__btn__count {
     color: $white;
   }
 
   &:not(:nth-child(3n + 1)):hover{
     background-color: transparent;
   }
-  &:not(:nth-child(3n + 1)):hover .playlist__btn__svg path {
+  &:not(:nth-child(3n + 1)):hover .podcasts__card__content__btn__svg path {
     fill: $primary;
   }
-  &:not(:nth-child(3n + 1)):hover .playlist__counts {
+  &:not(:nth-child(3n + 1)):hover .podcasts__card__content__btn__count {
     color: $primary;
   }
 
   &:not(:nth-child(3n + 1)):active{
     background-color: transparent;
   }
-  &:not(:nth-child(3n + 1)):active .playlist__btn__svg {
+  &:not(:nth-child(3n + 1)):active .podcasts__card__content__btn__svg {
     fill: $primaryShade;
   }
-  &:not(:nth-child(3n + 1)):active .playlist__btn__svg path {
+  &:not(:nth-child(3n + 1)):active .podcasts__card__content__btn__svg path {
     fill: $primaryShade;
   }
-  &:not(:nth-child(3n + 1)):active .playlist__counts {
+  &:not(:nth-child(3n + 1)):active .podcasts__card__content__btn__count {
     color: $primaryShade;
   }
 }
 
-.playlist__time {
-  @include textCustom($mainColor, $lowFS, $fwRegular);
-  margin-bottom: 9px;
+.podcasts__card__content__btn__svg path {
+  transition-property: fill;
+  @include transition;
 }
 
-.playlist__title {
-  margin-bottom: 3px;
+.podcasts__card__content__btn__count {
+  transition-property: color;
+  @include transition;
 }
 
-.playlist__author {
-  @include textSecond($textGray);
+.podcasts__card__content__btn__listening {
+  cursor: auto;
 }
 
-.playlist__counts {
+.podcasts__card__content__btn__count {
   @include textSecond($textGray);
   padding-top: 2px;
   margin-left: 6px;
 }
 
-  // !PODCASTS
-
+// !PODCASTS
 .podcasts__btn__more {
   display: block;
   padding: 23px 52px;
@@ -1782,9 +1804,6 @@ button.accordion__tab__item {
 }
 
 .about__title {
-  font-weight: 400;
-  font-size: $headingFS;
-  line-height: 1;
   color: $white;
   margin-bottom: 13px;
 }
@@ -2139,7 +2158,7 @@ button.accordion__tab__item {
     padding: 93px 0;
   }
 
-  .podcasts__playlist__item {
+  .podcasts__card {
     flex: 0 0 48.149%;
   }
 
@@ -2370,13 +2389,13 @@ button.accordion__tab__item {
 // *768
 @media ( max-width: 1000px ) {
   // !PODCASTS
-  .playlist__items__row {
+  .podcasts__cards__group {
     flex-direction: column;
     justify-content: start;
     margin-bottom: 0px;
   }
 
-  .podcasts__playlist__item {
+  .podcasts__card {
     max-width: 540px;
     margin-bottom: 30px;
   }
@@ -2555,9 +2574,14 @@ button.accordion__tab__item {
     width: 100%;
   }
 
+  .header__footer__player {
+    padding-left: 0;
+  }
+
   .header__footer__player__btns {
     border: none;
   }
+
 
   .header__player__content {
     display: none;
@@ -2570,10 +2594,6 @@ button.accordion__tab__item {
     &:last-child {
       display: none;
     }
-  }
-
-  .header__footer__player {
-    padding-left: 0;
   }
 
   // !HERO
@@ -2686,17 +2706,15 @@ button.accordion__tab__item {
     padding: 0;
   }
 
-  .product__title {
-    margin-top: 0;
-  }
-
   .product__content {
     max-width: 100%;
   }
 
   .product__title {
+    margin-top: 0;
     max-width: 382px;
   }
+
 }
 
 // *320
@@ -2801,7 +2819,6 @@ button.accordion__tab__item {
   }
 
   .about__title {
-    font-size: $secondPreFS;
     margin-bottom: 11px;
   }
 
@@ -2971,15 +2988,26 @@ button.accordion__tab__item {
     display: flex;
   }
 
-
   // FOOTER
-
   .header__footer {
     display: none;
   }
 
   .header__drop__panel__box {
     display: block;
+  }
+
+  .header__footer__player {
+    padding-left: 0;
+  }
+
+  .header__drop__panel__title {
+    font-size: 10px;
+    margin-bottom: 4px;
+  }
+
+  .header__drop__panel__text {
+    font-size: 14px;
   }
 
   // !HERO
@@ -3011,50 +3039,48 @@ button.accordion__tab__item {
   }
 
   .podcasts__title {
-    font-weight: $fwRegular;
-    font-size: $secondPreFS;
     margin-bottom: 20px;
   }
 
-  .playlist__items__row {
+  .podcasts__cards__group {
     width: 256px;
   }
 
-  .item__content__top {
+  .podcasts__card__content__top {
     padding: 16px 11px 0 16px;
+
+    & path {
+      fill: $primary;
+    }
+
+    & circle {
+      stroke: $primary;
+    }
   }
 
-  .item__content__top path {
-    fill: $primary;
-  }
-
-  .item__content__top circle {
-    stroke: $primary;
-  }
-
-  .playlist__btn__play__svg {
+  .podcasts__card__content__btn__svg {
     width:  31px;
     height:  31px;
   }
 
-  .podcasts__playlist__item {
+  .podcasts__card {
     flex-direction: column;
   }
 
-  .podcasts__playlist__items {
+  .podcasts__cards {
     margin: 0;
   }
 
-  .playlist_hide {
+  .podcasts__cards__group-hide {
     display: none;
   }
 
-  .podcast__item__date {
+  .podcasts__card__date {
     left: 0;
     top: 0;
   }
 
-  .playlist__like__btns {
+  .podcasts__card__content__footer {
     height: 28px;
   }
 
@@ -3071,26 +3097,24 @@ button.accordion__tab__item {
     padding: 15px 28px;
   }
 
-  .playlist__item__content {
+  .podcasts__card__content {
     height: 113px;
   }
 
-  .playlist__title {
+  .podcasts__card__content__title {
     font-size: $mainFS;
     margin-bottom: 0;
   }
 
-  .playlist__author {
+  .podcasts__card__content__author {
     font-size: $lowFS;
   }
 
-  .playlist__counts {
+  .podcasts__card__content__btn__count {
     font-size: $lowFS;
   }
 
-  .playlist__btn {
-    display: flex;
-    align-items: center;
+  .podcasts__card__content__btn {
     margin-left: 33px;
   }
 

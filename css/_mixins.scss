@@ -1,11 +1,5 @@
 @import './var';
 
-@mixin h2 {
-  color: $mainColor;
-  font-size: $headingFS;
-  font-weight: $fwRegular;
-  line-height: $lhMain;
-}
 
 @mixin h3($color, $fs) {
   font-weight: $fwNormal;

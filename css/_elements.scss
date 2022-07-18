@@ -2,9 +2,7 @@
 
 .logo {}
 
-.logo__img {
-  display: block;
-}
+.logo__img {}
 
 
 .link {
@@ -34,8 +32,6 @@
 
 .nav__list {
   margin: 0;
-  padding: 0;
-  list-style: none;
   @include felxBetween;
 }
 
@@ -215,7 +211,6 @@
 
 .drop-panel__place {
   display: flex;
-  flex: 1;
   position: absolute;
   margin: 0 auto;
   top: 45px; left: 0; bottom: 0; right: 0;
