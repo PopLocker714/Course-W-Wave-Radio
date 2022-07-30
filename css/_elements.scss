@@ -124,8 +124,7 @@
 
 .player {
   display: flex;
-  width: 174px;
-  height: 40px;
+
   border: none;
   border-radius: 0;
   border-left: 1px solid $liteColor;
@@ -222,6 +221,86 @@
   background-color: $white;
   &.active {
     transform: translateY(0);
+  }
+}
+
+.accordion {
+
+}
+
+.accordion__item__title {
+  font-family: Muller;
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  border-top: 1px solid $textGray;
+  border-bottom: 1px solid $textGray;
+
+  &:not(:first-child) {
+    margin-top: -1px;
+  }
+
+  transition-property: background-color, color;
+  @include transition;
+  & .accordion__item__svg circle,
+  & .accordion__item__svg path {
+    transition-property: stroke;
+    @include transition;
+  }
+  &:focus {
+    background-color: $primaryLightFocus;
+  }
+  &:focus .accordion__item__svg circle {
+    fill: $primaryShade;
+  }
+  &:hover {
+    color: $primaryLight;
+    background-color: transparent;
+  }
+  &:hover .accordion__item__svg circle,
+  &:hover .accordion__item__svg path {
+    stroke: $primaryLight;
+    fill: transparent;
+  }
+  &:active {
+    color: $primaryLight;
+  }
+  &:active .accordion__item__svg circle {
+    stroke: $primaryLight;
+    fill: $primaryLight;
+  }
+  &:active .accordion__item__svg path {
+    stroke: $white;
+  }
+
+  &.ui-state-active .accordion__item__svg circle {
+    fill: transparent;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__link {
+  transition-property: color, background-color;
+  @include transition;
+  & .social__link__svg path {
+    transition-property: fill;
+    @include transition;
+  }
+  &:focus  {
+    outline: none;
+  }
+  &:focus .social__link__svg path {
+    fill: $primaryLight
+  }
+  &:hover .social__link__svg path {
+    fill: $primary;
+  }
+  &:active .social__link__svg path {
+    fill: $primaryShade;
   }
 }
 
