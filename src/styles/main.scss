@@ -1,6 +1,56 @@
-@import './fonts';
-@import './header';
+
+@import 'var';
+@import 'mixins';
+@import 'resset';
+@import 'fonts';
+
+@import './components/link/link';
+@import './components/buttons/btns';
+@import './components/nav/nav';
+@import './components/search/search';
+
+
+
+
+@import './components/_header/header';
+
+
+
 body {
   font-family: Muller, Arial, Helvetica, sans-serif;
-  background-color: green;
+  font-size: 16px;
+  background-color: $lite-color;
+  min-width: 320px;
 }
+
+.container {
+  margin: 0 auto;
+  max-width: 1310px;
+  padding: 0 100px;
+}
+
+@media ( max-width: 890px ) {
+  .container {
+    padding: 0 114px;
+  }
+}
+@media ( max-width: 750px ) {
+  .container {
+    padding: 0 32px;
+  }
+}
+
+
+
+
+
+
+
+
+
+// !MEDIA
+@media (max-width: 1249px) {}
+@media (max-width: 1000px) {}
+@media (max-width: 890px) {}
+@media (max-width: 580px) {}
+@media (max-width: 532px) {}

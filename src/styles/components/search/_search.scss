@@ -1,0 +1,18 @@
+.search {
+  width: 24px;
+  height: 24px;
+  // border: none;
+  & .search__svg path {
+    transition-property: stroke;
+    @include transition;
+  }
+  &:focus .search__svg path {
+    stroke: $primary-light;
+  }
+  &:hover .search__svg path {
+    stroke: $primary-light;
+  }
+  &:active .search__svg path {
+    stroke: $primary-shade;
+  }
+}

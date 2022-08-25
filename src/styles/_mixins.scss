@@ -1,0 +1,7 @@
+@import './var';
+
+@mixin transition {
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
+}
+

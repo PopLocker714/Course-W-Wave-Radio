@@ -1,0 +1,20 @@
+.link {
+  color: inherit;
+  text-decoration: none;
+  transition-property: color, background-color;
+  @include transition;
+
+  &:focus {
+    outline: none;
+    color: $white;
+    background-color: $primary-light;
+  }
+  &:hover {
+    color: $primary;
+    background-color: transparent;
+  }
+  &:active {
+    color: $primary-shade;
+    background-color: transparent;
+  }
+}
