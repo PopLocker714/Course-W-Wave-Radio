@@ -15,6 +15,7 @@ import '@fonts/MullerRegularItalic.woff2'
 import loadSection from "./loadSections"
 
 import headerHtml from '../styles/components/_header/header.html'
+import heroHtml from '../styles/components/_hero/hero.html'
 
 import '../styles/main.scss'
 
@@ -23,7 +24,13 @@ import '../styles/main.scss'
 import burgerMenu from './BurgerMenu'
 
 loadSection(headerHtml, 'header', document.body)
-// loadSection(logoHtml, 'picture', document.querySelector('.header__container-top'))
+loadSection(heroHtml, 'section', document.body)
+
+
+
+
+
+
 
 const burger = new burgerMenu({
   burger: document.querySelector('#burger'),
