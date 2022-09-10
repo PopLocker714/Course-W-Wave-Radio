@@ -1,5 +1,7 @@
 .burger {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 30px;
   height: 30px;
   position: relative;
@@ -8,14 +10,14 @@
   background-color: transparent;
   padding: 0;
 
-  &.active .burger__span {
+  &.active .burger__stick {
     transform: translateX(-50px);
     background-color: transparent;
   }
-  &.active .burger__span::before {
+  &.active .burger__stick::before {
     transform: rotate(45deg) translate(35px, -35px);
   }
-  &.active .burger__span::after {
+  &.active .burger__stick::after {
     transform: rotate(-45deg) translate(35px, 35px);
   }
 
@@ -47,7 +49,4 @@
       transform: translateY(10px);
     }
   }
-
-
 }
-

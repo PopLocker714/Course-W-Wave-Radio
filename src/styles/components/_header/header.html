@@ -7,6 +7,11 @@
   </div>
   <div class="header__section header__section-middle header__section_bg_white">
     <div class="header__container-middle container">
+
+      <button class="btn burger header__burger" id="burger">
+        <span class="burger__stick"></span>
+      </button>
+
       <img class="logo header__logo-middle" src="../../../assets/images/logo/logo-black.svg" alt="W-Wave-Radio">
       <nav class="nav header__nav-middle">
         <ul class="nav__list header__list-middle">
@@ -18,8 +23,8 @@
         </ul>
       </nav>
       <div class="header__btns-group">
-        <button class="btn search">
-          <svg class="search__svg" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <button aria-label="Поиск" class="btn search">
+          <svg aria-hidden="true" focusable="false" class="search__svg" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M11 19C15.4182 19 19 15.4183 19 11C19 6.58172 15.4182 3 11 3C6.58169 3 2.99997 6.58172 2.99997 11C2.99997 15.4183 6.58169 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             <path d="M21 21L16.65 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
@@ -30,7 +35,41 @@
   </div>
   <div class="header__section header__section-bottom header__section_bg_white">
     <div class="header__container-bottom container">
-      <!-- <a class="btn btn_login header__login-middle" href="#">btn</a> -->
+      <nav class="nav header__nav-bottom">
+        <ul class="nav__list header__list-bottom">
+          <li class="nav__item"><a class="link header__link-bottom" href="#">Новости</a></li>
+          <li class="nav__item"><a class="link header__link-bottom" href="#">Блоги</a></li>
+          <li class="nav__item"><a class="link header__link-bottom" href="#">Топы</a></li>
+          <li class="nav__item"><a class="link header__link-bottom" href="#">Опросы</a></li>
+          <li class="nav__item"><a class="link header__link-bottom" href="#">Рейтинги</a></li>
+          <li class="nav__item"><a class="link header__link-bottom" href="#">Реклама</a></li>
+        </ul>
+      </nav>
+      <div class="header__players-btns">
+        <div role="button" tabindex="0" autofocus class="player header__player">
+          <svg aria-hidden="true" focusable="false" class="player__svg header__player-svg" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
+              fill="#A1A6B4" />
+          </svg>
+          <div class="player__content header__player-content">
+            <p class="player__title header__player-title">Ранее в эфире</p>
+            <p class="player__title-radio header__player-title-radio">&laquo;Музыка&raquo;</p>
+          </div>
+        </div>
+        <div role="button" tabindex="0" autofocus class="player header__player">
+          <svg aria-hidden="true" focusable="false" class="player__svg header__player-svg" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
+              fill="#A1A6B4" />
+          </svg>
+          <div class="player__content header__player-content">
+            <p class="player__title header__player-title">Ранее в эфире</p>
+            <p class="player__title-radio header__player-title-radio">&laquo;Музыка&raquo;</p>
+          </div>
+        </div>
+      </div>
+      <div class="age header__age"></div>
     </div>
   </div>
 </header>

@@ -9,6 +9,8 @@
 @import './components/nav/nav';
 @import './components/search/search';
 @import './components/burger/burger';
+@import './components/player/player';
+@import './components/age/age';
 
 @import './components/_header/header';
 
@@ -35,7 +37,7 @@ body {
 @media ( max-width: 750px ) {
   .container {
     padding: 0 32px;
-  }lsjdf
+}
 }
 
 

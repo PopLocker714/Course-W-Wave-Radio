@@ -6,6 +6,10 @@
     transition-property: stroke;
     @include transition;
   }
+
+  &:focus {
+    outline: none;
+  }
   &:focus .search__svg path {
     stroke: $primary-light;
   }
