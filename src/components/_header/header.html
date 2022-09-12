@@ -1,7 +1,7 @@
 <header class="header" id="header">
   <div class="header__section header__section-top header__section_bg_lite">
     <div class="header__container-top container">
-      <img class="logo" src="../../../assets/images/logo/logo-black-small.svg" alt="W-Wave-Radio">
+      <img class="logo" src="../../assets/images/logo/logo-black-small.svg" alt="W-Wave-Radio">
       <a class="btn btn_login header__login-top" href="#">Вход</a>
     </div>
   </div>
@@ -12,7 +12,7 @@
         <span class="burger__stick"></span>
       </button>
 
-      <img class="logo header__logo-middle" src="../../../assets/images/logo/logo-black.svg" alt="W-Wave-Radio">
+      <img class="logo header__logo-middle" src="../../assets/images/logo/logo-black.svg" alt="W-Wave-Radio">
       <nav class="nav header__nav-middle">
         <ul class="nav__list header__list-middle">
           <li class="nav__item"><a class="link header__link-middle" href="#">Подкасты</a></li>
@@ -24,9 +24,13 @@
       </nav>
       <div class="header__btns-group">
         <button aria-label="Поиск" class="btn search">
-          <svg aria-hidden="true" focusable="false" class="search__svg" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11 19C15.4182 19 19 15.4183 19 11C19 6.58172 15.4182 3 11 3C6.58169 3 2.99997 6.58172 2.99997 11C2.99997 15.4183 6.58169 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M21 21L16.65 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <svg aria-hidden="true" focusable="false" class="search__svg" viewbox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11 19C15.4182 19 19 15.4183 19 11C19 6.58172 15.4182 3 11 3C6.58169 3 2.99997 6.58172 2.99997 11C2.99997 15.4183 6.58169 19 11 19Z"
+              stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M21 21L16.65 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
           </svg>
         </button>
         <a class="btn btn_login header__login-middle" href="#">Вход</a>
@@ -46,8 +50,9 @@
         </ul>
       </nav>
       <div class="header__players-btns">
-        <div role="button" tabindex="0" autofocus class="player header__player">
-          <svg aria-hidden="true" focusable="false" class="player__svg header__player-svg" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div role="button" tabindex="0" class="player header__player">
+          <svg aria-hidden="true" focusable="false" class="player__svg header__player-svg" viewbox="0 0 20 20"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
               fill="#A1A6B4" />
@@ -57,8 +62,9 @@
             <p class="player__title-radio header__player-title-radio">&laquo;Музыка&raquo;</p>
           </div>
         </div>
-        <div role="button" tabindex="0" autofocus class="player header__player">
-          <svg aria-hidden="true" focusable="false" class="player__svg header__player-svg" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div role="button" tabindex="0" class="player header__player">
+          <svg aria-hidden="true" focusable="false" class="player__svg header__player-svg" viewbox="0 0 20 20"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
               fill="#A1A6B4" />
@@ -70,9 +76,46 @@
         </div>
       </div>
       <div class="age header__age"></div>
+    </div> <!-- \\ container -->
+
+    <div class="panel header__panel" id="panel">
+      <button class="btn panel__btn header__panel-btn" id="panel-btn">
+        <svg class="panel__svg header__panel-svg" width="15" height="15" viewBox="0 0 15 15" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="7.5" cy="7.5" r="7.5" fill="#6D31EE" />
+          <path d="M12 7.00014V8.00014H3V7.00014H12Z" fill="white" />
+          <path d="M8 12.0001H7L7 3.00014L8 3.00014L8 12.0001Z" fill="white" />
+        </svg>
+        Что в эфире?
+      </button>
+      <div class="panel__content header__panel-content">
+        
+        <div role="button" tabindex="0" class="player">
+          <svg aria-hidden="true" focusable="false" class="player__svg" viewbox="0 0 20 20" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
+              fill="#A1A6B4" />
+          </svg>
+          <div class="player__content">
+            <p class="player__title">Ранее в эфире</p>
+            <p class="player__title-radio">&laquo;Музыка&raquo;</p>
+          </div>
+        </div>
+        <div role="button" tabindex="0" class="player">
+          <svg aria-hidden="true" focusable="false" class="player__svg" viewbox="0 0 20 20" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
+              fill="#A1A6B4" />
+          </svg>
+          <div class="player__content">
+            <p class="player__title">Ранее в эфире</p>
+            <p class="player__title-radio">&laquo;Музыка&raquo;</p>
+          </div>
+        </div>
+
+      </div>
     </div>
-    <button class="btn header__panel-btn">
-      helo
-    </button>
   </div>
 </header>

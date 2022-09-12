@@ -3,13 +3,39 @@ const path = require('path')
 const HTMLWebpackPlugin     = require('html-webpack-plugin')
 const {CleanWebpackPlugin}  = require('clean-webpack-plugin')
 const MiniCssExtractPlugin  = require('mini-css-extract-plugin')
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin")
+const TerserPlugin = require("terser-webpack-plugin")
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
+
+const isDev = process.env.NODE_ENV === 'development'
+const isProd = !isDev
+console.log('-------- mode is development: ', isDev, ' --------')
+
+
+const optimization = () => {
+  const config = {
+    splitChunks: {
+      chunks: 'all',
+    }
+  }
+
+  if (isProd) {
+    config.minimizer = [
+      new CssMinimizerPlugin(),
+      new TerserPlugin(),
+    ]
+  }
+
+  return config
+}
+
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode: 'development',
-  entry: './javaScript/index.js',
+  entry: './index.js',
   output: {
-    filename: '[name].js',
+    filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
   },
   resolve: {
@@ -18,20 +44,36 @@ module.exports = {
       '@fonts': path.resolve(__dirname, 'src/assets/fonts')
     }
   },
-  optimization: {
-    splitChunks: {
-      chunks: 'all',
-    }
-  },
+  optimization: optimization(),
   devServer: {
-    port: 9000,
+    port: 3100,
   },
   plugins: [
     new HTMLWebpackPlugin({
       template: './index.html',
     }),
     new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({
+      filename: '[name].[contenthash].css'
+    }),
+    new BrowserSyncPlugin(
+      // BrowserSync options
+      {
+        // browse to http://localhost:3000/ during development
+        host: 'localhost',
+        port: 3000,
+        // proxy the Webpack Dev Server endpoint
+        // (which should be serving on http://localhost:3100/)
+        // through BrowserSync
+        proxy: 'http://localhost:3100/'
+      },
+      // plugin options
+      {
+        // prevent BrowserSync from reloading the page
+        // and let Webpack Dev Server take care of this
+        reload: false
+      }
+    )
   ],
   module: {
     rules: [
@@ -43,8 +85,11 @@ module.exports = {
         test: /\.s[ac]ss$/i,
         use: [
           // Creates `style` nodes from JS strings
-          MiniCssExtractPlugin.loader,
-          // Translates CSS into CommonJS
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {}
+          },
+          // Translates CSS into CommonJ S
           "css-loader",
           // Compiles Sass to CSS
           "sass-loader",
@@ -57,7 +102,7 @@ module.exports = {
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
-      }
+      },
     ],
   },
 }

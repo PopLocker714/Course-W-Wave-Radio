@@ -4,18 +4,29 @@
 @import 'resset';
 @import 'fonts';
 
-@import './components/link/link';
-@import './components/buttons/btns';
-@import './components/nav/nav';
-@import './components/search/search';
-@import './components/burger/burger';
-@import './components/player/player';
-@import './components/age/age';
+@import '../components/link/link';
+@import '../components/buttons/btns';
+@import '../components/nav/nav';
+@import '../components/search/search';
+@import '../components/burger/burger';
+@import '../components/player/player';
+@import '../components/age/age';
+@import '../components/panel/panel';
 
-@import './components/_header/header';
-@import './components/_hero/hero';
+@import '../components/_header/header';
+@import '../components/_hero/hero';
 
-
+button,
+a,
+div:hover {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
 body {
   font-family: Muller, Arial, Helvetica, sans-serif;

@@ -68,7 +68,6 @@
   }
 
   // bottom
-
   &__container-bottom {
     display: flex;
     align-items: center;
@@ -89,19 +88,14 @@
   &__players-btns {
     display: flex;
     border-right: 1px solid $shade-gray;
-    // width: 100%;
-    // max-width: 370px;
     min-width: 310px;
     flex: 0 1 370px;
   }
 
   &__player {
     width: 100%;
-    // max-width: 175px;
-    // min-width: 154px;
-
-
     padding: 3px 20px 3px 10px;
+
     &-svg {
       margin-left: 10px;
       margin-right: 10px;
@@ -109,12 +103,59 @@
   }
 
   &__age {
+    margin-left: 4px;
+
     &::before {
       content: '12+';
       font-family: 'Open Sans', sans-serif;
       font-weight: 400;
       font-size: 12px;
       color: $text-gray;
+    }
+  }
+
+  &__panel {
+    display: none;
+    min-height: 45px;
+    height: 100%;
+
+    &-btn {
+      transition-property: background-color, color;
+      @include transition;
+      border: 1px solid $lite-color;
+      background-color: $white;
+      min-height: 45px;
+      color: $primary;
+      font-weight: 500;
+
+      &:active {
+        color: $primary-light;
+      }
+
+      &:active .header__panel-svg circle {
+        fill: $primary-light;
+      }
+    }
+
+    &-svg {
+      margin-right: 5px;
+      transition-property: transform;
+      @include transition;
+
+      & circle {
+        transition-property: fill;
+        @include transition;
+      }
+    }
+
+    &.open {
+      .header__panel-btn {
+        background-color: $lite-color-transparent;
+      }
+
+      .header__panel-svg {
+        transform: rotate(45deg);
+      }
     }
   }
 }
@@ -129,8 +170,7 @@
     }
 
     &__logo-middle,
-    &__age
-    {
+    &__age {
       display: none;
     }
   }
@@ -138,6 +178,7 @@
 
 // *768px
 @media (max-width: 1000px) {}
+
 @media (max-width: 890px) {
   .header {
     &__nav-middle {
@@ -151,12 +192,12 @@
     &__players-btns {
       width: 40px;
       height: 40px;
-      
+
       min-width: auto;
       flex: 0 0 auto;
       border: none;
     }
-  
+
     &__player {
       &:first-child {
         display: none;
@@ -165,6 +206,7 @@
       &-content {
         display: none;
       }
+
       border: none;
       padding: 0;
     }
@@ -174,6 +216,14 @@
 // *320px
 @media (max-width: 580px) {
   .header {
+
+    &__section-bottom {
+      border: none;
+    }
+
+    &__panel {
+      display: block;
+    }
 
     &__container-top {
       height: 54px;
@@ -201,4 +251,5 @@
     }
   }
 }
+
 @media (max-width: 532px) {}
