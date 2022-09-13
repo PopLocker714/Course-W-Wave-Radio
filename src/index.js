@@ -1,3 +1,4 @@
+
 import '@fonts/MullerBold.woff'
 import '@fonts/MullerBold.woff2'
 import '@fonts/MullerLight.woff'
@@ -12,6 +13,8 @@ import '@fonts/MullerRegularItalic.woff'
 import '@fonts/MullerRegularItalic.woff2'
 
 import headerHtml from './components/_header/header.html'
+// import headerSpiralImg from './assets/images/header/spiral.png'
+// console.log(headerSpiralImg)
 import heroHtml from './components/_hero/hero.html'
 
 import './styles/main.scss'
@@ -29,6 +32,7 @@ const burger = new BurgerMenu({
   element: document.getElementById('burger'),
   animDilay: 200,
   classStyleName: 'active',
+  isFirstElementAdd: true,
   onClick: burgerHandler
 })
 
@@ -36,6 +40,7 @@ const panel = new Panel({
   element: document.getElementById('panel'),
   animDilay: 200,
   classStyleName: 'open',
+  isFirstElementAdd: false,
   onClick: panelHandler
 })
 

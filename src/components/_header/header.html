@@ -1,16 +1,19 @@
 <header class="header" id="header">
   <div class="header__section header__section-top header__section_bg_lite">
     <div class="header__container-top container">
-      <img class="logo" src="../../assets/images/logo/logo-black-small.svg" alt="W-Wave-Radio">
+      <img class="logo header__logo-top" src="../../assets/images/logo/logo-black-small.svg" alt="W-Wave-Radio">
       <a class="btn btn_login header__login-top" href="#">Вход</a>
     </div>
   </div>
   <div class="header__section header__section-middle header__section_bg_white">
     <div class="header__container-middle container">
 
-      <button class="btn burger header__burger" id="burger">
-        <span class="burger__stick"></span>
-      </button>
+      <div class="burger header__burger" id="burger">
+        <button class="btn burger__btn" id="burger-btn">
+          <span class="burger__btn-stick"></span>
+        </button>
+        <div class="burger__content header__burger-content container"></div>
+      </div>
 
       <img class="logo header__logo-middle" src="../../assets/images/logo/logo-black.svg" alt="W-Wave-Radio">
       <nav class="nav header__nav-middle">
@@ -70,8 +73,8 @@
               fill="#A1A6B4" />
           </svg>
           <div class="player__content header__player-content">
-            <p class="player__title header__player-title">Ранее в эфире</p>
-            <p class="player__title-radio header__player-title-radio">&laquo;Музыка&raquo;</p>
+            <p class="player__title header__player-title">Сейчас в эфире</p>
+            <p class="player__title-radio header__player-title-radio">&laquo;Как так?&raquo;</p>
           </div>
         </div>
       </div>
@@ -88,33 +91,31 @@
         </svg>
         Что в эфире?
       </button>
-      <div class="panel__content header__panel-content">
-        
-        <div role="button" tabindex="0" class="player">
-          <svg aria-hidden="true" focusable="false" class="player__svg" viewbox="0 0 20 20" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
+      <div class="panel__content header__panel-content container">
+        <div role="button" tabindex="0" class="player header__panel-player">
+          <svg aria-hidden="true" focusable="false" class="player__svg header__panel-player-svg" viewbox="0 0 20 20"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
               fill="#A1A6B4" />
           </svg>
-          <div class="player__content">
-            <p class="player__title">Ранее в эфире</p>
-            <p class="player__title-radio">&laquo;Музыка&raquo;</p>
+          <div class="player__content header__panel-player-content">
+            <p class="player__title header__panel-player-title">Ранее в эфире</p>
+            <p class="player__title-radio header__panel-player-title-radio">&laquo;Музыка&raquo;</p>
           </div>
         </div>
-        <div role="button" tabindex="0" class="player">
-          <svg aria-hidden="true" focusable="false" class="player__svg" viewbox="0 0 20 20" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
+        <div role="button" tabindex="0" class="player header__panel-player">
+          <svg aria-hidden="true" focusable="false" class="player__svg header__panel-player-svg" viewbox="0 0 20 20"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
               fill="#A1A6B4" />
           </svg>
-          <div class="player__content">
-            <p class="player__title">Ранее в эфире</p>
-            <p class="player__title-radio">&laquo;Музыка&raquo;</p>
+          <div class="player__content header__panel-player-content">
+            <p class="player__title header__panel-player-title">Сейчас в эфире</p>
+            <p class="player__title-radio header__panel-player-title-radio">&laquo;Как так?&raquo;</p>
           </div>
         </div>
-
       </div>
     </div>
   </div>

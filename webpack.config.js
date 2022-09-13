@@ -71,7 +71,7 @@ module.exports = {
       {
         // prevent BrowserSync from reloading the page
         // and let Webpack Dev Server take care of this
-        reload: false
+        reload: true
       }
     )
   ],
@@ -90,17 +90,22 @@ module.exports = {
             options: {}
           },
           // Translates CSS into CommonJ S
-          "css-loader",
+          {
+            loader: 'css-loader',
+            options: {
+              url: true,
+            }
+          },
           // Compiles Sass to CSS
           "sass-loader",
         ],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
       },
     ],

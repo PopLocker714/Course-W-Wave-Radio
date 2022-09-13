@@ -4,13 +4,20 @@
 
   &__section {
     background-color: $white;
-
+    
     &-top {
       display: none;
       background-color: transparent;
+      z-index: 300;
+    }
+
+    &-middle {
+      position: relative;
+      z-index: 200;
     }
 
     &-bottom {
+      z-index: 100;
       border-top: 1px solid $lite-color;
       border-bottom: 1px solid $lite-color;
     }
@@ -37,13 +44,12 @@
   }
 
   &__login-middle {
-    padding: 10px 31px;
+    padding: 9px 31px;
   }
 
   &__nav-middle {
     width: 100%;
     max-width: 638px;
-    margin-right: 14px;
   }
 
   &__list-middle {
@@ -65,20 +71,44 @@
 
   &__burger {
     display: none;
+
+    &-content {
+      opacity: 0;
+      width: 100%;
+      height: 500px;
+      background-color: $shade-gray;
+      transition-property: opacity visibility;
+      @include transition;
+      visibility: hidden;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: 10px url(../assets/images/header/spiral.png) no-repeat;
+      }
+    }
+
+    &.active &-content {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 
-  // bottom
   &__container-bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    min-height: 60px;
+    min-height: 58px;
   }
 
   &__nav-bottom {
     flex: 0 1 611px;
-    margin-right: 10px;
+    margin-right: 35px;
   }
 
   &__list-bottom {
@@ -88,22 +118,31 @@
   &__players-btns {
     display: flex;
     border-right: 1px solid $shade-gray;
-    min-width: 310px;
-    flex: 0 1 370px;
+    min-width: 300px;
+    height: 40px;
+    flex: 0 1 351px;
   }
 
   &__player {
     width: 100%;
-    padding: 3px 20px 3px 10px;
+    padding-left: 3px;
 
     &-svg {
       margin-left: 10px;
       margin-right: 10px;
     }
+
+    &-title {
+      margin-bottom: 2px;
+    }
   }
 
   &__age {
-    margin-left: 4px;
+    margin-left: 33px;
+    width: 46px;
+    height: 100%;
+    min-height: 58px;
+    background-color: $lite-color;
 
     &::before {
       content: '12+';
@@ -118,6 +157,7 @@
     display: none;
     min-height: 45px;
     height: 100%;
+    background-color: $white;
 
     &-btn {
       transition-property: background-color, color;
@@ -156,6 +196,52 @@
       .header__panel-svg {
         transform: rotate(45deg);
       }
+
+      .header__panel-content {
+        transform: translateY(45px);
+      }
+    }
+
+    &-content {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      background-color: $white;
+      min-height: 80px;
+      width: 100%;
+      transform: translateY(-45px);
+      transition-property: transform;
+      @include transition;
+      z-index: -10;
+    }
+
+    &-player {
+      flex-direction: column;
+      align-items: flex-start;
+      min-height: 64px;
+      height: 100%;
+      min-width: 108px;
+
+      &:first-child {
+        border: none;
+      }
+
+      &:not(:first-child) {
+        padding-left: 35px;
+        padding-right: 35px;
+      }
+
+      &-svg {
+        margin-bottom: 7px;
+      }
+
+      &-title {
+        font-size: 10px;
+      }
+      
+      &-title-radio {
+        font-size: 14px;
+      }
     }
   }
 }
@@ -169,11 +255,17 @@
       }
     }
 
+    &__btns-group {
+      margin-left: 14px;
+    }
+
     &__logo-middle,
     &__age {
       display: none;
     }
   }
+
+  
 }
 
 // *768px
@@ -184,13 +276,16 @@
     &__nav-middle {
       display: none;
     }
+    &__nav-bottom {
+      margin-right: 25px;
+    }
 
     &__burger {
       display: flex;
     }
 
     &__players-btns {
-      width: 40px;
+      width: 22px;
       height: 40px;
 
       min-width: auto;
@@ -207,6 +302,10 @@
         display: none;
       }
 
+      &-svg {
+        margin: 0;
+      }
+
       border: none;
       padding: 0;
     }
@@ -216,6 +315,10 @@
 // *320px
 @media (max-width: 580px) {
   .header {
+
+    &__logo-top {
+      width: 88px;
+    }
 
     &__section-bottom {
       border: none;

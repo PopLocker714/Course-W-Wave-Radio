@@ -13,10 +13,5 @@
     position: absolute;
     top: 0;
     left: 0;
-    display: none;
-  }
-
-  &.open &__content {
-    display: block;
   }
 }
