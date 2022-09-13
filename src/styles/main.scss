@@ -4,8 +4,15 @@
 @import 'resset';
 @import 'fonts';
 
+
+
+
+
+@import 'container';
+
+
 @import '../components/link/link';
-@import '../components/buttons/btns';
+@import '../components/btn/btn';
 @import '../components/nav/nav';
 @import '../components/search/search';
 @import '../components/burger/burger';
@@ -18,7 +25,7 @@
 
 button,
 a,
-div:hover {
+.search__svg:hover {
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-user-select: none;
@@ -28,36 +35,13 @@ div:hover {
   user-select: none;
 }
 
+
 body {
   font-family: Muller, Arial, Helvetica, sans-serif;
   font-size: 16px;
   background-color: $lite-color;
   min-width: 320px;
 }
-
-.container {
-  margin: 0 auto;
-  max-width: 1310px;
-  padding: 0 100px;
-}
-
-@media ( max-width: 890px ) {
-  .container {
-    padding: 0 114px;
-  }
-}
-@media ( max-width: 750px ) {
-  .container {
-    padding: 0 32px;
-}
-}
-
-
-
-
-
-
-
 
 
 // !MEDIA

@@ -12,28 +12,28 @@ import '@fonts/MullerRegular.woff2'
 import '@fonts/MullerRegularItalic.woff'
 import '@fonts/MullerRegularItalic.woff2'
 
-import headerHtml from './components/_header/header.html'
-// import headerSpiralImg from './assets/images/header/spiral.png'
-// console.log(headerSpiralImg)
-import heroHtml from './components/_hero/hero.html'
-
 import './styles/main.scss'
 
-import loadSection from './modules/loadSection'
+import headerHtml from './components/_header/header.html'
+import heroHtml from './components/_hero/hero.html'
 
+import loadSection from './modules/loadSection'
 import BurgerMenu from './components/burger/BurgerMenu'
 import Panel from './components/panel/Panel'
 
+
+
+
+
 loadSection(headerHtml, 'header', document.body)
 loadSection(heroHtml, 'section', document.body)
-
 
 const burger = new BurgerMenu({
   element: document.getElementById('burger'),
   animDilay: 200,
   classStyleName: 'active',
   isFirstElementAdd: true,
-  onClick: burgerHandler
+  onClick: burgerHandler,
 })
 
 const panel = new Panel({
@@ -41,7 +41,7 @@ const panel = new Panel({
   animDilay: 200,
   classStyleName: 'open',
   isFirstElementAdd: false,
-  onClick: panelHandler
+  onClick: panelHandler,
 })
 
 function burgerHandler() {
@@ -62,3 +62,7 @@ function panelHandler() {
     panel.close()
   }
 }
+
+
+const burgerLinks = document.querySelectorAll('.header__burger-nav-link')
+burgerLinks.forEach(el => el.addEventListener('click', () => burger.close()))

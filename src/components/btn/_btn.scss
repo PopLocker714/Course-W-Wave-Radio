@@ -1,0 +1,84 @@
+.btn {
+  outline: none;
+  color: inherit;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition-property: color, background-color, border;
+  @include transition;
+
+  &_login {
+    border: 2px solid $dark;
+    border-radius: 77px;
+
+    &:focus {
+      outline: none;
+      background-color: $primary-light;
+    }
+
+    &:hover {
+      color: $white;
+      background-color: $dark;
+    }
+
+    &:active {
+      background-color: $primary-shade;
+      color: $white;
+      border-color: $primary-shade;
+    }
+  }
+
+  &_primary_main {
+    color: $white;
+    background-color: $primary;
+    border: 2px solid $primary;
+
+    border-radius: 40px;
+
+    &:focus {
+      outline: none;
+      background-color: $primary-light;
+      border-color: $primary-shade;
+    }
+
+    &:hover {
+      background-color: $primary-light;
+      border-color: $primary-light;
+    }
+
+    &:active {
+      background-color: $primary-shade;
+      border-color: $primary-shade;
+    }
+  }
+  
+  &_primary_second {
+    color: $primary;
+    background-color: transparent;
+    border: 2px solid $primary;
+    
+    border-radius: 40px;
+
+    &:focus {
+      outline: none;
+      color: $white;
+      background-color: $primary-light;
+      border-color: $primary;
+    }
+
+    &:hover {
+      color: $white;
+      background-color: $primary;
+      border-color: $primary;
+    }
+    
+    &:active {
+      color: $white;
+      background-color: $primary-shade;
+      border-color: $primary-shade;
+    }
+  }
+}
