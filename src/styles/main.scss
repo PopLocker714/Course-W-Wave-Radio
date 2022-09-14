@@ -1,16 +1,11 @@
-
 @import 'var';
 @import 'mixins';
 @import 'resset';
 @import 'fonts';
 
-
-
-
-
 @import 'container';
 
-
+@import '../components/text/text';
 @import '../components/link/link';
 @import '../components/btn/btn';
 @import '../components/nav/nav';
@@ -22,10 +17,11 @@
 
 @import '../components/_header/header';
 @import '../components/_hero/hero';
+@import '../components/_podcast/podcast';
 
 button,
 a,
-.search__svg:hover {
+.player {
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-user-select: none;
@@ -35,18 +31,21 @@ a,
   user-select: none;
 }
 
-
 body {
   font-family: Muller, Arial, Helvetica, sans-serif;
   font-size: 16px;
   background-color: $lite-color;
   min-width: 320px;
+  color: $dark
 }
-
 
 // !MEDIA
 @media (max-width: 1249px) {}
+
 @media (max-width: 1000px) {}
+
 @media (max-width: 890px) {}
+
 @media (max-width: 580px) {}
+
 @media (max-width: 532px) {}

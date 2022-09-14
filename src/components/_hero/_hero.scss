@@ -1,9 +1,6 @@
 .hero {
   background-color: $white;
-  // width: 100%;
-  // height: 1000px;
-  
-  
+
   &__content {
     padding: 90px 0;
     background: right url(../assets/images/hero/microphone.png) no-repeat;
@@ -13,12 +10,12 @@
     font-size: 60px;
     margin-bottom: 7px;
 
-    &_italic {
+    &-italic {
       font-weight: 400;
       font-style: italic;
     }
   }
-  
+
   &__text {
     max-width: 635px;
     font-size: 16px;
@@ -43,7 +40,6 @@
 
 @media (max-width: 1249px) {
   .hero {
-
     &__content {
       padding: 86px 0;
       background: right/30% url(../assets/images/hero/microphone.png) no-repeat;
@@ -54,8 +50,9 @@
       margin-bottom: 21px;
     }
   }
-    
+
 }
+
 @media (max-width: 1000px) {
   .hero {
     &__content {
@@ -63,11 +60,10 @@
     }
   }
 }
+
 @media (max-width: 890px) {
-  
+
   .hero {
-
-
     &__content {
       padding: 40px 0;
     }
@@ -91,8 +87,7 @@
     }
   }
 }
-@media (max-width: 580px) {
 
-}
+@media (max-width: 580px) {}
+
 @media (max-width: 532px) {}
-

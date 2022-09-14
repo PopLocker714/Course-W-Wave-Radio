@@ -1,4 +1,3 @@
-
 import '@fonts/MullerBold.woff'
 import '@fonts/MullerBold.woff2'
 import '@fonts/MullerLight.woff'
@@ -16,17 +15,17 @@ import './styles/main.scss'
 
 import headerHtml from './components/_header/header.html'
 import heroHtml from './components/_hero/hero.html'
+import podcastHtml from './components/_podcast/podcast.html'
+console.log(podcastHtml)
 
 import loadSection from './modules/loadSection'
 import BurgerMenu from './components/burger/BurgerMenu'
 import Panel from './components/panel/Panel'
 
 
-
-
-
 loadSection(headerHtml, 'header', document.body)
 loadSection(heroHtml, 'section', document.body)
+loadSection(podcastHtml, 'section', document.body)
 
 const burger = new BurgerMenu({
   element: document.getElementById('burger'),

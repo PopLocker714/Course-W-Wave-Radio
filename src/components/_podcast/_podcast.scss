@@ -1,0 +1,208 @@
+.podcast {
+  padding-top: 96px;
+  padding-bottom: 94px;
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &__card {
+    display: flex;
+    position: relative;
+    background-color: $white;
+    width: 100%;
+    max-width: 540px;
+
+    &:nth-child(2n+1) {
+      margin-right: 30px;
+    }
+  }
+
+  &__date {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 51px;
+    height: 16px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1;
+    color: $dark;
+    background-color: $lite-color;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 30px 24px 30px;
+
+    &-time {
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+
+    &-title {
+      margin-bottom: 3px;
+    }
+
+    &-author {
+      font-size: 16px;
+      line-height: 1;
+    }
+  }
+
+  &__btns-list {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid $lite-color;
+    height: 32px;
+  }
+
+  &__like-item {
+    margin-left: 30px;
+  }
+
+  &__btn {
+    &-play {
+      display: flex;
+      align-items: center;
+
+      &:focus &-svg circle {
+        stroke: $primary-light;
+      }
+
+      &:focus &-svg path {
+        fill: $primary-light;
+      }
+
+      &:hover &-svg circle {
+        stroke: $primary;
+      }
+
+      &:hover &-svg path {
+        fill: $primary;
+      }
+
+      &:active &-svg {
+        fill: $primary-shade;
+      }
+
+      &:active &-svg circle {
+        stroke: $primary-shade;
+      }
+
+      &:active &-svg path {
+        fill: $white;
+      }
+
+      &-svg {
+        & circle {
+          transition-property: stroke;
+          @include transition;
+        }
+
+        & path {
+          transition-property: fill;
+          @include transition;
+        }
+      }
+    }
+
+    &-like {
+      display: flex;
+      align-items: center;
+
+      &-count {
+        color: $text-gray;
+        padding-top: 2px;
+        margin-left: 6px;
+
+        transition-property: color;
+        @include transition;
+      }
+
+      &-svg {
+        transition-property: fill;
+        @include transition;
+
+        & path {
+          transition-property: fill;
+          @include transition;
+        }
+      }
+
+      &:not(:nth-child(3n + 1)):focus {
+        background-color: $primary-light;
+      }
+
+      &:not(:nth-child(3n + 1)):focus &-svg path {
+        fill: $white;
+      }
+
+      &:not(:nth-child(3n + 1)):focus &-count {
+        color: $white;
+      }
+
+      &:not(:nth-child(3n + 1)):hover {
+        background-color: transparent;
+      }
+
+      &:not(:nth-child(3n + 1)):hover &-svg path {
+        fill: $primary;
+      }
+
+      &:not(:nth-child(3n + 1)):hover &-count {
+        color: $primary;
+      }
+
+      &:not(:nth-child(3n + 1)):active {
+        background-color: transparent;
+      }
+
+      &:not(:nth-child(3n + 1)):active &-svg {
+        fill: $primary-shade;
+      }
+
+      &:not(:nth-child(3n + 1)):active &-svg path {
+        fill: $primary-shade;
+      }
+
+      &:not(:nth-child(3n + 1)):active &-count {
+        color: $primary-shade;
+      }
+
+      
+    }
+
+    &-more {
+      padding: 23px 52px;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+.podcast__btn-like {
+  &:not(:first-child) {
+    background-color: black;
+  }
+  
+  &:first-child {
+    background-color: black;
+  }
+}
