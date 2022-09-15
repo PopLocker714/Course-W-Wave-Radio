@@ -1,7 +1,10 @@
-@import './var';
-
 @mixin transition {
   transition-duration: .2s;
   transition-timing-function: ease-in-out;
 }
 
+@mixin opacityAnim {
+  animation-name: opacityAnim;
+  animation-duration: .4s;
+  animation-timing-function: ease-in-out;
+}

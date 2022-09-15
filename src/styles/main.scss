@@ -1,5 +1,6 @@
 @import 'var';
 @import 'mixins';
+@import 'keyframes';
 @import 'resset';
 @import 'fonts';
 
@@ -31,12 +32,17 @@ a,
   user-select: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Muller, Arial, Helvetica, sans-serif;
   font-size: 16px;
   background-color: $lite-color;
   min-width: 320px;
-  color: $dark
+  color: $dark;
+ 
 }
 
 // !MEDIA

@@ -20,3 +20,11 @@
     line-height: 1;
   }
 }
+
+@media (max-width: 580px) {
+  .title {
+    &-h2 {
+      font-size: 24px;
+    }
+  }
+}

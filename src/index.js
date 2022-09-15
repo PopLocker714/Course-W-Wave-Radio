@@ -16,17 +16,18 @@ import './styles/main.scss'
 import headerHtml from './components/_header/header.html'
 import heroHtml from './components/_hero/hero.html'
 import podcastHtml from './components/_podcast/podcast.html'
-console.log(podcastHtml)
 
 import loadSection from './modules/loadSection'
 import BurgerMenu from './components/burger/BurgerMenu'
 import Panel from './components/panel/Panel'
 
+import loadPodcastItems from './components/_podcast/loadPodcastItems'
 
 loadSection(headerHtml, 'header', document.body)
 loadSection(heroHtml, 'section', document.body)
 loadSection(podcastHtml, 'section', document.body)
 
+// header
 const burger = new BurgerMenu({
   element: document.getElementById('burger'),
   animDilay: 200,
@@ -62,6 +63,9 @@ function panelHandler() {
   }
 }
 
-
 const burgerLinks = document.querySelectorAll('.header__burger-nav-link')
 burgerLinks.forEach(el => el.addEventListener('click', () => burger.close()))
+
+// podcast
+const btnMore = document.getElementById('btn-more')
+btnMore.addEventListener('click', loadPodcastItems)

@@ -6,10 +6,15 @@
     margin-bottom: 30px;
   }
 
+  &__list {
+    margin-bottom: 60px;
+  }
+
   &__item {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
+    @include opacityAnim;
   }
 
   &__card {
@@ -146,63 +151,162 @@
         }
       }
 
-      &:not(:nth-child(3n + 1)):focus {
+      &:focus {
         background-color: $primary-light;
       }
 
-      &:not(:nth-child(3n + 1)):focus &-svg path {
+      &:focus &-svg path {
         fill: $white;
       }
 
-      &:not(:nth-child(3n + 1)):focus &-count {
+      &:focus &-count {
         color: $white;
       }
 
-      &:not(:nth-child(3n + 1)):hover {
+      &:hover {
         background-color: transparent;
       }
 
-      &:not(:nth-child(3n + 1)):hover &-svg path {
+      &:hover &-svg path {
         fill: $primary;
       }
 
-      &:not(:nth-child(3n + 1)):hover &-count {
+      &:hover &-count {
         color: $primary;
       }
 
-      &:not(:nth-child(3n + 1)):active {
+      &:active {
         background-color: transparent;
       }
 
-      &:not(:nth-child(3n + 1)):active &-svg {
+      &:active &-svg {
         fill: $primary-shade;
       }
 
-      &:not(:nth-child(3n + 1)):active &-svg path {
+      &:active &-svg path {
         fill: $primary-shade;
       }
 
-      &:not(:nth-child(3n + 1)):active &-count {
+      &:active &-count {
         color: $primary-shade;
       }
-
-      
     }
 
     &-more {
+      display: block;
       padding: 23px 52px;
       margin: 0 auto;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1;
+    }
+  }
+
+  &__footer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1249px) {}
+
+@media (max-width: 1000px) {
+  .podcast {
+    &__item {
+      flex-direction: column;
+    }
+
+    &__card {
+      &:nth-child(2n+1) {
+        margin-right: 0;
+      }
+
+      &:first-child {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__footer {
+      max-width: 540px;
     }
   }
 }
 
+@media (max-width: 890px) {}
 
-.podcast__btn-like {
-  &:not(:first-child) {
-    background-color: black;
-  }
+@media (max-width: 580px) {
+  .podcast {
+    padding-top: 54px;
+    padding-bottom: 54px;
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__list {
+      max-width: 256px;
+      margin-bottom: 10px;
+    }
+
+    &__item {
+      &_mobile_hide {
+        display: none;
+      }
+    }
+
+    &__card {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__date {
+      bottom: auto;
+    }
+
+    &__info {
+      min-height: 85px;
+      padding: 14px 17px 15px 16px;
+      align-items: center;
+
+      &-title {
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+
+      &-author {
+        font-size: 12px;
+      }
+    }
+
+    &__btn {
+      &-more {
+        font-size: 16px;
+        padding: 15px 28px;
+      }
+
+      &-play {
+        width: 37px;
+        height: 37px;
+      }
   
-  &:first-child {
-    background-color: black;
+      &-like-count {
+        padding-top: 0;
+        font-size: 12px;
+      }
+    }
+
+    &__like-item {
+      margin-left: 32px;
+    }
+
+    &__btns-list {
+      height: 28px;
+    }
+
+    &__footer {
+      width: 100%;
+      max-width: 256px;
+    }
   }
 }
+
+@media (max-width: 532px) {}

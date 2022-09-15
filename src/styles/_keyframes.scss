@@ -1,0 +1,20 @@
+// @keyframes scaleCheck {
+//   from {
+//     background: center center / 0 url(../img/aboutUs/checksvg.svg) no-repeat;
+//   }
+
+//   to {
+//     background: center center / 10px url(../img/aboutUs/checksvg.svg) no-repeat;
+//   }
+// }
+
+
+@keyframes opacityAnim {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
