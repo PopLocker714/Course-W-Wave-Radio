@@ -13,9 +13,12 @@ import '@fonts/MullerRegularItalic.woff2'
 
 import './styles/main.scss'
 
+import Choices from 'choices.js'
+
 import headerHtml from './components/_header/header.html'
 import heroHtml from './components/_hero/hero.html'
 import podcastHtml from './components/_podcast/podcast.html'
+import transmissionHtml from './components/_transmission/transmission.html'
 
 import loadSection from './modules/loadSection'
 import BurgerMenu from './components/burger/BurgerMenu'
@@ -26,6 +29,7 @@ import loadPodcastItems from './components/_podcast/loadPodcastItems'
 loadSection(headerHtml, 'header', document.body)
 loadSection(heroHtml, 'section', document.body)
 loadSection(podcastHtml, 'section', document.body)
+loadSection(transmissionHtml, 'section', document.body)
 
 // header
 const burger = new BurgerMenu({
@@ -69,3 +73,16 @@ burgerLinks.forEach(el => el.addEventListener('click', () => burger.close()))
 // podcast
 const btnMore = document.getElementById('btn-more')
 btnMore.addEventListener('click', loadPodcastItems)
+
+
+// transmission
+
+const choices = new Choices(document.getElementById('select'), {
+  searchEnabled: false,
+  itemSelectText: '',
+  position: 'bottom',
+  shouldSort: false,
+  placeholder: false,
+
+  
+})

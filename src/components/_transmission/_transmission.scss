@@ -1,0 +1,36 @@
+.transmission {
+  padding: 94px 0 64px;
+  background-color: $white;
+
+  &__container {
+    // background-color: red;
+    display: flex;
+    min-height: 564px;
+    height: 100%;
+  }
+
+  &__sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    max-width: 255px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  &__list {}
+
+  &__card {
+    &-note {
+      
+    }
+  }
+}
