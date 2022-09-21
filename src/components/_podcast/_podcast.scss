@@ -3,7 +3,7 @@
   padding-bottom: 94px;
 
   &__title {
-    margin-bottom: 30px;
+    margin-bottom: 29px;
   }
 
   &__list {
@@ -207,10 +207,15 @@
   }
 }
 
-@media (max-width: 1249px) {}
+@media (max-width: 1249px) {
+  .podcast {
+    padding-bottom: 92px;
+  }
+}
 
 @media (max-width: 1000px) {
   .podcast {
+    padding-bottom: 94px;
     &__item {
       flex-direction: column;
     }
