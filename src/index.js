@@ -23,6 +23,8 @@ import transmissionHtml from './components/_transmission/transmission.html'
 import loadSection from './modules/loadSection'
 import BurgerMenu from './components/burger/BurgerMenu'
 import Panel from './components/panel/Panel'
+import TabsToggle from './modules/TabsToggle'
+import transmissionToggle from './components/_transmission/transmissionToggle'
 
 import loadPodcastItems from './components/_podcast/loadPodcastItems'
 
@@ -76,13 +78,21 @@ btnMore.addEventListener('click', loadPodcastItems)
 
 
 // transmission
-
 const choices = new Choices(document.getElementById('select'), {
   searchEnabled: false,
   itemSelectText: '',
   position: 'bottom',
   shouldSort: false,
   placeholder: false,
-
-  
 })
+
+// console.log(choices)
+
+transmissionToggle(document.getElementById('select'), document.querySelectorAll('.transmission__list'), 'transmission__list_active')
+
+// new TabsToggle({
+//   buttons: document.querySelectorAll('[role="option"]'),
+//   contents: document.querySelectorAll('.transmission__list'),
+//   classActive: 'transmission__list_active',
+//   activeItem: 0
+// }).init()

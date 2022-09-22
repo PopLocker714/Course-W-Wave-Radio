@@ -49,11 +49,15 @@
   }
 
   &__list {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 14px;
     padding-left: 30px;
+
+    &_active {
+      display: flex;
+    }
   }
 
   &__item {
