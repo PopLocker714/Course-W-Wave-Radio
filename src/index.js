@@ -14,11 +14,13 @@ import '@fonts/MullerRegularItalic.woff2'
 import './styles/main.scss'
 
 import Choices from 'choices.js'
+import Accordion from 'accordion-js'
 
 import headerHtml from './components/_header/header.html'
 import heroHtml from './components/_hero/hero.html'
 import podcastHtml from './components/_podcast/podcast.html'
 import transmissionHtml from './components/_transmission/transmission.html'
+import guestHtml from './components/_guest/guest.html'
 
 import loadSection from './modules/loadSection'
 import BurgerMenu from './components/burger/BurgerMenu'
@@ -32,6 +34,7 @@ loadSection(headerHtml, 'header', document.body)
 loadSection(heroHtml, 'section', document.body)
 loadSection(podcastHtml, 'section', document.body)
 loadSection(transmissionHtml, 'section', document.body)
+loadSection(guestHtml, 'section', document.body)
 
 // header
 const burger = new BurgerMenu({
@@ -88,7 +91,11 @@ const choices = new Choices(document.getElementById('select'), {
 
 // console.log(choices)
 
-transmissionToggle(document.getElementById('select'), document.querySelectorAll('.transmission__list'), 'transmission__list_active')
+transmissionToggle(
+  document.getElementById('select'),
+  document.querySelectorAll('.transmission__list'),
+  'transmission__list_active'
+)
 
 // new TabsToggle({
 //   buttons: document.querySelectorAll('[role="option"]'),
@@ -96,3 +103,7 @@ transmissionToggle(document.getElementById('select'), document.querySelectorAll(
 //   classActive: 'transmission__list_active',
 //   activeItem: 0
 // }).init()
+
+// guest
+
+new Accordion('.accordion-container')

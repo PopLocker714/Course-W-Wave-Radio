@@ -1,0 +1,28 @@
+.social {
+  display: inline-flex;
+
+  &__link {
+    &:focus {
+      outline: none;
+    }
+
+    &:focus .social__svg path {
+      fill: $primary-light;
+    }
+
+    &:hover .social__svg path {
+      fill: $primary;
+    }
+
+    &:active .social__svg path {
+      fill: $primary-shade;
+    }
+  }
+
+  &__svg {
+    & path {
+      transition-property: fill;
+      @include transition;
+    }
+  }
+}

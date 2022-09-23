@@ -1,0 +1,154 @@
+.guest {
+  padding: 94px 0 91px;
+  color: $white;
+  background-color: $dark;
+
+  &__title {
+    color: $white;
+    margin-bottom: 13px;
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 49px;
+    max-width: 825px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__ac {
+
+    &-container {
+      max-width: 730px;
+      width: 100%;
+
+      & .is-active .guest__ac-header {
+        border-color: $primary-light;
+      }
+    }
+
+    &-header {
+      border-top: 1px solid $text-gray;
+      border-bottom: 1px solid $text-gray;
+
+      &-btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        color: $white;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1;
+        padding: 34px 3px 34px 0;
+
+        &:focus {
+          background-color: rgba(170, 157, 250, 30%);
+        }
+
+        &:hover {
+          color: $primary-light;
+          background-color: transparent;
+        }
+
+        &:hover .guest__ac-header-svg circle,
+        &:hover .guest__ac-header-svg path {
+          stroke: $primary-light;
+        }
+
+        &:active {
+          color: $primary-light;
+          background-color: transparent;
+        }
+
+        &:active .guest__ac-header-svg circle {
+          stroke: $primary-light;
+        }
+
+        &:active .guest__ac-header-svg path {
+          stroke: $white;
+        }
+
+        &:active .guest__ac-header-svg {
+          fill: $primary-light;
+        }
+
+
+
+      }
+
+      &-svg circle,
+      &-svg path {
+        transition-property: stroke;
+        @include transition;
+      }
+    }
+
+    &-panel {
+      // padding: 30px 0 14px;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__sidebar {
+    max-width: 350px;
+    margin-left: 30px;
+  }
+
+  &__social {
+    margin-bottom: 8px;
+
+    &-item {
+      margin-right: 30px;
+    }
+
+    &-link {
+      display: inline-block;
+    }
+  }
+
+  &__info {
+
+    &-picture {
+      background-color: $dark-lite;
+      margin-bottom: 12px;
+    }
+
+    &-name {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1;
+      margin-bottom: 7px;
+    }
+
+    &-desc {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 42px;
+    }
+
+    &-btn {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1;
+      padding: 10px 18px;
+    }
+  }
+}

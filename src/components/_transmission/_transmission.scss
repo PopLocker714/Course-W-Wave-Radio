@@ -1,5 +1,5 @@
 .transmission {
-  padding: 94px 0 64px;
+  padding: 94px 0;
   background-color: $white;
 
   &__container {
@@ -54,6 +54,7 @@
     justify-content: space-between;
     padding-top: 14px;
     padding-left: 30px;
+    @include opacityAnim;
 
     &_active {
       display: flex;
@@ -86,8 +87,6 @@
       min-height: 112px;
       height: 100%;
     }
-
-    &-intro {}
 
     &-name {
       font-weight: 500;

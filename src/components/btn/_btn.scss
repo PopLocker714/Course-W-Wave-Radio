@@ -84,6 +84,32 @@
       border-color: $primary-shade;
     }
   }
+
+  &_light {
+    color: $primary-light;
+    background-color: transparent;
+    border: 2px solid $primary-light;
+
+    border-radius: 77px;
+    &:focus {
+      outline: none;
+      color: $white;
+      background-color: $primary;
+      border-color: $primary;
+    }
+
+    &:hover {
+      color: $white;
+      background-color: $primary-light;
+      border-color: $primary-light;
+    }
+
+    &:active {
+      color: $white;
+      background-color: $primary-shade;
+      border-color: $primary-shade;
+    }
+  }
 }
 
 .btn__svg path {
