@@ -25,8 +25,9 @@ import guestHtml from './components/_guest/guest.html'
 import loadSection from './modules/loadSection'
 import BurgerMenu from './components/burger/BurgerMenu'
 import Panel from './components/panel/Panel'
-import TabsToggle from './modules/TabsToggle'
+// import TabsToggle from './modules/TabsToggle'
 import transmissionToggle from './components/_transmission/transmissionToggle'
+import guestTabs from './components/_guest/guestTabs'
 
 import loadPodcastItems from './components/_podcast/loadPodcastItems'
 
@@ -106,4 +107,10 @@ transmissionToggle(
 
 // guest
 
-new Accordion('.accordion-container')
+new Accordion('.accordion-container', {
+  duration: 200,
+  openOnInit: [0],
+})
+
+
+guestTabs()

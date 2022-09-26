@@ -1,5 +1,5 @@
 .guest {
-  padding: 94px 0 91px;
+  padding: 94px 0;
   color: $white;
   background-color: $dark;
 
@@ -18,7 +18,7 @@
   &__text {
     font-size: 20px;
     line-height: 1.6;
-    margin-bottom: 49px;
+    margin-bottom: 50px;
     max-width: 825px;
   }
 
@@ -36,11 +36,16 @@
       & .is-active .guest__ac-header {
         border-color: $primary-light;
       }
+
+      & .is-active .guest__ac-header .guest__ac-header-btn {
+        background-color: transparent;
+      }
     }
 
     &-header {
       border-top: 1px solid $text-gray;
       border-bottom: 1px solid $text-gray;
+      margin-top: -1px;
 
       &-btn {
         display: flex;
@@ -51,7 +56,7 @@
         font-weight: 500;
         font-size: 20px;
         line-height: 1;
-        padding: 34px 3px 34px 0;
+        padding: 23px 3px 23px 0;
 
         &:focus {
           background-color: rgba(170, 157, 250, 30%);
@@ -83,9 +88,6 @@
         &:active .guest__ac-header-svg {
           fill: $primary-light;
         }
-
-
-
       }
 
       &-svg circle,
@@ -96,13 +98,39 @@
     }
 
     &-panel {
-      // padding: 30px 0 14px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
   }
 
+  &__col {
+    width: 100%;
+    max-width: 160px;
+    padding: 31px 0;
+  }
+
   &__item {
-    &:not(:last-child) {
-      margin-bottom: 16px;
+    &:not(:nth-child(4n)) {
+      margin-bottom: 12px;
+    }
+
+    &_tablet,
+    &_mobile {
+      display: none;
+    }
+  }
+
+  &__toggle-item {
+    font-size: 16px;
+
+    &_active {
+      color: $primary-light;
+
+      &:focus {
+        color: $primary-light;
+        background-color: transparent;
+      }
     }
   }
 
@@ -125,6 +153,14 @@
 
   &__info {
 
+    &-item {
+      display: none;
+
+      &_active {
+        display: block;
+      }
+    }
+
     &-picture {
       background-color: $dark-lite;
       margin-bottom: 12px;
@@ -141,10 +177,11 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 1.8;
-      margin-bottom: 42px;
+      margin-bottom: 30px;
     }
 
     &-btn {
+      display: inline-flex;
       font-weight: 500;
       font-size: 16px;
       line-height: 1;
@@ -152,3 +189,178 @@
     }
   }
 }
+
+
+// !MEDIA
+@media (max-width: 1249px) {
+  .guest {
+
+    &__text {
+      max-width: 536px;
+    }
+
+    &__col {
+      &:last-child {
+        display: none;
+      }
+    }
+
+    &__item {
+      &_tablet {
+        display: block;
+      }
+
+      &:not(:nth-child(4n)) {
+        margin-bottom: 0;
+      }
+
+      &:not(:nth-child(5n)) {
+        margin-bottom: 12px;
+      }
+    }
+
+    &__sidebar {
+      max-width: 255px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .guest {
+    &__content {
+      flex-direction: column;
+    }
+
+    &__ac-container {
+      margin-bottom: 50px;
+    }
+
+    &__col {
+      padding: 30px 0;
+    }
+
+    &__item {
+      &:not(:nth-child(5n)) {
+        margin-bottom: 27px;
+      }
+    }
+
+    &__sidebar {
+      max-width: 540px;
+      margin-left: 0;
+    }
+
+    &__info-desc {
+      max-width: 400px;
+    }
+  }
+}
+
+@media (max-width: 890px) {}
+
+@media (max-width: 580px) {
+  .guest {
+    padding: 54px 0;
+
+    &__title {
+      margin-bottom: 11px;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+      margin-bottom: 1px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+
+    &__ac {
+      &:last-child {
+        display: none;
+      }
+
+      &-container {
+        margin-bottom: 31px;
+      }
+
+      &-panel {
+        justify-content: flex-start;
+      }
+
+      &-header {
+        &-btn {
+          font-size: 16px;
+          padding: 13px 3px 13px 0;
+        }
+
+        &-svg {
+          width: 26px;
+          height: 26px;
+        }
+      }
+
+    }
+
+    &__col {
+      max-width: 113px;
+      padding: 20px 13px 20px 0;
+
+      &:first-child {
+        margin-right: 30px;
+      }
+
+      &:not(:nth-last-child(n + 3)) {
+        display: none;
+      }
+    }
+
+    &__item {
+      &_mobile {
+        display: block;
+      }
+
+      margin-bottom: 28px;
+
+      &:not(:nth-child(4n)) {
+        margin-bottom: 0;
+      }
+
+      &:not(:nth-child(5n)) {
+        margin-bottom: 0;
+      }
+
+      &:not(:nth-child(8n)) {
+        margin-bottom: 27px;
+      }
+    }
+
+    &__toggle-item {
+      font-size: 14px;
+      line-height: 110%;
+      text-align: start;
+    }
+
+
+    &__social {
+      &-item {
+        margin-right: 21px;
+      }
+
+      &-svg {
+        width: 36px;
+        height: 36px;
+      }
+    }
+
+    &__info {
+      &-btn {
+        padding: 8px 13px;
+      }
+    }
+  }
+}
+
+@media (max-width: 532px) {}

@@ -20,5 +20,5 @@ npm run build
 
 ## APIs
 
-- [Choices]('https://github.com/Choices-js/Choices')
-- [Accordion]('https://github.com/michu2k/Accordion')
+- [Choices](https://github.com/Choices-js/Choices)
+- [Accordion](https://github.com/michu2k/Accordion)
