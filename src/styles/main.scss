@@ -4,6 +4,8 @@
 @import 'resset';
 @import 'fonts';
 
+@import '../../node_modules/swiper/swiper-bundle';
+
 @import 'container';
 
 @import '../components/text/text';
@@ -24,6 +26,10 @@
 @import '../components/_podcast/podcast';
 @import '../components/_transmission/transmission';
 @import '../components/_guest/guest';
+@import '../components/_playlist/playlist';
+
+
+
 
 button,
 a,

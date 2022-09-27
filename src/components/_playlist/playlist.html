@@ -1,0 +1,383 @@
+<section class="playlist" id="playlist">
+  <div class="container">
+    <div class="playlist__wrapper">
+      <div class="playlist__sidebar">
+        <h2 class="title-h2 playlist__title">Плейлисты</h2>
+        <h3 class="text text_color_gray playlist__subtitle">Жанр</h3>
+  
+        <div class="playlist__genres">
+          <div class="playlist__genre-item">
+            <label for="playlist-genre-input-1" class="playlist__genre-label playlist__genre-label_active" data-target-number="1" tabindex="0">
+              <input type="radio" name="playlist__input" id="playlist-genre-input-1" class="playlist__input"
+                checked>
+              Постпанк
+              <span></span>
+            </label>
+            <label for="playlist-genre-input-2" class="playlist__genre-label" data-target-number="2" tabindex="0">
+              <input type="radio" name="playlist__input" id="playlist-genre-input-2" class="playlist__input">
+              Хардкор
+              <span></span>
+            </label>
+            <label for="playlist-genre-input-3" class="playlist__genre-label" data-target-number="3" tabindex="0">
+              <input type="radio" name="playlist__input" id="playlist-genre-input-3" class="playlist__input">
+              Панк-рок
+              <span></span>
+            </label>
+            <label for="playlist-genre-input-4" class="playlist__genre-label" data-target-number="4" tabindex="0">
+              <input type="radio" name="playlist__input" id="playlist-genre-input-4" class="playlist__input">
+              Рок
+              <span></span>
+            </label>
+          </div>
+          <div class="playlist__genre-item">
+            <label for="playlist-genre-input-5" class="playlist__genre-label playlist__genre-label_active" data-target-number="5" tabindex="0">
+              <input type="radio" name="playlist__input" id="playlist-genre-input-5" class="playlist__input">
+              Прогрессивный рок
+              <span></span>
+            </label>
+            <label for="playlist-genre-input-6" class="playlist__genre-label" data-target-number="6" tabindex="0">
+              <input type="radio" name="playlist__input" id="playlist-genre-input-6" class="playlist__input">
+              Электронная музыка
+              <span></span>
+            </label>
+            <label for="playlist-genre-input-7" class="playlist__genre-label" data-target-number="7" tabindex="0">
+              <input type="radio" name="playlist__input" id="playlist-genre-input-7" class="playlist__input">
+              Классическая музыка
+              <span></span>
+            </label>
+            <label for="playlist-genre-input-8" class="playlist__genre-label" data-target-number="8" tabindex="0">
+              <input type="radio" name="playlist__input" id="playlist-genre-input-8" class="playlist__input">
+              Звуки природы и шум города
+              <span></span>
+            </label>
+          </div>
+          <div class="playlist__genre-item playlist__genre-item_mobile">
+            <button class="btn btn_primary_second playlist__genre-bnt" data-target-number="1">Постпанк</button>
+            <button class="btn btn_primary_second playlist__genre-bnt" data-target-number="2">Хардкор</button>
+            <button class="btn btn_primary_second playlist__genre-bnt" data-target-number="3">Панк-рок</button>
+            <button class="btn btn_primary_second playlist__genre-bnt" data-target-number="4">Рок</button>
+            <button class="btn btn_primary_second playlist__genre-bnt" data-target-number="5">Прогрессивный рок</button>
+            <button class="btn btn_primary_second playlist__genre-bnt" data-target-number="6">Электронная музыка</button>
+            <button class="btn btn_primary_second playlist__genre-bnt" data-target-number="7">Классическая музыка</button>
+            <button class="btn btn_primary_second playlist__genre-bnt" data-target-number="8">Звуки природы и шум города</button>
+          </div>
+        </div>
+        <div class="playlist__sidebar-footer">
+          <p class="text text_color_gray playlist__warning-desc">
+            Раздел «Плейлисты» может содержать информацию, не предназначенную для несовершеннолетних.
+          </p>
+          <p class="text text_color_gray playlist__copyright">&copy; 2021 l W-Wave</p>
+          <div class="text text_color_gray playlist__warning-count">18+</div>
+        </div>
+      </div>
+
+      <ul class="playlist__sliders">
+
+        <li class="playlist__slider-item">
+
+          <div class="swiper playlist__swiper playlist__swiper_acitve" data-number="1">
+
+            <div class="swiper-wrapper">
+              <div class="swiper-slide playlist__swiper-slide">
+                <button class="btn playlist__swiper-card">
+                  <img class="playlist__swiper-flag" src="../../assets/images/playlist/f-ru.jpg" alt="ru">
+                  <picture class="playlist__swiper-picture">
+                    <source media="(max-width: 1249px)" srcset="../../assets/images/playlist/small_1.png">
+                    <img class="playlist__swiper-img" src="../../assets/images/playlist/big_1.png" alt="Ploho">
+                  </picture>
+                  <div class="playlist__swiper-content">
+                    <h3 class="playlist__swiper-title">Ploho</h3>
+                    <p class="text text_color_gray playlist__swiper-desc">3 последних альбома</p>
+                  </div>
+                </button>
+                <button class="btn playlist__swiper-card">
+                  <img class="playlist__swiper-flag" src="../../assets/images/playlist/f-ru.jpg" alt="ru">
+                  <picture class="playlist__swiper-picture">
+                    <source media="(max-width: 1249px)" srcset="../../assets/images/playlist/small_2.png">
+                    <img class="playlist__swiper-img" src="../../assets/images/playlist/big_2.png" alt="Molchat Doma">
+                  </picture>
+                  <div class="playlist__swiper-content">
+                    <h3 class="playlist__swiper-title">Molchat Doma</h3>
+                    <p class="text text_color_gray playlist__swiper-desc">Все песни</p>
+                  </div>
+                </button>
+                <button class="btn playlist__swiper-card">
+                  <img class="playlist__swiper-flag" src="../../assets/images/playlist/f-ru.jpg" alt="ru">
+                  <picture class="playlist__swiper-picture">
+                    <source media="(max-width: 1249px)" srcset="../../assets/images/playlist/small_3.png">
+                    <img class="playlist__swiper-img" src="../../assets/images/playlist/big_3.png" alt="Motorama">
+                  </picture>
+                  <div class="playlist__swiper-content">
+                    <h3 class="playlist__swiper-title">Motorama</h3>
+                    <p class="text text_color_gray playlist__swiper-desc">Все синглы</p>
+                  </div>
+                </button>
+                <button class="btn playlist__swiper-card">
+                  <img class="playlist__swiper-flag" src="../../assets/images/playlist/f-ru.jpg" alt="ru">
+                  <picture class="playlist__swiper-picture">
+                    <source media="(max-width: 1249px)" srcset="../../assets/images/playlist/small_4.png">
+                    <img class="playlist__swiper-img" src="../../assets/images/playlist/big_4.png" alt="Human Tetris">
+                  </picture>
+                  <div class="playlist__swiper-content">
+                    <h3 class="playlist__swiper-title">Human Tetris</h3>
+                    <p class="text text_color_gray playlist__swiper-desc">3 последних альбома</p>
+                  </div>
+                </button>
+                <button class="btn playlist__swiper-card">
+                  <img class="playlist__swiper-flag" src="../../assets/images/playlist/f-ru.jpg" alt="ru">
+                  <picture class="playlist__swiper-picture">
+                    <source media="(max-width: 1249px)" srcset="../../assets/images/playlist/small_5.png">
+                    <img class="playlist__swiper-img" src="../../assets/images/playlist/big_5.png" alt="Буерак">
+                  </picture>
+                  <div class="playlist__swiper-content">
+                    <h3 class="playlist__swiper-title">Буерак</h3>
+                    <p class="text text_color_gray playlist__swiper-desc">Все EP</p>
+                  </div>
+                </button>
+                <button class="btn playlist__swiper-card">
+                  <img class="playlist__swiper-flag" src="../../assets/images/playlist/f-ru.jpg" alt="ru">
+                  <picture class="playlist__swiper-picture">
+                    <source media="(max-width: 1249px)" srcset="../../assets/images/playlist/small_6.png">
+                    <img class="playlist__swiper-img" src="../../assets/images/playlist/big_6.png" alt="Июльские Дни">
+                  </picture>
+                  <div class="playlist__swiper-content">
+                    <h3 class="playlist__swiper-title">Июльские Дни</h3>
+                    <p class="text text_color_gray playlist__swiper-desc">Альбом «Колокол»</p>
+                  </div>
+                </button>
+                <button class="btn playlist__swiper-card">
+                  <img class="playlist__swiper-flag" src="../../assets/images/playlist/f-uk.jpg" alt="uk">
+                  <picture class="playlist__swiper-picture">
+                    <source media="(max-width: 1249px)" srcset="../../assets/images/playlist/small_7.png">
+                    <img class="playlist__swiper-img" src="../../assets/images/playlist/big_7.png" alt="Joy Division">
+                  </picture>
+                  <div class="playlist__swiper-content">
+                    <h3 class="playlist__swiper-title">Joy Division</h3>
+                    <p class="text text_color_gray playlist__swiper-desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="btn playlist__swiper-card">
+                  <img class="playlist__swiper-flag" src="../../assets/images/playlist/f-uk.jpg" alt="uk">
+                  <picture class="playlist__swiper-picture">
+                    <source media="(max-width: 1249px)" srcset="../../assets/images/playlist/small_8.png">
+                    <img class="playlist__swiper-img" src="../../assets/images/playlist/big_8.png" alt="The Cure">
+                  </picture>
+                  <div class="playlist__swiper-content">
+                    <h3 class="playlist__swiper-title">The Cure</h3>
+                    <p class="text text_color_gray playlist__swiper-desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="btn playlist__swiper-card">
+                  <img class="playlist__swiper-flag" src="../../assets/images/playlist/f-uk.jpg" alt="uk">
+                  <picture class="playlist__swiper-picture">
+                    <source media="(max-width: 1249px)" srcset="../../assets/images/playlist/small_9.png">
+                    <img class="playlist__swiper-img" src="../../assets/images/playlist/big_9.png" alt="The Smiths">
+                  </picture>
+                  <div class="playlist__swiper-content">
+                    <h3 class="playlist__swiper-title">The Smiths</h3>
+                    <p class="text text_color_gray playlist__swiper-desc">Период 1984-1988</p>
+                  </div>
+                </button>
+                <button class="btn playlist__swiper-card">
+                  <img class="playlist__swiper-flag" src="../../assets/images/playlist/f-uk.jpg" alt="uk">
+                  <picture class="playlist__swiper-picture">
+                    <source media="(max-width: 1249px)" srcset="../../assets/images/playlist/small_10.png">
+                    <img class="playlist__swiper-img" src="../../assets/images/playlist/big_10.png" alt="New Order">
+                  </picture>
+                  <div class="playlist__swiper-content">
+                    <h3 class="playlist__swiper-title">New Order</h3>
+                    <p class="text text_color_gray playlist__swiper-desc">Хиты</p>
+                  </div>
+                </button>
+                <button class="btn playlist__swiper-card">
+                  <img class="playlist__swiper-flag" src="../../assets/images/playlist/f-uk.jpg" alt="uk">
+                  <picture class="playlist__swiper-picture">
+                    <source media="(max-width: 1249px)" srcset="../../assets/images/playlist/small_11.png">
+                    <img class="playlist__swiper-img" src="../../assets/images/playlist/big_11.png" alt="Bauhaus">
+                  </picture>
+                  <div class="playlist__swiper-content">
+                    <h3 class="playlist__swiper-title">Bauhaus</h3>
+                    <p class="text text_color_gray playlist__swiper-desc">Все синглы</p>
+                  </div>
+                </button>
+                <button class="btn playlist__swiper-card">
+                  <img class="playlist__swiper-flag" src="../../assets/images/playlist/f-uk.jpg" alt="uk">
+                  <picture class="playlist__swiper-picture">
+                    <source media="(max-width: 1249px)" srcset="../../assets/images/playlist/small_12.png">
+                    <img class="playlist__swiper-img" src="../../assets/images/playlist/big_12.png" alt="Gang Of Four">
+                  </picture>
+                  <div class="playlist__swiper-content">
+                    <h3 class="playlist__swiper-title">Gang Of Four</h3>
+                    <p class="text text_color_gray playlist__swiper-desc">3 последних альбома</p>
+                  </div>
+                </button>
+              </div>
+              <div class="swiper-slide playlist__swiper-slide">
+                <button class="btn playlist__swiper-card">
+                  <img class="playlist__swiper-flag" src="../../assets/images/playlist/f-uk.jpg" alt="uk">
+                  <picture class="playlist__swiper-picture">
+                    <source media="(max-width: 1249px)" srcset="../../assets/images/playlist/small_13.png">
+                    <img class="playlist__swiper-img" src="../../assets/images/playlist/big_13.png" alt="The Chameleons">
+                  </picture>
+                  <div class="playlist__swiper-content">
+                    <h3 class="playlist__swiper-title">The Chameleons</h3>
+                    <p class="text text_color_gray playlist__swiper-desc">Период 2000-2003</p>
+                  </div>
+                </button>
+                <button class="btn playlist__swiper-card">
+                  <img class="playlist__swiper-flag" src="../../assets/images/playlist/f-uk.jpg" alt="uk">
+                  <picture class="playlist__swiper-picture">
+                    <source media="(max-width: 1249px)" srcset="../../assets/images/playlist/small_14.png">
+                    <img class="playlist__swiper-img" src="../../assets/images/playlist/big_14.png" alt="Killing Joke">
+                  </picture>
+                  <div class="playlist__swiper-content">
+                    <h3 class="playlist__swiper-title">Killing Joke</h3>
+                    <p class="text text_color_gray playlist__swiper-desc">Период 1988-1991</p>
+                  </div>
+                </button>
+                <button class="btn playlist__swiper-card">
+                  <img class="playlist__swiper-flag" src="../../assets/images/playlist/f-uk.jpg" alt="uk">
+                  <picture class="playlist__swiper-picture">
+                    <source media="(max-width: 1249px)" srcset="../../assets/images/playlist/small_15.png">
+                    <img class="playlist__swiper-img" src="../../assets/images/playlist/big_15.png" alt="The Stranglers">
+                  </picture>
+                  <div class="playlist__swiper-content">
+                    <h3 class="playlist__swiper-title">The Stranglers</h3>
+                    <p class="text text_color_gray playlist__swiper-desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="btn playlist__swiper-card">
+                  <img class="playlist__swiper-flag" src="../../assets/images/playlist/f-uk.jpg" alt="uk">
+                  <picture class="playlist__swiper-picture">
+                    <source media="(max-width: 1249px)" srcset="../../assets/images/playlist/small_16.png">
+                    <img class="playlist__swiper-img" src="../../assets/images/playlist/big_16.png" alt="Ultravox">
+                  </picture>
+                  <div class="playlist__swiper-content">
+                    <h3 class="playlist__swiper-title">Ultravox</h3>
+                    <p class="text text_color_gray playlist__swiper-desc">Период 1973-1987</p>
+                  </div>
+                </button>
+                <button class="btn playlist__swiper-card">
+                  <img class="playlist__swiper-flag" src="../../assets/images/playlist/f-usa.jpg" alt="usa">
+                  <picture class="playlist__swiper-picture">
+                    <source media="(max-width: 1249px)" srcset="../../assets/images/playlist/small_17.png">
+                    <img class="playlist__swiper-img" src="../../assets/images/playlist/big_17.png" alt="Dub Housing">
+                  </picture>
+                  <div class="playlist__swiper-content">
+                    <h3 class="playlist__swiper-title">Pere Ubu</h3>
+                    <p class="text text_color_gray playlist__swiper-desc">Dub Housing</p>
+                  </div>
+                </button>
+                <button class="btn playlist__swiper-card">
+                  <img class="playlist__swiper-flag" src="../../assets/images/playlist/f-usa.jpg" alt="usa">
+                  <picture class="playlist__swiper-picture">
+                    <source media="(max-width: 1249px)" srcset="../../assets/images/playlist/small_18.png">
+                    <img class="playlist__swiper-img" src="../../assets/images/playlist/big_18.png" alt="Talking Heads">
+                  </picture>
+                  <div class="playlist__swiper-content">
+                    <h3 class="playlist__swiper-title">Talking Heads</h3>
+                    <p class="text text_color_gray playlist__swiper-desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="btn playlist__swiper-card">
+                  <img class="playlist__swiper-flag" src="../../assets/images/playlist/f-usa.jpg" alt="usa">
+                  <picture class="playlist__swiper-picture">
+                    <source media="(max-width: 1249px)" srcset="../../assets/images/playlist/small_19.png">
+                    <img class="playlist__swiper-img" src="../../assets/images/playlist/big_19.png" alt="The Feelies">
+                  </picture>
+                  <div class="playlist__swiper-content">
+                    <h3 class="playlist__swiper-title">The Feelies</h3>
+                    <p class="text text_color_gray playlist__swiper-desc">Crazy Rhythms</p>
+                  </div>
+                </button>
+                <button class="btn playlist__swiper-card">
+                  <img class="playlist__swiper-flag" src="../../assets/images/playlist/f-usa.jpg" alt="usa">
+                  <picture class="playlist__swiper-picture">
+                    <source media="(max-width: 1249px)" srcset="../../assets/images/playlist/small_20.png">
+                    <img class="playlist__swiper-img" src="../../assets/images/playlist/big_20.png" alt="Wipers">
+                  </picture>
+                  <div class="playlist__swiper-content">
+                    <h3 class="playlist__swiper-title">Wipers</h3>
+                    <p class="text text_color_gray playlist__swiper-desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="btn playlist__swiper-card">
+                  <img class="playlist__swiper-flag" src="../../assets/images/playlist/f-usa.jpg" alt="usa">
+                  <picture class="playlist__swiper-picture">
+                    <source media="(max-width: 1249px)" srcset="../../assets/images/playlist/small_21.png">
+                    <img class="playlist__swiper-img" src="../../assets/images/playlist/big_21.png" alt="Violent Femmes">
+                  </picture>
+                  <div class="playlist__swiper-content">
+                    <h3 class="playlist__swiper-title">Violent Femmes</h3>
+                    <p class="text text_color_gray playlist__swiper-desc">Лучшее за всё время</p>
+                  </div>
+                </button>
+                <button class="btn playlist__swiper-card">
+                  <img class="playlist__swiper-flag" src="../../assets/images/playlist/f-usa.jpg" alt="usa">
+                  <picture class="playlist__swiper-picture">
+                    <source media="(max-width: 1249px)" srcset="../../assets/images/playlist/small_22.png">
+                    <img class="playlist__swiper-img" src="../../assets/images/playlist/big_22.png" alt="Minutemen">
+                  </picture>
+                  <div class="playlist__swiper-content">
+                    <h3 class="playlist__swiper-title">Minutemen</h3>
+                    <p class="text text_color_gray playlist__swiper-desc">Хиты</p>
+                  </div>
+                </button>
+                <button class="btn playlist__swiper-card">
+                  <img class="playlist__swiper-flag" src="../../assets/images/playlist/f-usa.jpg" alt="usa">
+                  <picture class="playlist__swiper-picture">
+                    <source media="(max-width: 1249px)" srcset="../../assets/images/playlist/small_23.png">
+                    <img class="playlist__swiper-img" src="../../assets/images/playlist/big_23.png" alt="Swans">
+                  </picture>
+                  <div class="playlist__swiper-content">
+                    <h3 class="playlist__swiper-title">Swans</h3>
+                    <p class="text text_color_gray playlist__swiper-desc">Все синглы</p>
+                  </div>
+                </button>
+                <button class="btn playlist__swiper-card">
+                  <img class="playlist__swiper-flag" src="../../assets/images/playlist/f-usa.jpg" alt="usa">
+                  <picture class="playlist__swiper-picture">
+                    <source media="(max-width: 1249px)" srcset="../../assets/images/playlist/small_24.png">
+                    <img class="playlist__swiper-img" src="../../assets/images/playlist/big_24.png" alt="DEVO">
+                  </picture>
+                  <div class="playlist__swiper-content">
+                    <h3 class="playlist__swiper-title">DEVO</h3>
+                    <p class="text text_color_gray playlist__swiper-desc">3 последних альбома</p>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            <div class="swiper-pagination playlist__swiper-pagination"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev playlist__swiper-nav playlist__swiper-nav-prev">
+              <svg class="playlist__swiper-nav-svg" width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
+                  fill="#121723" />
+              </svg>
+            </div>
+            <div class="swiper-button-next playlist__swiper-nav playlist__swiper-nav-next">
+              <svg class="playlist__swiper-nav-svg" width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
+                  fill="#121723" />
+              </svg>
+            </div>
+          </div>
+
+        </li>
+
+      </ul>
+
+      <div class="playlist__footer">
+        <p class="text text_color_gray playlist__warning-desc">
+          Раздел «Плейлисты» может содержать информацию, не предназначенную для несовершеннолетних.
+        </p>
+        <p class="text text_color_gray playlist__copyright">&copy; 2021 l W-Wave</p>
+        <div class="text text_color_gray playlist__warning-count">18+</div>
+      </div>
+
+    </div>
+  </div>
+</section>

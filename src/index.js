@@ -15,12 +15,15 @@ import './styles/main.scss'
 
 import Choices from 'choices.js'
 import Accordion from 'accordion-js'
+import Swiper from 'swiper'
+// import 'swiper/css';
 
 import headerHtml from './components/_header/header.html'
 import heroHtml from './components/_hero/hero.html'
 import podcastHtml from './components/_podcast/podcast.html'
 import transmissionHtml from './components/_transmission/transmission.html'
 import guestHtml from './components/_guest/guest.html'
+import playlistHtml from './components/_playlist/playlist.html'
 
 import loadSection from './modules/loadSection'
 import BurgerMenu from './components/burger/BurgerMenu'
@@ -36,6 +39,7 @@ loadSection(heroHtml, 'section', document.body)
 loadSection(podcastHtml, 'section', document.body)
 loadSection(transmissionHtml, 'section', document.body)
 loadSection(guestHtml, 'section', document.body)
+loadSection(playlistHtml, 'section', document.body)
 
 // header
 const burger = new BurgerMenu({
@@ -112,5 +116,20 @@ new Accordion('.accordion-container', {
   openOnInit: [0],
 })
 
-
 guestTabs()
+
+// playlist
+
+const swiper = new Swiper(document.querySelector('.swiper'), {
+  // cssMode: true,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  }
+})
+
+// swiper.slideNext()
