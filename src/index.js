@@ -32,6 +32,7 @@ import Panel from './components/panel/Panel'
 // import TabsToggle from './modules/TabsToggle'
 import transmissionToggle from './components/_transmission/transmissionToggle'
 import guestTabs from './components/_guest/guestTabs'
+import playlistTabs from './components/_playlist/playlistTabs'
 
 import loadPodcastItems from './components/_podcast/loadPodcastItems'
 
@@ -133,3 +134,6 @@ const swiper = new Swiper('.playlist__swiper', {
     prevEl: ".swiper-button-prev",
   }
 })
+
+
+playlistTabs()

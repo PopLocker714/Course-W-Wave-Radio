@@ -162,7 +162,12 @@
   }
 
   &__swiper {
+    display: none;
     padding-top: 34px;
+
+    &_active {
+      display: block;
+    }
 
     &-slide {
       display: flex;
@@ -511,6 +516,15 @@
         padding: 7px 19px;
         margin-right: 15px;
         white-space: nowrap;
+       
+        &_active {
+          color: $white;
+          background-color: $primary;
+          &:focus {
+            color: $white;
+            background-color: $primary;
+          }
+        }
       }
     }
 
