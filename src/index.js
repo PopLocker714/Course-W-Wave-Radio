@@ -15,7 +15,8 @@ import './styles/main.scss'
 
 import Choices from 'choices.js'
 import Accordion from 'accordion-js'
-import Swiper from 'swiper'
+// import Swiper from 'swiper'
+import Swiper, { Navigation, Pagination } from 'swiper';
 // import 'swiper/css';
 
 import headerHtml from './components/_header/header.html'
@@ -120,8 +121,9 @@ guestTabs()
 
 // playlist
 
-const swiper = new Swiper(document.querySelector('.swiper'), {
-  // cssMode: true,
+const swiper = new Swiper('.playlist__swiper', {
+  modules: [Navigation, Pagination],
+  cssMode: true,
   pagination: {
     el: ".swiper-pagination",
     type: "fraction",
@@ -131,5 +133,3 @@ const swiper = new Swiper(document.querySelector('.swiper'), {
     prevEl: ".swiper-button-prev",
   }
 })
-
-// swiper.slideNext()

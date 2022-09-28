@@ -44,6 +44,9 @@ a,
 }
 
 html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -51,9 +54,14 @@ body {
   font-family: Muller, Arial, Helvetica, sans-serif;
   font-size: 16px;
   background-color: $lite-color;
-  min-width: 320px;
   color: $dark;
+
+  width: 100%;
+  max-width: 100%;
+  min-width: 320px;
+  overflow-x: hidden;
  
+
 }
 
 // !MEDIA

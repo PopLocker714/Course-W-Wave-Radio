@@ -1,5 +1,5 @@
 .guest {
-  padding: 94px 0;
+  padding: 95px 0 94px 0;
   color: $white;
   background-color: $dark;
 
@@ -194,7 +194,6 @@
 // !MEDIA
 @media (max-width: 1249px) {
   .guest {
-
     &__text {
       max-width: 536px;
     }
