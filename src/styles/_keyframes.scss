@@ -18,3 +18,17 @@
     opacity: 1;
   }
 }
+
+@keyframes scaleLoop {
+  from {
+    transform: scale3d(.9, .9, .9);
+  }
+
+  to {
+    transform: scale3d(.9, .9, .9);
+  }
+
+  50% {
+    transform: scale3d(1, 1, 1);
+  }
+}

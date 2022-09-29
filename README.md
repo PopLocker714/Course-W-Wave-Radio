@@ -22,4 +22,4 @@ npm run build
 
 - [Choices](https://github.com/Choices-js/Choices)
 - [Accordion](https://github.com/michu2k/Accordion)
-- [Swiper](https://swiperjs.com/)
+- [Swiper](https://swiperjs.com/) 

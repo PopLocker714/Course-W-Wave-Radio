@@ -1,0 +1,304 @@
+.product {
+  background-color: $dark-lite;
+  color: $white;
+  padding: 94px 0 88px;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__slider {
+    max-width: 640px;
+  }
+
+  &__img {
+    padding-top: 8px;
+    padding-bottom: 51px;
+  }
+
+  &__svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include scaleLoop;
+  }
+
+  &__content {
+    padding: 2px 0 0 0;
+    margin-left: 25px;
+    max-width: 441px;
+    width: 100%;
+  }
+
+  &__title {
+    color: $promo;
+    margin-bottom: 18px;
+  }
+
+  &__wave {
+    border: none;
+    margin: 0;
+    width: auto;
+    height: 12px;
+    background: url(../assets/images/product/wawe.png) no-repeat;
+    margin-bottom: 18px;
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 13px;
+
+    &:nth-child(2n) {
+      margin-bottom: 31px;
+    }
+
+    &_promo {
+      font-weight: 500;
+      color: $promo;
+    }
+  }
+
+  &__cost {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 30px;
+  }
+
+  &__btn {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    padding: 23px 12px;
+
+    &-svg {
+      margin-right: 8px;
+    }
+
+    &:active &-svg g &-path-1 {
+      fill: $black;
+    }
+
+    &:active &-svg g &-path-2 {
+      fill: $promo-shade;
+    }
+
+    &:hover &-svg g &-path-1 {
+      fill: $black;
+    }
+
+    &:hover &-svg g &-path-2 {
+      fill: $promo;
+    }
+  }
+}
+
+
+// !MEDIA
+@media (max-width: 1249px) {
+  .product {
+    padding: 94px 0;
+    &__slider {
+      max-width: 397px;
+    }
+
+    &__svg {
+      width: 100px;
+      height: 100px;
+      top: 8px;
+      left: 6px;
+    }
+
+    &__slider {
+      display: flex;
+      align-items: center;
+      max-width: 397px;
+    }
+
+    &__content {
+      margin-left: 30px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .product {
+    padding: 47px 0 92px 0;
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__slider {
+      max-width: none;
+    }
+
+    &__svg {
+      width: 160px;
+      height: 160px;
+      top: 0;
+      left: 0;
+    }
+    
+    &__pagination {
+      display: none;
+    }
+
+    &__content {
+      max-width: none;
+      margin-left: 0;
+    }
+
+    &__title {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+@media (max-width: 890px) {}
+
+@media (max-width: 580px) {
+
+  .product {
+    padding: 55px 0;
+    &__svg {
+      width: 62px;
+      height: 62px;
+    }
+
+    &__img {
+      padding-top: 0px;
+      padding-bottom: 33px;
+    }
+
+    &__title {
+      margin-bottom: 10px;
+    }
+
+    &__desc {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 10px;
+
+      &:nth-child(2n) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__cost {
+      font-size: 24px;
+      margin-bottom: 18px;
+    }
+
+    &__btn {
+      font-size: 16px;
+      padding: 13px;
+    }
+  }
+
+}
+
+@media (max-width: 532px) {}
+
+
+
+
+
+
+
+// bullet
+.swiper-horizontal>.swiper-pagination-bullets {
+  bottom: 0;
+}
+
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  opacity: 1;
+  position: relative;
+
+  &.swiper-pagination-bullet::after {
+    content: '';
+    top: 30%;
+    left: 32%;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(30, 13, 68, 0.8);
+    background-color: $promo;
+    z-index: 6;
+
+    transition-property: opacity;
+    @include transition;
+    opacity: 0;
+  }
+
+  &:first-child {
+    background: rgb(135, 65, 88);
+  }
+
+  &:nth-child(2n) {
+    background: rgb(0, 110, 123);
+  }
+
+  &:last-child {
+    background: rgb(29, 108, 78);
+  }
+
+  &::before {
+    content: '';
+    top: 12.4%;
+    left: 12%;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: $white;
+    z-index: 5;
+
+    transition-property: opacity;
+    @include transition;
+    opacity: 0;
+  }
+
+  &:focus {
+    outline-color: $primary;
+    outline-offset: 1px;
+  }
+
+  &.swiper-pagination-bullet-active:focus {
+    outline: none;
+  }
+
+  &:hover {
+    outline: none;
+  }
+
+  &:hover::before {
+    opacity: .5;
+  }
+
+  &.swiper-pagination-bullet-active:hover::before {
+    display: none;
+  }
+
+
+  &:active.swiper-pagination-bullet::after {
+    outline: none;
+    opacity: 1;
+  }
+
+  &:active::before {
+    display: none;
+  }
+
+  &.swiper-pagination-bullet-active::after {
+    opacity: 1;
+  }
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 15px;
+}

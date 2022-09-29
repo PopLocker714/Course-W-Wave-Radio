@@ -25,6 +25,7 @@ import podcastHtml from './components/_podcast/podcast.html'
 import transmissionHtml from './components/_transmission/transmission.html'
 import guestHtml from './components/_guest/guest.html'
 import playlistHtml from './components/_playlist/playlist.html'
+import productHtml from './components/_product/product.html'
 
 import loadSection from './modules/loadSection'
 import BurgerMenu from './components/burger/BurgerMenu'
@@ -42,6 +43,7 @@ loadSection(podcastHtml, 'section', document.body)
 loadSection(transmissionHtml, 'section', document.body)
 loadSection(guestHtml, 'section', document.body)
 loadSection(playlistHtml, 'section', document.body)
+loadSection(productHtml, 'section', document.body)
 
 // header
 const burger = new BurgerMenu({
@@ -122,7 +124,7 @@ guestTabs()
 
 // playlist
 
-const swiper = new Swiper('.playlist__swiper', {
+new Swiper('.playlist__swiper', {
   modules: [Navigation, Pagination],
   cssMode: true,
   pagination: {
@@ -137,3 +139,17 @@ const swiper = new Swiper('.playlist__swiper', {
 
 
 playlistTabs()
+
+
+// product 
+
+
+new Swiper('.product__swiper', {
+  modules: [Navigation, Pagination],
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: true,
+  }
+})

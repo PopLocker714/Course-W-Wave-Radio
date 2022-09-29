@@ -110,6 +110,34 @@
       border-color: $primary-shade;
     }
   }
+
+  &_promo {
+    display: inline-flex;
+    align-items: center;
+
+    color: $promo;
+    background-color: transparent;
+    border: 2px solid $promo;
+    border-radius: 100px;
+
+    &:focus {
+      outline: none;
+      color: $black;
+      background-color: $promo-shade;
+    }
+  
+    &:hover {
+      color: $black;
+      background-color: $promo;
+    }
+  
+    &:active {
+      color: $black;
+      background-color: $promo-shade;
+      border-color: $promo-shade;
+    }
+    
+  }
 }
 
 .btn__svg path {
