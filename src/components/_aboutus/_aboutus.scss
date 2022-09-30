@@ -1,0 +1,180 @@
+.aboutus {
+  color: $white;
+  padding: 94px 0 91px;
+  background-color: $dark;
+
+  &__wrapper {}
+
+  &__intro {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 19px;
+
+    &-content {
+      width: 58%;
+    }
+  }
+
+  &__title {
+    color: $white;
+    margin-bottom: 13px;
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  &__img {
+    width: 40.1%;
+    height: 290px;
+    background: left url(../assets/images/aboutus/spiral.png) no-repeat;
+
+    &::after {
+      content: '';
+      display: block;
+      margin-left: auto;
+      width: 255px;
+      height: 100%;
+      background: left 50% url(../assets/images/aboutus/rays.png) no-repeat;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    max-width: 255px;
+    margin-bottom: 30px;
+
+    &-photo {
+      margin-bottom: 32px;
+    }
+
+    &-name {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1;
+      margin-bottom: 7px;
+    }
+
+    &-desc {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__input {
+    border: 1px solid $white;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 10px 32px;
+    background-color: transparent;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    color: $white;
+
+    min-height: 70px;
+  }
+
+  &__form {
+    display: block;
+    max-width: 920px;
+
+    &-message {
+      padding: 30px 32px;
+      resize: vertical;
+      width: 100%;
+
+      min-height: 150px;
+      margin-bottom: 28px;
+    }
+
+    &-person {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      border: none;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    &-name,
+    &-email {
+      flex: 1;
+      border-radius: 40px;
+      max-width: 445px;
+    }
+  }
+
+  &__btn {
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    padding: 25px 54px;
+    margin-bottom: 29px;
+  }
+
+  &__checkbox {
+    
+    display: none;
+
+    & + span {
+      position: absolute;
+      top: -3px;
+      left: 0;
+      width: 14px;
+      height: 14px;
+    }
+  
+    & + span::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 1px solid $text-gray;
+      width: 14px;
+      height: 14px;
+    }
+    & + span::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 14px;
+      height: 14px;
+    }
+  
+    &:checked + span::after {
+      @include scaleUp;
+      background: center url(../assets/images/aboutus/checksvg.svg) no-repeat;
+    }
+
+    &-label {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1;
+      color: $white;
+
+      cursor: pointer;
+      position: relative;
+      padding: 0 0 0 22px;
+    }
+  }
+
+}

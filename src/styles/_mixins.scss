@@ -16,3 +16,10 @@
   animation-iteration-count: infinite;
 }
 
+@mixin scaleUp {
+  animation-name: scaleUp;
+  animation-duration: .1s;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}

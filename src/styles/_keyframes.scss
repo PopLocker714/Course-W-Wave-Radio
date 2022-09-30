@@ -1,14 +1,3 @@
-// @keyframes scaleCheck {
-//   from {
-//     background: center center / 0 url(../img/aboutUs/checksvg.svg) no-repeat;
-//   }
-
-//   to {
-//     background: center center / 10px url(../img/aboutUs/checksvg.svg) no-repeat;
-//   }
-// }
-
-
 @keyframes opacityAnim {
   from {
     opacity: 0;
@@ -29,6 +18,16 @@
   }
 
   50% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale3d(0, 0, 0);
+  }
+
+  to {
     transform: scale3d(1, 1, 1);
   }
 }

@@ -26,6 +26,7 @@ import transmissionHtml from './components/_transmission/transmission.html'
 import guestHtml from './components/_guest/guest.html'
 import playlistHtml from './components/_playlist/playlist.html'
 import productHtml from './components/_product/product.html'
+import aboutusHtml from './components/_aboutus/aboutus.html'
 
 import loadSection from './modules/loadSection'
 import BurgerMenu from './components/burger/BurgerMenu'
@@ -44,6 +45,7 @@ loadSection(transmissionHtml, 'section', document.body)
 loadSection(guestHtml, 'section', document.body)
 loadSection(playlistHtml, 'section', document.body)
 loadSection(productHtml, 'section', document.body)
+loadSection(aboutusHtml, 'section', document.body)
 
 // header
 const burger = new BurgerMenu({
