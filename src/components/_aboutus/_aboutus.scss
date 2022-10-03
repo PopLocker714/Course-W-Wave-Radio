@@ -52,11 +52,12 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 28px;
   }
 
   &__card {
     max-width: 255px;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
 
     &-photo {
       margin-bottom: 32px;
@@ -96,6 +97,8 @@
     max-width: 920px;
 
     &-message {
+      font-size: 16px;
+      line-height: 16px;
       padding: 30px 32px;
       resize: vertical;
       width: 100%;
@@ -126,8 +129,8 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 1;
-    padding: 25px 54px;
-    margin-bottom: 29px;
+    padding: 24px 53px;
+    margin-bottom: 27px;
   }
 
   &__checkbox {
@@ -178,3 +181,200 @@
   }
 
 }
+
+
+// !MEDIA
+@media (max-width: 1249px) {
+  .aboutus {
+
+    &__intro {
+      margin-bottom: 29px;
+      &-content {
+      width: 75%;
+      }
+    }
+
+    &__subtitle {
+      margin-bottom: 9px;
+    }
+
+    &__img {
+      height: auto;
+      background: none;
+      &::after {
+        // background: left 140% url(../assets/images/aboutus/rays.png) no-repeat;
+      }
+    }
+
+    &__card {
+      max-width: 397px;
+      &:not(:nth-child(n+3)) {
+        margin-bottom: 30px;
+      }
+
+      &-photo {
+        margin-bottom: 31px;
+      }
+
+    }
+
+    &__form-message {
+      margin-bottom: 29px;
+    }
+
+    &__form-name,
+    &__form-email {
+        max-width: 397px;      
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .aboutus {
+
+    &__subtitle {
+      margin-bottom: 8px;
+    }
+
+    &__img {
+      position: relative;
+      width: calc(142px + 100%) ;
+      height: 114px;
+      background: 100% 50% url(../assets/images/aboutus/rays2.png) no-repeat;
+      margin-left: -142px;
+
+      &::after {
+        width: 100%;
+        height: 114px;
+        position: absolute;
+        background: 9% 50% url(../assets/images/aboutus/spiral2.png) no-repeat;
+        margin-left: 0;
+      }
+    }
+
+    &__intro {
+      flex-direction: column;
+      &-content {
+        width: auto;
+        margin-bottom: 29px;
+      }
+    }
+
+    &__card {
+      max-width: 255px;
+    }
+
+    &__form {
+      &-person {
+        flex-direction: column;
+        margin-bottom: 29px;
+      }
+
+      &-name, &-email {
+        max-width: none;
+      }
+
+      &-name {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 890px) {}
+
+@media (max-width: 580px) {
+  .aboutus {
+    padding: 55px 0 52px;
+
+    &__intro {
+      margin-bottom: 27px;
+
+      &-content {
+        margin-bottom: 2px;
+      }
+    }
+
+    &__title {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    .aboutus__text {
+      font-size: 14px;
+      line-height: 1.57;
+    }
+
+    &__img {
+      display: none;
+    }
+
+    &__cards {
+      max-width: 284px;
+    }
+
+    &__card {
+      max-width: 113px;
+
+      &-photo {
+        margin-bottom: 13px;
+      }
+      
+      &-name {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 4px;
+      }
+
+      &-desc {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+
+    &__input {
+      font-size: 16px;
+      padding: 10px 10px 10px 23px;
+      border-radius: 40px;
+    }
+
+    &__form {
+      &-message {
+        padding: 17px 23px;
+        border-radius: 20px;
+      }
+      
+      &-name,
+      &-email {
+        padding: 15px 23px;
+        min-height: auto;
+      }
+    }
+
+    &__btn {
+      font-size: 16px;
+      padding: 15px 43px;
+      margin-bottom: 17px;
+    }
+
+    .aboutus__checkbox {
+      & + span,
+      & + span::after,
+      & + span::before {
+        width: 13px;
+        height: 13px;
+      }
+      
+      &-label {
+        font-size: 9px;
+      }
+    }
+  }
+}
+
+@media (max-width: 532px) {}
