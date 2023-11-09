@@ -1023,24 +1023,24 @@ button.swiper-pagination-bullet {
   background-color: rgb(79, 40, 165);
   border-color: rgb(79, 40, 165);
 }
-.btn_light {
+.btn__light {
   color: rgb(170, 157, 250);
   background-color: transparent;
   border: 2px solid rgb(170, 157, 250);
   border-radius: 77px;
 }
-.btn_light:focus {
+.btn__light:focus {
   outline: none;
   color: rgb(255, 255, 255);
   background-color: rgb(109, 49, 238);
   border-color: rgb(109, 49, 238);
 }
-.btn_light:hover {
+.btn__light:hover {
   color: rgb(255, 255, 255);
   background-color: rgb(170, 157, 250);
   border-color: rgb(170, 157, 250);
 }
-.btn_light:active {
+.btn__light:active {
   color: rgb(255, 255, 255);
   background-color: rgb(79, 40, 165);
   border-color: rgb(79, 40, 165);

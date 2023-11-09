@@ -20,7 +20,7 @@
     background-color: transparent;
   }
 
-  &_hover_stick {
+  &__hover--stick {
     &::after {
       content: '';
       position: absolute;

@@ -1,7 +1,7 @@
-import ToggleContent from "../../modules/ToggleContent"
+import ToggleContent from "../../modules/ToggleContent";
 export default class Panel extends ToggleContent {
   constructor(options) {
-    super(options)
-    this.element.firstElementChild.addEventListener('click', options.onClick)
+    super(options);
+    this.element.firstElementChild.addEventListener("click", options.onClick);
   }
 }

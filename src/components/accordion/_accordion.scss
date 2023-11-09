@@ -3,18 +3,12 @@
     position: relative;
   }
 
-  
-
-  // & .ac-trigger:focus {
-  //   color: #8a8a8a;
-  // }
-
   &-svg {
     transform: rotate(180deg);
     transition-property: transform, fill;
     @include transition;
   }
-  
+
   & .ac-panel {
     overflow: hidden;
     transition-property: height, visibility;
@@ -29,7 +23,7 @@
     visibility: visible;
   }
 
-  &.is-active>.ac-header .ac-trigger &-svg {
+  &.is-active > .ac-header .ac-trigger &-svg {
     transform: rotate(360deg);
   }
 }

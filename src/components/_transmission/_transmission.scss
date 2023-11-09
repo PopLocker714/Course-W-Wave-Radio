@@ -130,7 +130,7 @@
     &:focus &-img,
     &:hover &-img,
     &:active &-img {
-      opacity: .7;
+      opacity: 0.7;
     }
 
     &:hover {
@@ -165,12 +165,9 @@
   }
 }
 
-
 // !MEDIA
 @media (max-width: 1249px) {
   .transmission {
-    // padding: 94px 0 92px;
-
     &__list {
       max-width: 570px;
     }
@@ -232,8 +229,6 @@
     }
   }
 }
-
-@media (max-width: 890px) {}
 
 @media (max-width: 580px) {
   .transmission {
@@ -321,5 +316,3 @@
     }
   }
 }
-
-@media (max-width: 532px) {}

@@ -1,7 +1,6 @@
 .search {
   width: 24px;
   height: 24px;
-  // border: none;
   & .search__svg path {
     transition-property: stroke;
     @include transition;

@@ -10,7 +10,7 @@
   transition-property: color, background-color, border;
   @include transition;
 
-  &_login {
+  &__login {
     border: 2px solid $dark;
     border-radius: 77px;
 
@@ -35,7 +35,7 @@
     }
   }
 
-  &_primary_main {
+  &__primary-main {
     color: $white;
     background-color: $primary;
     border: 2px solid $primary;
@@ -57,12 +57,12 @@
       border-color: $primary-shade;
     }
   }
-  
-  &_primary_second {
+
+  &__primary-second {
     color: $primary;
     background-color: transparent;
     border: 2px solid $primary;
-    
+
     border-radius: 40px;
 
     &:focus {
@@ -77,7 +77,7 @@
       background-color: $primary;
       border-color: $primary;
     }
-    
+
     &:active {
       color: $white;
       background-color: $primary-shade;
@@ -85,7 +85,7 @@
     }
   }
 
-  &_light {
+  &__light {
     color: $primary-light;
     background-color: transparent;
     border: 2px solid $primary-light;
@@ -111,7 +111,7 @@
     }
   }
 
-  &_promo {
+  &__promo {
     display: inline-flex;
     align-items: center;
 
@@ -125,22 +125,21 @@
       color: $black;
       background-color: $promo-shade;
     }
-  
+
     &:hover {
       color: $black;
       background-color: $promo;
     }
-  
+
     &:active {
       color: $black;
       background-color: $promo-shade;
       border-color: $promo-shade;
     }
-    
   }
-}
 
-.btn__svg path {
-  transition-property: fill, stroke;
-  @include transition;
+  &__svg path {
+    transition-property: fill, stroke;
+    @include transition;
+  }
 }

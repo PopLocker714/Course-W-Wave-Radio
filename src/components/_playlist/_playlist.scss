@@ -59,22 +59,22 @@
         outline: none;
       }
 
-      &:focus .playlist__input+span {
+      &:focus .playlist__input + span {
         background-color: $shade-gray;
         border-color: $primary;
       }
 
-      &:hover .playlist__input+span {
+      &:hover .playlist__input + span {
         border-color: $primary;
         background-color: transparent;
       }
 
-      &:active .playlist__input+span {
+      &:active .playlist__input + span {
         border-color: $primary-shade;
         background-color: transparent;
       }
 
-      &.active .playlist__input+span {
+      &.active .playlist__input + span {
         background-color: transparent;
       }
     }
@@ -83,7 +83,7 @@
   &__input {
     display: none;
 
-    &+span {
+    & + span {
       position: absolute;
       top: 6px;
       left: 2px;
@@ -95,8 +95,8 @@
       @include transition;
     }
 
-    &+span::before {
-      content: '';
+    & + span::before {
+      content: "";
       position: absolute;
       top: -2px;
       right: 0;
@@ -109,7 +109,7 @@
       @include transition;
     }
 
-    &:checked+span::before {
+    &:checked + span::before {
       border: 7px solid $primary;
       width: 26px;
       height: 26px;
@@ -123,7 +123,6 @@
   }
 
   &__warning {
-
     &-desc {
       font-weight: 400;
       font-size: 16px;
@@ -158,7 +157,6 @@
 
   &__sliders {
     max-width: 730px;
-
   }
 
   &__swiper {
@@ -185,8 +183,6 @@
         left: 86%;
         transform: rotate(180deg);
       }
-
-      &-next {}
 
       &::after {
         display: none;
@@ -227,7 +223,6 @@
       // margin-right: 30px;
       margin-bottom: 30px;
 
-
       &:focus .playlist__swiper-content .playlist__swiper-desc {
         color: $black;
       }
@@ -235,10 +230,10 @@
         background-color: $primary-light;
         border-color: $primary-light;
       }
-      &:focus .playlist__swiper-picture::before{
-        opacity: .8;
+      &:focus .playlist__swiper-picture::before {
+        opacity: 0.8;
       }
-      &:focus .playlist__swiper-picture::after{
+      &:focus .playlist__swiper-picture::after {
         opacity: 1;
       }
 
@@ -253,7 +248,7 @@
       }
 
       &:hover .playlist__swiper-picture::before {
-        opacity: .8;
+        opacity: 0.8;
       }
 
       &:hover .playlist__swiper-picture::after {
@@ -271,7 +266,7 @@
       }
 
       &:active .playlist__swiper-picture::before {
-        opacity: .8;
+        opacity: 0.8;
       }
 
       &:active .playlist__swiper-picture::after {
@@ -294,7 +289,7 @@
 
     &-picture {
       &::before {
-        content: '';
+        content: "";
         opacity: 0;
         position: absolute;
         width: 100%;
@@ -307,7 +302,7 @@
       }
 
       &::after {
-        content: '';
+        content: "";
         opacity: 0;
         position: absolute;
         left: calc(50% - 56px / 2);
@@ -315,11 +310,12 @@
         width: 56px;
         height: 56px;
         z-index: 6;
-        background: 0 0 / 56px url('../assets/images/playlist/play_btn.svg') no-repeat;
+        background: 0 0 / 56px url("../assets/images/playlist/play_btn.svg")
+          no-repeat;
 
         transition-property: opacity, transform;
         @include transition;
-        transform: scale(.9);
+        transform: scale(0.9);
       }
     }
 
@@ -364,11 +360,8 @@
       font-style: italic;
       padding: 0 36px 0 0;
     }
-
-
   }
 }
-
 
 // !MEDIA
 @media (max-width: 1249px) {
@@ -421,7 +414,6 @@
       &-content {
         min-width: 143px;
         padding: 0 0 0 9px;
-        
       }
 
       &-picture {
@@ -446,11 +438,11 @@
   }
 }
 
-@media (max-width: 1000px) {}
+@media (max-width: 1000px) {
+}
 
 @media (max-width: 890px) {
   .playlist {
-
     &__swiper {
       padding-top: 23px;
     }
@@ -478,7 +470,6 @@
     }
 
     &__genres {
-      
       overflow: hidden;
       height: 40px;
     }
@@ -490,19 +481,19 @@
     &__genre {
       &-item {
         display: none;
-  
+
         &_mobile {
           display: flex;
           width: 620px;
           position: absolute;
           left: -32px;
-  
+
           overflow-x: scroll;
           scroll-behavior: smooth;
           overflow-y: hidden;
           -ms-overflow-style: none;
           scrollbar-width: none;
-  
+
           flex-direction: row;
           align-items: flex-start;
           text-align: start;
@@ -516,7 +507,7 @@
         padding: 7px 19px;
         margin-right: 15px;
         white-space: nowrap;
-       
+
         &_active {
           color: $white;
           background-color: $primary;
@@ -585,8 +576,5 @@
       font-size: 12px;
       margin-bottom: 9px;
     }
-    
   }
 }
-
-@media (max-width: 532px) {}

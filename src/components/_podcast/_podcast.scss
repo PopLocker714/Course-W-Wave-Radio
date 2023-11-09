@@ -24,7 +24,7 @@
     width: 100%;
     max-width: 540px;
 
-    &:nth-child(2n+1) {
+    &:nth-child(2n + 1) {
       margin-right: 30px;
     }
   }
@@ -221,7 +221,7 @@
     }
 
     &__card {
-      &:nth-child(2n+1) {
+      &:nth-child(2n + 1) {
         margin-right: 0;
       }
 
@@ -235,8 +235,6 @@
     }
   }
 }
-
-@media (max-width: 890px) {}
 
 @media (max-width: 580px) {
   .podcast {
@@ -292,7 +290,7 @@
         width: 37px;
         height: 37px;
       }
-  
+
       &-like-count {
         padding-top: 0;
         font-size: 12px;
@@ -313,5 +311,3 @@
     }
   }
 }
-
-@media (max-width: 532px) {}
